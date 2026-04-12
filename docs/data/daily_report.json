@@ -1,6 +1,6 @@
 {
   "date": "2026-04-12",
-  "generated_at": "2026-04-12T21:12:49.930530",
+  "generated_at": "2026-04-12T08:24:19.847086",
   "indices": {
     "nasdaq": {
       "close": 22902.89,
@@ -261,7 +261,7 @@
         "momentum": 56.5,
         "value": 26.7,
         "quality": 92.5,
-        "growth": 89.4,
+        "growth": 89.5,
         "risk": 44.6,
         "flow": 56.1
       },
@@ -350,7 +350,7 @@
         "value": 36.0,
         "quality": 71.1,
         "growth": 48.4,
-        "risk": 59.1,
+        "risk": 59.0,
         "flow": 47.0
       },
       "signal": "HOLD",
@@ -524,7 +524,7 @@
         "momentum": 55.3,
         "value": 50.4,
         "quality": 32.9,
-        "growth": 37.6,
+        "growth": 37.7,
         "risk": 51.1,
         "flow": 55.2
       },
@@ -2127,7 +2127,7 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 32.4,
-        "value": 39.9,
+        "value": 40.0,
         "quality": 30.9,
         "growth": 75.0,
         "risk": 42.0,
@@ -2735,7 +2735,7 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 66.2,
-        "value": 58.2,
+        "value": 58.1,
         "quality": 25.4,
         "growth": 18.5,
         "risk": 37.7,
@@ -2917,7 +2917,7 @@
         "momentum": 45.1,
         "value": 85.5,
         "quality": 34.4,
-        "growth": 34.7,
+        "growth": 34.6,
         "risk": 46.0,
         "flow": 45.7
       },
@@ -3362,7 +3362,7 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 61.3,
-        "value": 49.6,
+        "value": 49.5,
         "quality": 26.7,
         "growth": 32.2,
         "risk": 56.2,
@@ -3451,7 +3451,7 @@
         "momentum": 58.5,
         "value": 51.2,
         "quality": 54.2,
-        "growth": 31.3,
+        "growth": 31.4,
         "risk": 50.7,
         "flow": 46.9
       },
@@ -3538,7 +3538,7 @@
         "value": 72.5,
         "quality": 64.0,
         "growth": 68.3,
-        "risk": 47.4,
+        "risk": 47.5,
         "flow": 58.3
       },
       "signal": "BUY",
@@ -3551,7 +3551,7 @@
       "reasons": [
         "Forward P/E 13.9 — 저평가 영역",
         "최강 팩터: value (72점)",
-        "최약 팩터: risk (47점)"
+        "최약 팩터: risk (48점)"
       ],
       "factors_raw": {
         "momentum": {
@@ -4067,7 +4067,7 @@
         "momentum": 56.5,
         "value": 75.6,
         "quality": 26.6,
-        "growth": 25.5,
+        "growth": 25.4,
         "risk": 65.6,
         "flow": 57.4
       },
@@ -4081,7 +4081,7 @@
       "reasons": [
         "매출 성장률 -1.3% — 역성장 우려",
         "최강 팩터: value (76점)",
-        "최약 팩터: growth (26점)"
+        "최약 팩터: growth (25점)"
       ],
       "factors_raw": {
         "momentum": {
@@ -4332,7 +4332,7 @@
           "value": 72.5,
           "quality": 64.0,
           "growth": 68.3,
-          "risk": 47.4,
+          "risk": 47.5,
           "flow": 58.3
         },
         "signal": "BUY",
@@ -4345,7 +4345,7 @@
         "reasons": [
           "Forward P/E 13.9 — 저평가 영역",
           "최강 팩터: value (72점)",
-          "최약 팩터: risk (47점)"
+          "최약 팩터: risk (48점)"
         ],
         "factors_raw": {
           "momentum": {
