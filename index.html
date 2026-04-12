@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASDAQ Quant Analyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap');
+    * { font-family: 'Noto Sans KR', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    body { background: #080c18; color: #e2e8f0; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0d1526; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+
+    .grade-S { color: #ff6b6b; text-shadow: 0 0 12px rgba(255,107,107,.5); }
+    .grade-A { color: #ffd93d; text-shadow: 0 0 10px rgba(255,217,61,.4); }
+    .grade-B { color: #6bcb77; }
+    .grade-C { color: #4d96ff; }
+    .grade-D { color: #9ca3af; }
+    .grade-F { color: #6b7280; }
+
+    .signal-STRONG_BUY  { background: rgba(0,230,118,.15); color: #00e676; border: 1px solid rgba(0,230,118,.3); }
+    .signal-BUY         { background: rgba(102,187,106,.12); color: #66bb6a; border: 1px solid rgba(102,187,106,.25); }
+    .signal-HOLD        { background: rgba(255,215,64,.12); color: #ffd740; border: 1px solid rgba(255,215,64,.25); }
+    .signal-SELL        { background: rgba(255,82,82,.12); color: #ff5252; border: 1px solid rgba(255,82,82,.25); }
+    .signal-STRONG_SELL { background: rgba(255,23,68,.15); color: #ff1744; border: 1px solid rgba(255,23,68,.3); }
+
+    .card { background: linear-gradient(135deg, #111927 0%, #0d1526 100%); border: 1px solid #1e3050; border-radius: 12px; }
+    .card:hover { border-color: #2d4a6f; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .fade-in { animation: fadeIn .3s ease-out; }
+
+    @keyframes pulse-glow { 0%,100% { opacity: 1; } 50% { opacity: .6; } }
+    .pulse-glow { animation: pulse-glow 2.5s infinite; }
+
+    .score-ring { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+    .score-ring svg { transform: rotate(-90deg); }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { useState, useEffect, useMemo, useRef, useCallback } = React;
+
+    // ─── 샘플 데이터 (JSON 로드 전 표시용) ──────────────────────────────
+    const SAMPLE_DATA = {
+      date: "2026-04-12", generated_at: "2026-04-12T08:00:00",
+      indices: {
+        nasdaq: { close: 18245.3, change_pct: 1.24 },
+        sp500:  { close: 5892.1, change_pct: 0.87 },
+        vix:    { close: 15.2, change_pct: -4.5 },
+      },
+      sectors: {
+        Technology: { ticker: "XLK", close: 218.5, change_pct: 1.5 },
+        Healthcare: { ticker: "XLV", close: 142.3, change_pct: 0.3 },
+        Financials: { ticker: "XLF", close: 44.8, change_pct: 0.6 },
+        "Consumer Disc": { ticker: "XLY", close: 198.2, change_pct: -0.2 },
+        Communication: { ticker: "XLC", close: 86.4, change_pct: 0.9 },
+        Industrials: { ticker: "XLI", close: 118.7, change_pct: 0.4 },
+        Staples: { ticker: "XLP", close: 78.1, change_pct: -0.1 },
+        Energy: { ticker: "XLE", close: 89.3, change_pct: -0.8 },
+        Utilities: { ticker: "XLU", close: 71.2, change_pct: -0.3 },
+        "Real Estate": { ticker: "XLRE", close: 41.5, change_pct: -0.5 },
+        Materials: { ticker: "XLB", close: 87.9, change_pct: 0.2 },
+      },
+      stocks: {},
+      top_picks: { buy: [], sell: [] },
+      summary: { total_stocks: 0, avg_score: 0, signal_distribution: {}, sector_avg_scores: {} },
+    };
+
+    // ─── 유틸 ──────────────────────────────────────────────────────────
+    const fmt = (n, d=2) => n != null ? Number(n).toFixed(d) : 'N/A';
+    const fmtPct = (n) => n != null ? `${n >= 0 ? '+' : ''}${Number(n).toFixed(2)}%` : 'N/A';
+    const fmtCap = (n) => {
+      if (!n) return 'N/A';
+      if (n >= 1e12) return `$${(n/1e12).toFixed(2)}T`;
+      if (n >= 1e9) return `$${(n/1e9).toFixed(1)}B`;
+      if (n >= 1e6) return `$${(n/1e6).toFixed(0)}M`;
+      return `$${n}`;
+    };
+    const pctColor = (v) => v > 0 ? '#00e676' : v < 0 ? '#ff1744' : '#ffd740';
+    const gradeClass = (g) => `grade-${g || 'F'}`;
+    const signalClass = (s) => `signal-${s || 'HOLD'}`;
+    const signalLabel = (s) => ({
+      STRONG_BUY:'Strong Buy', BUY:'Buy', HOLD:'Hold', SELL:'Sell', STRONG_SELL:'Strong Sell'
+    }[s] || s);
+
+    // ─── 스코어 링 SVG ──────────────────────────────────────────────────
+    function ScoreRing({ score, size=60, stroke=5, grade }) {
+      const r = (size - stroke) / 2;
+      const circ = 2 * Math.PI * r;
+      const offset = circ - (score / 100) * circ;
+      const colors = { S:'#ff6b6b', A:'#ffd93d', B:'#6bcb77', C:'#4d96ff', D:'#9ca3af', F:'#6b7280' };
+      const c = colors[grade] || '#4d96ff';
+      return (
+        <div className="score-ring" style={{width:size,height:size}}>
+          <svg width={size} height={size}>
+            <circle cx={size/2} cy={size/2} r={r} fill="none" stroke="#1e293b" strokeWidth={stroke}/>
+            <circle cx={size/2} cy={size/2} r={r} fill="none" stroke={c} strokeWidth={stroke}
+              strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round"
+              style={{transition:'stroke-dashoffset 1s ease'}}/>
+          </svg>
+          <div className="absolute text-center" style={{fontSize:size*.22}}>
+            <div className="font-bold mono" style={{color:c}}>{Math.round(score)}</div>
+            <div className={`text-xs font-black ${gradeClass(grade)}`}>{grade}</div>
+          </div>
+        </div>
+      );
+    }
+
+    // ─── 팩터 바 차트 ────────────────────────────────────────────────────
+    function FactorBars({ scores }) {
+      const factors = ['momentum','value','quality','growth','risk','flow'];
+      const labels = ['모멘텀','가치','품질','성장','리스크','수급'];
+      const colors = ['#60a5fa','#f472b6','#34d399','#fbbf24','#a78bfa','#38bdf8'];
+      return (
+        <div className="grid grid-cols-6 gap-1 mt-2">
+          {factors.map((f,i) => {
+            const v = scores?.[f] ?? 50;
+            return (
+              <div key={f} className="text-center">
+                <div className="text-[10px] text-gray-500 mb-1">{labels[i]}</div>
+                <div className="h-16 bg-gray-800/50 rounded relative overflow-hidden">
+                  <div className="absolute bottom-0 w-full rounded transition-all duration-700"
+                    style={{height:`${v}%`, background:colors[i], opacity:.7}}/>
+                </div>
+                <div className="mono text-[10px] mt-1" style={{color:colors[i]}}>{Math.round(v)}</div>
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+
+    // ─── 레이더 차트 (Canvas) ────────────────────────────────────────────
+    function RadarChart({ scores, size=200 }) {
+      const canvasRef = useRef(null);
+      const factors = ['momentum','value','quality','growth','risk','flow'];
+      const labels = ['모멘텀','가치','품질','성장','리스크','수급'];
+      useEffect(() => {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        const cx = size/2, cy = size/2, R = size/2 - 30;
+        ctx.clearRect(0,0,size,size);
+        const n = factors.length;
+        const angle = (i) => (Math.PI*2/n)*i - Math.PI/2;
+        // 배경 그리드
+        [.2,.4,.6,.8,1].forEach(s => {
+          ctx.beginPath();
+          for (let i=0;i<n;i++) { const a=angle(i); ctx[i?'lineTo':'moveTo'](cx+R*s*Math.cos(a), cy+R*s*Math.sin(a)); }
+          ctx.closePath(); ctx.strokeStyle='rgba(255,255,255,.08)'; ctx.stroke();
+        });
+        // 축
+        for (let i=0;i<n;i++) {
+          const a=angle(i);
+          ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(cx+R*Math.cos(a), cy+R*Math.sin(a));
+          ctx.strokeStyle='rgba(255,255,255,.1)'; ctx.stroke();
+          // 라벨
+          const lx = cx+(R+18)*Math.cos(a), ly = cy+(R+18)*Math.sin(a);
+          ctx.fillStyle='#94a3b8'; ctx.font='11px Noto Sans KR'; ctx.textAlign='center'; ctx.textBaseline='middle';
+          ctx.fillText(labels[i], lx, ly);
+        }
+        // 데이터
+        ctx.beginPath();
+        factors.forEach((f,i) => {
+          const v = (scores?.[f] ?? 50) / 100;
+          const a = angle(i);
+          ctx[i?'lineTo':'moveTo'](cx+R*v*Math.cos(a), cy+R*v*Math.sin(a));
+        });
+        ctx.closePath();
+        ctx.fillStyle='rgba(96,165,250,.2)'; ctx.fill();
+        ctx.strokeStyle='rgba(96,165,250,.8)'; ctx.lineWidth=2; ctx.stroke();
+        // 점
+        factors.forEach((f,i) => {
+          const v = (scores?.[f] ?? 50) / 100;
+          const a = angle(i);
+          ctx.beginPath(); ctx.arc(cx+R*v*Math.cos(a), cy+R*v*Math.sin(a), 3, 0, Math.PI*2);
+          ctx.fillStyle='#60a5fa'; ctx.fill();
+        });
+      }, [scores, size]);
+      return <canvas ref={canvasRef} width={size} height={size} />;
+    }
+
+    // ─── 섹터 히트맵 ────────────────────────────────────────────────────
+    function SectorHeatmap({ sectors }) {
+      const entries = Object.entries(sectors || {}).sort((a,b) => (b[1].change_pct||0) - (a[1].change_pct||0));
+      const maxAbs = Math.max(...entries.map(([,v]) => Math.abs(v.change_pct || 0)), 1);
+      return (
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+          {entries.map(([name, data]) => {
+            const pct = data.change_pct || 0;
+            const intensity = Math.min(Math.abs(pct) / maxAbs, 1);
+            const bg = pct >= 0
+              ? `rgba(0,230,118,${intensity * 0.3})`
+              : `rgba(255,23,68,${intensity * 0.3})`;
+            return (
+              <div key={name} className="p-2 rounded-lg text-center" style={{background:bg, border:`1px solid ${pct>=0?'rgba(0,230,118,.2)':'rgba(255,23,68,.2)'}`}}>
+                <div className="text-[10px] text-gray-400 truncate">{name}</div>
+                <div className="mono text-sm font-bold" style={{color:pctColor(pct)}}>{fmtPct(pct)}</div>
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+
+    // ─── 종목 상세 패널 ──────────────────────────────────────────────────
+    function StockDetail({ stock }) {
+      const ai = stock.ai_analysis;
+      const syn = ai?.synthesis;
+      return (
+        <div className="fade-in p-4 space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* 레이더 차트 */}
+            <div className="card p-4 flex flex-col items-center">
+              <h4 className="text-sm font-semibold text-gray-400 mb-2">팩터 프로파일</h4>
+              <RadarChart scores={stock.factor_scores} size={220} />
+            </div>
+            {/* 시그널 & 이유 */}
+            <div className="card p-4">
+              <h4 className="text-sm font-semibold text-gray-400 mb-2">투자 시그널</h4>
+              <div className="flex items-center gap-3 mb-3">
+                <span className={`px-3 py-1 rounded-full text-sm font-bold ${signalClass(stock.signal)}`}>
+                  {signalLabel(stock.signal)}
+                </span>
+                <ScoreRing score={stock.composite_score || 0} size={50} stroke={4} grade={stock.grade} />
+              </div>
+              <div className="space-y-1">
+                {(stock.reasons || []).map((r,i) => (
+                  <div key={i} className="text-xs text-gray-300 flex items-start gap-1">
+                    <span className="text-blue-400 mt-0.5">•</span>{r}
+                  </div>
+                ))}
+              </div>
+              {/* 경고 */}
+              {stock.alerts?.length > 0 && (
+                <div className="mt-3 space-y-1">
+                  {stock.alerts.map((a,i) => (
+                    <div key={i} className={`text-xs px-2 py-1 rounded ${
+                      a.severity==='danger'?'bg-red-900/30 text-red-400':
+                      a.severity==='warning'?'bg-yellow-900/30 text-yellow-400':
+                      'bg-blue-900/30 text-blue-400'
+                    }`}>⚠ {a.message}</div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* AI 에이전트 분석 */}
+          {ai?.reports && (
+            <div>
+              <h4 className="text-sm font-semibold text-gray-400 mb-2">AI 에이전트 분석</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {ai.reports.map((r,i) => (
+                  <div key={i} className="card p-3">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-lg">{r.avatar}</span>
+                      <span className="text-sm font-bold">{r.agent_name}</span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full ${
+                        r.stance==='BULLISH'?'bg-green-900/40 text-green-400':
+                        r.stance==='BEARISH'?'bg-red-900/40 text-red-400':
+                        'bg-gray-700/40 text-gray-400'
+                      }`}>{r.stance} {r.confidence_score}%</span>
+                    </div>
+                    <p className="text-xs text-gray-300 leading-relaxed">{r.analysis?.slice(0,300)}</p>
+                    <div className="mt-2 flex flex-wrap gap-1">
+                      {(r.key_points||[]).map((p,j) => (
+                        <span key={j} className="text-[10px] px-1.5 py-0.5 bg-gray-800 rounded text-gray-400">{p}</span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* AI 종합 판단 */}
+          {syn && (
+            <div className="card p-4 border-blue-900/50">
+              <h4 className="text-sm font-semibold text-blue-400 mb-2">🤖 AI 종합 판단</h4>
+              <p className="text-sm text-gray-200 leading-relaxed">{syn.summary}</p>
+              {syn.action && <p className="text-xs text-green-400 mt-2">📌 {syn.action}</p>}
+              {syn.key_risk && <p className="text-xs text-red-400 mt-1">⚠️ {syn.key_risk}</p>}
+              {syn.catalyst && <p className="text-xs text-yellow-400 mt-1">🚀 {syn.catalyst}</p>}
+              <div className="flex gap-3 mt-2 text-[10px] text-gray-500">
+                <span>합의: {syn.consensus}</span>
+                <span>평균 확신도: {syn.avg_confidence}%</span>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    // ─── 메인 앱 ─────────────────────────────────────────────────────────
+    function App() {
+      const [data, setData] = useState(SAMPLE_DATA);
+      const [filter, setFilter] = useState({ sector: 'ALL', signal: 'ALL' });
+      const [sortKey, setSortKey] = useState('composite_score');
+      const [sortDir, setSortDir] = useState('desc');
+      const [expanded, setExpanded] = useState(null);
+      const [loading, setLoading] = useState(true);
+
+      useEffect(() => {
+        fetch('docs/data/daily_report.json')
+          .then(r => r.json())
+          .then(d => { setData(d); setLoading(false); })
+          .catch(() => setLoading(false));
+      }, []);
+
+      const stocks = useMemo(() => {
+        let arr = Object.values(data.stocks || {});
+        if (filter.sector !== 'ALL') arr = arr.filter(s => s.sector === filter.sector);
+        if (filter.signal !== 'ALL') arr = arr.filter(s => s.signal === filter.signal);
+        arr.sort((a,b) => {
+          const av = a[sortKey] ?? 0, bv = b[sortKey] ?? 0;
+          return sortDir === 'desc' ? bv - av : av - bv;
+        });
+        return arr;
+      }, [data, filter, sortKey, sortDir]);
+
+      const sectors = useMemo(() => {
+        const s = new Set(Object.values(data.stocks || {}).map(s => s.sector));
+        return ['ALL', ...Array.from(s).sort()];
+      }, [data]);
+
+      const signals = ['ALL','STRONG_BUY','BUY','HOLD','SELL','STRONG_SELL'];
+
+      const handleSort = (key) => {
+        if (sortKey === key) setSortDir(d => d === 'desc' ? 'asc' : 'desc');
+        else { setSortKey(key); setSortDir('desc'); }
+      };
+
+      const summary = data.summary || {};
+      const indices = data.indices || {};
+      const topBuy = data.top_picks?.buy || [];
+      const topSell = data.top_picks?.sell || [];
+
+      return (
+        <div className="min-h-screen">
+          {/* ── Section 1: Header ── */}
+          <header className="px-4 py-3 border-b border-gray-800" style={{background:'linear-gradient(135deg,#080c18,#0f1a2e,#080c18)'}}>
+            <div className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <h1 className="text-xl font-black tracking-wider">
+                  <span style={{color:'#60a5fa',textShadow:'0 0 20px rgba(96,165,250,.5)'}}>NASDAQ</span>
+                  <span className="text-gray-400 mx-1">Quant</span>
+                  <span className="text-white">Analyzer</span>
+                </h1>
+                <p className="text-[10px] text-gray-500 tracking-widest">6-FACTOR QUANTITATIVE STOCK SCREENER</p>
+              </div>
+              <div className="text-right">
+                <div className="text-xs text-gray-400">
+                  {data.date || 'Loading...'} <span className="text-yellow-400 ml-1">{loading ? '⏳' : '✅'}</span>
+                </div>
+                <div className="text-[10px] text-gray-600">Generated: {data.generated_at?.slice(11,19) || ''}</div>
+              </div>
+            </div>
+          </header>
+
+          {/* ── Index Bar ── */}
+          <div className="flex overflow-x-auto border-b border-gray-800 bg-gray-900/50">
+            {Object.entries(indices).map(([name, d]) => (
+              <div key={name} className="px-5 py-2 border-r border-gray-800 min-w-[140px]">
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider">{name}</div>
+                <div className="mono text-sm font-bold">{fmt(d.close, name==='vix'?1:1)}</div>
+                <div className="mono text-xs font-semibold" style={{color:pctColor(d.change_pct)}}>{fmtPct(d.change_pct)}</div>
+              </div>
+            ))}
+            <div className="px-5 py-2 min-w-[140px]">
+              <div className="text-[10px] text-gray-500 uppercase tracking-wider">분석 종목</div>
+              <div className="mono text-sm font-bold">{summary.total_stocks || Object.keys(data.stocks||{}).length}</div>
+              <div className="text-xs text-gray-500">AVG Score: <span className="text-blue-400 mono">{summary.avg_score || 0}</span></div>
+            </div>
+          </div>
+
+          <div className="max-w-7xl mx-auto p-4 space-y-6">
+
+            {/* ── Section 2: Top Picks ── */}
+            {(topBuy.length > 0 || topSell.length > 0) && (
+              <section>
+                <h2 className="text-lg font-bold mb-3">
+                  <span className="text-blue-400">📊</span> 오늘의 투자 인사이트
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Buy */}
+                  <div className="card p-4">
+                    <h3 className="text-sm font-bold text-green-400 mb-3">🟢 Top Buy Picks</h3>
+                    <div className="space-y-2">
+                      {topBuy.map((s,i) => (
+                        <div key={i} className="flex items-center gap-3 p-2 rounded-lg bg-green-900/10 hover:bg-green-900/20 cursor-pointer"
+                          onClick={() => setExpanded(expanded===s.ticker?null:s.ticker)}>
+                          <div className="font-bold mono text-sm w-14">{s.ticker}</div>
+                          <ScoreRing score={s.composite_score} size={40} stroke={3} grade={s.grade} />
+                          <div className="flex-1">
+                            <div className="text-xs text-gray-300">{s.name}</div>
+                            <div className="text-[10px] text-gray-500">{s.reasons?.[0] || ''}</div>
+                          </div>
+                          <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${signalClass(s.signal)}`}>
+                            {signalLabel(s.signal)}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {/* Sell */}
+                  <div className="card p-4">
+                    <h3 className="text-sm font-bold text-red-400 mb-3">🔴 Top Sell Picks</h3>
+                    <div className="space-y-2">
+                      {topSell.map((s,i) => (
+                        <div key={i} className="flex items-center gap-3 p-2 rounded-lg bg-red-900/10 hover:bg-red-900/20 cursor-pointer"
+                          onClick={() => setExpanded(expanded===s.ticker?null:s.ticker)}>
+                          <div className="font-bold mono text-sm w-14">{s.ticker}</div>
+                          <ScoreRing score={s.composite_score} size={40} stroke={3} grade={s.grade} />
+                          <div className="flex-1">
+                            <div className="text-xs text-gray-300">{s.name}</div>
+                            <div className="text-[10px] text-gray-500">{s.reasons?.[0] || ''}</div>
+                          </div>
+                          <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${signalClass(s.signal)}`}>
+                            {signalLabel(s.signal)}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* ── Section 3: Quant Scoreboard ── */}
+            <section>
+              <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
+                <h2 className="text-lg font-bold"><span className="text-blue-400">📋</span> Quant Scoreboard</h2>
+                <div className="flex gap-2 flex-wrap">
+                  <select className="bg-gray-800 text-xs rounded px-2 py-1 border border-gray-700 text-gray-300"
+                    value={filter.sector} onChange={e => setFilter(f => ({...f, sector:e.target.value}))}>
+                    {sectors.map(s => <option key={s} value={s}>{s === 'ALL' ? '전체 섹터' : s}</option>)}
+                  </select>
+                  <select className="bg-gray-800 text-xs rounded px-2 py-1 border border-gray-700 text-gray-300"
+                    value={filter.signal} onChange={e => setFilter(f => ({...f, signal:e.target.value}))}>
+                    {signals.map(s => <option key={s} value={s}>{s === 'ALL' ? '전체 시그널' : signalLabel(s)}</option>)}
+                  </select>
+                </div>
+              </div>
+
+              {/* 테이블 */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr className="border-b border-gray-800 text-gray-500">
+                      {[
+                        ['rank','#'], ['ticker','종목'], ['sector','섹터'], ['price','가격'],
+                        ['change_pct','등락%'], ['composite_score','퀀트스코어'], ['grade','등급'],
+                        ['signal','시그널'],
+                      ].map(([key,label]) => (
+                        <th key={key} className="px-2 py-2 text-left cursor-pointer hover:text-gray-300 select-none"
+                          onClick={() => handleSort(key)}>
+                          {label} {sortKey===key ? (sortDir==='desc'?'▼':'▲') : ''}
+                        </th>
+                      ))}
+                      <th className="px-2 py-2 text-center">팩터</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {stocks.map((s,i) => (
+                      <React.Fragment key={s.ticker}>
+                        <tr className={`border-b border-gray-800/50 hover:bg-gray-800/30 cursor-pointer transition-colors ${expanded===s.ticker?'bg-gray-800/40':''}`}
+                          onClick={() => setExpanded(expanded===s.ticker?null:s.ticker)}>
+                          <td className="px-2 py-2 mono text-gray-500">{s.rank || i+1}</td>
+                          <td className="px-2 py-2">
+                            <div className="font-bold mono">{s.ticker}</div>
+                            <div className="text-[10px] text-gray-500">{s.name}</div>
+                          </td>
+                          <td className="px-2 py-2 text-gray-400">{s.sector}</td>
+                          <td className="px-2 py-2 mono font-semibold">${fmt(s.price)}</td>
+                          <td className="px-2 py-2 mono font-semibold" style={{color:pctColor(s.change_pct)}}>
+                            {fmtPct(s.change_pct)}
+                          </td>
+                          <td className="px-2 py-2">
+                            <div className="flex items-center gap-2">
+                              <div className="w-16 h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div className="h-full rounded-full transition-all duration-700"
+                                  style={{width:`${s.composite_score||0}%`, background: s.composite_score>=75?'#00e676':s.composite_score>=50?'#ffd740':'#ff5252'}}/>
+                              </div>
+                              <span className="mono font-bold">{fmt(s.composite_score,1)}</span>
+                            </div>
+                          </td>
+                          <td className={`px-2 py-2 font-black text-lg ${gradeClass(s.grade)}`}>{s.grade}</td>
+                          <td className="px-2 py-2">
+                            <span className={`px-2 py-0.5 rounded-full text-[10px] font-semibold ${signalClass(s.signal)}`}>
+                              {signalLabel(s.signal)}
+                            </span>
+                          </td>
+                          <td className="px-2 py-2 w-48">
+                            <div className="flex gap-0.5 items-end h-4">
+                              {['momentum','value','quality','growth','risk','flow'].map((f,j) => {
+                                const v = s.factor_scores?.[f] ?? 50;
+                                const colors = ['#60a5fa','#f472b6','#34d399','#fbbf24','#a78bfa','#38bdf8'];
+                                return <div key={f} className="flex-1 rounded-sm" style={{height:`${v}%`, background:colors[j], opacity:.7, minHeight:'2px'}} title={`${f}: ${Math.round(v)}`}/>;
+                              })}
+                            </div>
+                          </td>
+                        </tr>
+                        {expanded === s.ticker && (
+                          <tr><td colSpan={9} className="bg-gray-900/50"><StockDetail stock={s} /></td></tr>
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </tbody>
+                </table>
+                {stocks.length === 0 && (
+                  <div className="text-center py-12 text-gray-500">
+                    {loading ? '데이터 로딩 중...' : '데이터가 없습니다. 파이프라인을 실행해 주세요.'}
+                  </div>
+                )}
+              </div>
+            </section>
+
+            {/* ── Section 5: Market Context ── */}
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* 섹터 히트맵 */}
+              <div className="card p-4">
+                <h3 className="text-sm font-bold text-gray-400 mb-3">🗺️ 섹터 히트맵</h3>
+                <SectorHeatmap sectors={data.sectors} />
+              </div>
+
+              {/* 시그널 분포 + 섹터 평균 */}
+              <div className="card p-4">
+                <h3 className="text-sm font-bold text-gray-400 mb-3">📊 시그널 분포</h3>
+                <div className="space-y-2">
+                  {Object.entries(summary.signal_distribution || {}).sort((a,b) => b[1]-a[1]).map(([sig, cnt]) => {
+                    const total = summary.total_stocks || 1;
+                    const pct = cnt / total * 100;
+                    return (
+                      <div key={sig} className="flex items-center gap-2">
+                        <span className={`text-[10px] w-20 px-1.5 py-0.5 rounded text-center ${signalClass(sig)}`}>
+                          {signalLabel(sig)}
+                        </span>
+                        <div className="flex-1 h-3 bg-gray-800 rounded-full overflow-hidden">
+                          <div className="h-full rounded-full transition-all" style={{width:`${pct}%`, background:
+                            sig.includes('BUY')?'#00e676':sig.includes('SELL')?'#ff1744':'#ffd740'
+                          }}/>
+                        </div>
+                        <span className="mono text-[10px] text-gray-400 w-8 text-right">{cnt}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+                {/* VIX 게이지 */}
+                <div className="mt-4 pt-3 border-t border-gray-800">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] text-gray-500">시장 공포 지수 (VIX)</span>
+                    <span className="mono text-sm font-bold" style={{color:
+                      (indices.vix?.close||0)>30?'#ff1744':(indices.vix?.close||0)>20?'#ffd740':'#00e676'
+                    }}>{fmt(indices.vix?.close,1)}</span>
+                  </div>
+                  <div className="w-full h-2 bg-gray-800 rounded-full mt-1 overflow-hidden">
+                    <div className="h-full rounded-full" style={{
+                      width:`${Math.min((indices.vix?.close||0)/50*100, 100)}%`,
+                      background:`linear-gradient(90deg, #00e676, #ffd740, #ff1744)`
+                    }}/>
+                  </div>
+                  <div className="flex justify-between text-[9px] text-gray-600 mt-0.5">
+                    <span>탐욕</span><span>중립</span><span>공포</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Footer */}
+            <footer className="text-center py-6 text-[10px] text-gray-600 border-t border-gray-800/50">
+              NASDAQ Quant Analyzer — 6-Factor Quantitative Stock Screener<br/>
+              본 분석은 투자 참고 자료이며, 투자 판단의 최종 책임은 투자자 본인에게 있습니다.
+            </footer>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>
