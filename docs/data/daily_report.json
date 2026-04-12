@@ -1,6 +1,6 @@
 {
   "date": "2026-04-12",
-  "generated_at": "2026-04-12T08:24:19.847086",
+  "generated_at": "2026-04-12T19:36:31.159495",
   "indices": {
     "nasdaq": {
       "close": 22902.89,
@@ -175,7 +175,7 @@
         "momentum": 38.7,
         "value": 57.0,
         "quality": 72.9,
-        "growth": 60.9,
+        "growth": 61.0,
         "risk": 61.6,
         "flow": 65.6
       },
@@ -261,7 +261,7 @@
         "momentum": 56.5,
         "value": 26.7,
         "quality": 92.5,
-        "growth": 89.5,
+        "growth": 89.4,
         "risk": 44.6,
         "flow": 56.1
       },
@@ -1457,7 +1457,7 @@
           "bb_pct_b": 1.0365
         },
         "value": {
-          "forward_pe": 28.534958,
+          "forward_pe": 28.521187,
           "trailing_pe": 40.97333,
           "ps_ratio": 11.236946,
           "pb_ratio": 14.598575,
@@ -1478,7 +1478,7 @@
         "growth": {
           "revenue_growth": -2.1,
           "earnings_growth": 75.2,
-          "eps_growth_fwd": 43.59,
+          "eps_growth_fwd": 43.66,
           "analyst_target_upside": 5.6
         },
         "risk": {
@@ -2127,7 +2127,7 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 32.4,
-        "value": 40.0,
+        "value": 39.9,
         "quality": 30.9,
         "growth": 75.0,
         "risk": 42.0,
@@ -2304,7 +2304,7 @@
         "momentum": 60.9,
         "value": 65.2,
         "quality": 50.9,
-        "growth": 50.5,
+        "growth": 50.4,
         "risk": 67.4,
         "flow": 46.1
       },
@@ -2681,7 +2681,7 @@
           "bb_pct_b": 0.4095
         },
         "value": {
-          "forward_pe": 14.26709,
+          "forward_pe": 14.291267,
           "trailing_pe": 18.049408,
           "ps_ratio": 5.519832,
           "pb_ratio": 2.4581482,
@@ -2702,7 +2702,7 @@
         "growth": {
           "revenue_growth": 2.5,
           "earnings_growth": -2.6,
-          "eps_growth_fwd": 26.51,
+          "eps_growth_fwd": 26.3,
           "analyst_target_upside": 16.9
         },
         "risk": {
@@ -2917,7 +2917,7 @@
         "momentum": 45.1,
         "value": 85.5,
         "quality": 34.4,
-        "growth": 34.6,
+        "growth": 34.7,
         "risk": 46.0,
         "flow": 45.7
       },
@@ -3003,7 +3003,7 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 9.9,
-        "value": 72.2,
+        "value": 72.1,
         "quality": 55.6,
         "growth": 76.1,
         "risk": 43.1,
@@ -3642,7 +3642,7 @@
         }
       ],
       "reasons": [
-        "Forward P/E 7.2 — 저평가 영역",
+        "Forward P/E 7.3 — 저평가 영역",
         "최강 팩터: value (91점)",
         "최약 팩터: growth (17점)"
       ],
@@ -3661,7 +3661,7 @@
           "bb_pct_b": 0.2855
         },
         "value": {
-          "forward_pe": 7.2444034,
+          "forward_pe": 7.255149,
           "trailing_pe": 5.1818185,
           "ps_ratio": 0.8227018,
           "pb_ratio": 1.0388306,
@@ -3682,7 +3682,7 @@
         "growth": {
           "revenue_growth": 1.2,
           "earnings_growth": -52.5,
-          "eps_growth_fwd": -28.47,
+          "eps_growth_fwd": -28.58,
           "analyst_target_upside": 17.01
         },
         "risk": {
@@ -3837,7 +3837,7 @@
           "bb_pct_b": 0.8663
         },
         "value": {
-          "forward_pe": 20.489645,
+          "forward_pe": 20.488895,
           "trailing_pe": 33.916306,
           "ps_ratio": 3.9904177,
           "pb_ratio": 10.739285,
@@ -3858,7 +3858,7 @@
         "growth": {
           "revenue_growth": -3.3,
           "earnings_growth": -76.4,
-          "eps_growth_fwd": 65.53,
+          "eps_growth_fwd": 65.54,
           "analyst_target_upside": 7.0
         },
         "risk": {
