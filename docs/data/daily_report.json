@@ -1,75 +1,75 @@
 {
-  "date": "2026-04-16",
-  "generated_at": "2026-04-16T19:42:06.297058",
+  "date": "2026-04-19",
+  "generated_at": "2026-04-19T19:38:35.488918",
   "indices": {
     "nasdaq": {
-      "close": 24102.7,
-      "change_pct": 0.36
+      "close": 24468.48,
+      "change_pct": 1.52
     },
     "sp500": {
-      "close": 7041.28,
-      "change_pct": 0.26
+      "close": 7126.06,
+      "change_pct": 1.2
     },
     "vix": {
-      "close": 17.94,
-      "change_pct": -1.27
+      "close": 17.48,
+      "change_pct": -2.56
     }
   },
   "sectors": {
     "Technology": {
       "ticker": "XLK",
-      "close": 152.02,
-      "change_pct": 1.14
+      "close": 154.35,
+      "change_pct": 1.53
     },
     "Healthcare": {
       "ticker": "XLV",
-      "close": 146.61,
-      "change_pct": -0.79
+      "close": 148.8,
+      "change_pct": 1.49
     },
     "Financials": {
       "ticker": "XLF",
-      "close": 52.03,
-      "change_pct": -0.27
+      "close": 52.43,
+      "change_pct": 0.77
     },
     "Consumer Disc": {
       "ticker": "XLY",
-      "close": 117.63,
-      "change_pct": -0.47
+      "close": 120.41,
+      "change_pct": 2.36
     },
     "Communication": {
       "ticker": "XLC",
-      "close": 118.83,
-      "change_pct": 1.25
+      "close": 119.1,
+      "change_pct": 0.23
     },
     "Industrials": {
       "ticker": "XLI",
-      "close": 170.33,
-      "change_pct": -0.5
+      "close": 173.51,
+      "change_pct": 1.87
     },
     "Staples": {
       "ticker": "XLP",
-      "close": 81.43,
-      "change_pct": 0.46
+      "close": 82.46,
+      "change_pct": 1.26
     },
     "Energy": {
       "ticker": "XLE",
-      "close": 56.58,
-      "change_pct": 1.47
+      "close": 55.02,
+      "change_pct": -2.76
     },
     "Utilities": {
       "ticker": "XLU",
-      "close": 46.35,
-      "change_pct": 0.72
+      "close": 46.16,
+      "change_pct": -0.41
     },
     "Real Estate": {
       "ticker": "XLRE",
-      "close": 43.81,
-      "change_pct": 0.92
+      "close": 44.48,
+      "change_pct": 1.53
     },
     "Materials": {
       "ticker": "XLB",
-      "close": 51.75,
-      "change_pct": 0.72
+      "close": 51.88,
+      "change_pct": 0.25
     }
   },
   "stocks": {
@@ -77,20 +77,20 @@
       "ticker": "AAPL",
       "name": "Apple",
       "sector": "Technology",
-      "price": 263.4,
-      "change_pct": -1.14,
-      "market_cap": 3871433555968,
-      "composite_score": 48.9,
+      "price": 270.23,
+      "change_pct": 2.59,
+      "market_cap": 3971820552192,
+      "composite_score": 47.9,
       "grade": "C",
-      "rank": 28,
+      "rank": 30,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 49.0,
-        "value": 37.3,
-        "quality": 57.3,
-        "growth": 39.6,
+        "momentum": 48.0,
+        "value": 31.7,
+        "quality": 57.0,
+        "growth": 38.5,
         "risk": 65.2,
-        "flow": 48.7
+        "flow": 52.2
       },
       "signal": "HOLD",
       "signal_info": {
@@ -100,33 +100,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 62 — 강세 모멘텀 유지",
+        "RSI 73 — 과매수 구간, 단기 조정 가능성",
         "최강 팩터: risk (65점)",
-        "최약 팩터: value (37점)"
+        "최약 팩터: value (32점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 62.18,
-          "macd_histogram": 1.5003,
-          "return_1m": 3.61,
-          "return_3m": 1.42,
-          "return_6m": 6.51,
+          "rsi": 73.36,
+          "macd_histogram": 1.8232,
+          "return_1m": 8.12,
+          "return_3m": 4.75,
+          "return_6m": 8.58,
           "return_1y": null,
-          "ma20_diff_pct": 3.16,
-          "ma60_diff_pct": 1.29,
-          "ma200_diff_pct": 4.73,
+          "ma20_diff_pct": 5.4,
+          "ma60_diff_pct": 3.76,
+          "ma200_diff_pct": 7.31,
           "from_52w_high": null,
-          "bb_pct_b": 0.8738
+          "bb_pct_b": 1.0647
         },
         "value": {
-          "forward_pe": 28.289606,
-          "trailing_pe": 33.29962,
-          "ps_ratio": 8.887241,
-          "pb_ratio": 43.914635,
-          "ev_ebitda": 25.445,
-          "peg_ratio": null,
-          "fcf_yield": 2.75,
-          "dividend_yield": 0.39
+          "forward_pe": 28.898207,
+          "trailing_pe": 34.249683,
+          "ps_ratio": 9.117689,
+          "pb_ratio": 45.053352,
+          "ev_ebitda": 26.101,
+          "peg_ratio": 2.43,
+          "fcf_yield": 2.68,
+          "dividend_yield": 0.38
         },
         "quality": {
           "roe": 152.02,
@@ -140,22 +140,22 @@
         "growth": {
           "revenue_growth": 15.7,
           "earnings_growth": 18.3,
-          "eps_growth_fwd": 17.71,
-          "analyst_target_upside": 12.55
+          "eps_growth_fwd": 18.52,
+          "analyst_target_upside": 10.07
         },
         "risk": {
           "beta": 1.109,
-          "vol_20d": 21.25,
-          "vol_60d": 25.26,
+          "vol_20d": 22.61,
+          "vol_60d": 25.76,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.01,
-          "institutional_pct": 65.28,
-          "short_ratio": 3.17,
-          "short_pct_float": 0.85,
+          "volume_ratio": 1.39,
+          "institutional_pct": 65.3,
+          "short_ratio": 3.11,
+          "short_pct_float": 0.86,
           "insider_pct": 1.64
         }
       }
@@ -164,20 +164,20 @@
       "ticker": "MSFT",
       "name": "Microsoft",
       "sector": "Technology",
-      "price": 420.26,
-      "change_pct": 2.2,
-      "market_cap": 3123531218944,
-      "composite_score": 59.1,
+      "price": 422.79,
+      "change_pct": 0.6,
+      "market_cap": 3142335070208,
+      "composite_score": 59.5,
       "grade": "C",
-      "rank": 3,
+      "rank": 4,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 43.7,
-        "value": 53.4,
-        "quality": 72.9,
-        "growth": 61.5,
-        "risk": 58.3,
-        "flow": 72.2
+        "momentum": 42.1,
+        "value": 55.5,
+        "quality": 72.6,
+        "growth": 62.1,
+        "risk": 59.1,
+        "flow": 73.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -189,37 +189,37 @@
         {
           "type": "OVERHEAT",
           "severity": "warning",
-          "message": "과열 경고 — RSI 82, 볼린저밴드 상단 이탈"
+          "message": "과열 경고 — RSI 93, 볼린저밴드 상단 이탈"
         }
       ],
       "reasons": [
-        "RSI 82 — 과매수 구간, 단기 조정 가능성",
-        "최강 팩터: quality (73점)",
-        "최약 팩터: momentum (44점)"
+        "RSI 93 — 과매수 구간, 단기 조정 가능성",
+        "최강 팩터: flow (73점)",
+        "최약 팩터: momentum (42점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 82.49,
-          "macd_histogram": 6.6201,
-          "return_1m": 5.22,
-          "return_3m": -8.31,
-          "return_6m": -17.83,
+          "rsi": 92.94,
+          "macd_histogram": 7.3946,
+          "return_1m": 7.91,
+          "return_3m": -7.21,
+          "return_6m": -17.31,
           "return_1y": null,
-          "ma20_diff_pct": 11.11,
-          "ma60_diff_pct": 4.73,
-          "ma200_diff_pct": -10.73,
+          "ma20_diff_pct": 11.28,
+          "ma60_diff_pct": 5.45,
+          "ma200_diff_pct": -10.13,
           "from_52w_high": null,
-          "bb_pct_b": 1.1711
+          "bb_pct_b": 1.0808
         },
         "value": {
-          "forward_pe": 22.231121,
-          "trailing_pe": 26.26625,
-          "ps_ratio": 10.225898,
-          "pb_ratio": 7.987456,
-          "ev_ebitda": 17.999,
-          "peg_ratio": null,
-          "fcf_yield": 1.72,
-          "dividend_yield": 0.89
+          "forward_pe": 22.363321,
+          "trailing_pe": 26.457449,
+          "ps_ratio": 10.287458,
+          "pb_ratio": 8.035542,
+          "ev_ebitda": 18.106,
+          "peg_ratio": 1.33,
+          "fcf_yield": 1.71,
+          "dividend_yield": 0.86
         },
         "quality": {
           "roe": 34.39,
@@ -233,22 +233,22 @@
         "growth": {
           "revenue_growth": 16.7,
           "earnings_growth": 59.8,
-          "eps_growth_fwd": 18.15,
-          "analyst_target_upside": 38.22
+          "eps_growth_fwd": 18.31,
+          "analyst_target_upside": 37.08
         },
         "risk": {
           "beta": 1.107,
-          "vol_20d": 31.22,
-          "vol_60d": 35.61,
+          "vol_20d": 30.97,
+          "vol_60d": 35.34,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.2,
-          "institutional_pct": 75.97,
-          "short_ratio": 2.5,
-          "short_pct_float": 1.08,
+          "volume_ratio": 1.35,
+          "institutional_pct": 76.03,
+          "short_ratio": 2.51,
+          "short_pct_float": 1.09,
           "insider_pct": 0.08
         }
       }
@@ -257,20 +257,20 @@
       "ticker": "NVDA",
       "name": "NVIDIA",
       "sector": "Technology",
-      "price": 198.35,
-      "change_pct": -0.26,
-      "market_cap": 4820896841728,
-      "composite_score": 58.1,
+      "price": 201.68,
+      "change_pct": 1.68,
+      "market_cap": 4901832228864,
+      "composite_score": 58.8,
       "grade": "C",
       "rank": 5,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 54.7,
-        "value": 25.8,
+        "momentum": 55.1,
+        "value": 30.9,
         "quality": 92.5,
-        "growth": 88.9,
-        "risk": 45.3,
-        "flow": 53.5
+        "growth": 88.4,
+        "risk": 46.0,
+        "flow": 50.4
       },
       "signal": "HOLD",
       "signal_info": {
@@ -280,33 +280,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 84 — 과매수 구간, 단기 조정 가능성",
+        "RSI 93 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 73.2% — 고성장",
         "최강 팩터: quality (92점)",
-        "최약 팩터: value (26점)"
+        "최약 팩터: value (31점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 83.64,
-          "macd_histogram": 2.9457,
-          "return_1m": 9.03,
-          "return_3m": 8.31,
-          "return_6m": 10.19,
+          "rsi": 92.81,
+          "macd_histogram": 3.0139,
+          "return_1m": 11.8,
+          "return_3m": 7.83,
+          "return_6m": 12.16,
           "return_1y": null,
-          "ma20_diff_pct": 10.02,
-          "ma60_diff_pct": 8.1,
-          "ma200_diff_pct": 9.27,
+          "ma20_diff_pct": 11.16,
+          "ma60_diff_pct": 9.73,
+          "ma200_diff_pct": 10.96,
           "from_52w_high": null,
-          "bb_pct_b": 0.9691
+          "bb_pct_b": 0.9714
         },
         "value": {
-          "forward_pe": 17.693266,
-          "trailing_pe": 40.562374,
-          "ps_ratio": 22.325375,
-          "pb_ratio": 30.647404,
-          "ev_ebitda": 35.888,
-          "peg_ratio": null,
-          "fcf_yield": 1.21,
+          "forward_pe": 17.94437,
+          "trailing_pe": 41.15918,
+          "ps_ratio": 22.700182,
+          "pb_ratio": 31.161926,
+          "ev_ebitda": 36.401,
+          "peg_ratio": 0.72,
+          "fcf_yield": 1.19,
           "dividend_yield": 0.02
         },
         "quality": {
@@ -321,22 +321,22 @@
         "growth": {
           "revenue_growth": 73.2,
           "earnings_growth": 95.6,
-          "eps_growth_fwd": 129.25,
-          "analyst_target_upside": 35.42
+          "eps_growth_fwd": 129.37,
+          "analyst_target_upside": 33.19
         },
         "risk": {
           "beta": 2.335,
-          "vol_20d": 36.28,
-          "vol_60d": 37.04,
+          "vol_20d": 36.04,
+          "vol_60d": 36.73,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.81,
-          "institutional_pct": 69.74,
-          "short_ratio": 1.28,
-          "short_pct_float": 0.98,
+          "volume_ratio": 0.98,
+          "institutional_pct": 69.73,
+          "short_ratio": 1.54,
+          "short_pct_float": 1.21,
           "insider_pct": 4.21
         }
       }
@@ -345,20 +345,20 @@
       "ticker": "GOOGL",
       "name": "Alphabet",
       "sector": "Technology",
-      "price": 336.02,
-      "change_pct": -0.33,
-      "market_cap": 4064833961984,
-      "composite_score": 52.4,
+      "price": 341.68,
+      "change_pct": 1.68,
+      "market_cap": 4133303091200,
+      "composite_score": 52.1,
       "grade": "C",
-      "rank": 13,
+      "rank": 16,
       "total_count": 47,
       "factor_scores": {
         "momentum": 58.9,
-        "value": 36.8,
-        "quality": 71.1,
-        "growth": 46.2,
-        "risk": 57.6,
-        "flow": 46.5
+        "value": 32.8,
+        "quality": 70.8,
+        "growth": 45.7,
+        "risk": 58.3,
+        "flow": 50.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -368,32 +368,32 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 85 — 과매수 구간, 단기 조정 가능성",
+        "RSI 94 — 과매수 구간, 단기 조정 가능성",
         "최강 팩터: quality (71점)",
-        "최약 팩터: value (37점)"
+        "최약 팩터: value (33점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 85.37,
-          "macd_histogram": 5.2515,
-          "return_1m": 8.07,
-          "return_3m": 0.12,
-          "return_6m": 37.09,
+          "rsi": 93.75,
+          "macd_histogram": 5.2634,
+          "return_1m": 11.05,
+          "return_3m": 2.75,
+          "return_6m": 36.3,
           "return_1y": null,
-          "ma20_diff_pct": 10.41,
-          "ma60_diff_pct": 7.65,
-          "ma200_diff_pct": 23.81,
+          "ma20_diff_pct": 11.63,
+          "ma60_diff_pct": 9.39,
+          "ma200_diff_pct": 25.51,
           "from_52w_high": null,
-          "bb_pct_b": 0.9144
+          "bb_pct_b": 0.9268
         },
         "value": {
-          "forward_pe": 24.994793,
-          "trailing_pe": 31.055452,
-          "ps_ratio": 10.090543,
-          "pb_ratio": 9.781387,
-          "ev_ebitda": 26.669,
-          "peg_ratio": null,
-          "fcf_yield": 0.94,
+          "forward_pe": 25.396692,
+          "trailing_pe": 31.637035,
+          "ps_ratio": 10.26051,
+          "pb_ratio": 9.946147,
+          "ev_ebitda": 27.125,
+          "peg_ratio": 2.34,
+          "fcf_yield": 0.92,
           "dividend_yield": 0.25
         },
         "quality": {
@@ -408,21 +408,21 @@
         "growth": {
           "revenue_growth": 18.0,
           "earnings_growth": 31.1,
-          "eps_growth_fwd": 24.25,
-          "analyst_target_upside": 11.92
+          "eps_growth_fwd": 24.57,
+          "analyst_target_upside": 10.19
         },
         "risk": {
           "beta": 1.128,
-          "vol_20d": 37.76,
-          "vol_60d": 28.53,
+          "vol_20d": 37.92,
+          "vol_60d": 28.45,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.68,
-          "institutional_pct": 80.75,
-          "short_ratio": 2.64,
+          "volume_ratio": 0.87,
+          "institutional_pct": 80.92,
+          "short_ratio": 2.74,
           "short_pct_float": 1.37,
           "insider_pct": 0.57
         }
@@ -432,20 +432,20 @@
       "ticker": "META",
       "name": "Meta Platforms",
       "sector": "Technology",
-      "price": 676.87,
-      "change_pct": 0.79,
-      "market_cap": 1712180166656,
-      "composite_score": 56.8,
+      "price": 688.55,
+      "change_pct": 1.73,
+      "market_cap": 1747831357440,
+      "composite_score": 58.6,
       "grade": "C",
-      "rank": 7,
+      "rank": 6,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 55.1,
-        "value": 48.7,
+        "momentum": 55.3,
+        "value": 51.1,
         "quality": 75.9,
-        "growth": 63.8,
-        "risk": 42.8,
-        "flow": 57.8
+        "growth": 63.7,
+        "risk": 43.5,
+        "flow": 65.7
       },
       "signal": "HOLD",
       "signal_info": {
@@ -455,34 +455,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 85 — 과매수 구간, 단기 조정 가능성",
+        "RSI 96 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 23.8% — 고성장",
         "최강 팩터: quality (76점)",
-        "최약 팩터: risk (43점)"
+        "최약 팩터: risk (44점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 84.88,
-          "macd_histogram": 13.8095,
-          "return_1m": 8.71,
-          "return_3m": 10.06,
-          "return_6m": -4.32,
+          "rsi": 96.46,
+          "macd_histogram": 14.23,
+          "return_1m": 11.84,
+          "return_3m": 11.01,
+          "return_6m": -3.88,
           "return_1y": null,
-          "ma20_diff_pct": 12.89,
-          "ma60_diff_pct": 6.21,
-          "ma200_diff_pct": -0.52,
+          "ma20_diff_pct": 14.06,
+          "ma60_diff_pct": 7.83,
+          "ma200_diff_pct": 1.22,
           "from_52w_high": null,
-          "bb_pct_b": 0.9588
+          "bb_pct_b": 0.9555
         },
         "value": {
-          "forward_pe": 19.00449,
-          "trailing_pe": 28.790728,
-          "ps_ratio": 8.519751,
-          "pb_ratio": 7.8827724,
-          "ev_ebitda": 16.838,
-          "peg_ratio": null,
-          "fcf_yield": 1.37,
-          "dividend_yield": 0.31
+          "forward_pe": 19.332428,
+          "trailing_pe": 29.324957,
+          "ps_ratio": 8.697149,
+          "pb_ratio": 8.018797,
+          "ev_ebitda": 17.128,
+          "peg_ratio": 1.13,
+          "fcf_yield": 1.34,
+          "dividend_yield": 0.3
         },
         "quality": {
           "roe": 30.24,
@@ -496,23 +496,23 @@
         "growth": {
           "revenue_growth": 23.8,
           "earnings_growth": 10.7,
-          "eps_growth_fwd": 51.49,
-          "analyst_target_upside": 26.39
+          "eps_growth_fwd": 51.69,
+          "analyst_target_upside": 24.28
         },
         "risk": {
           "beta": 1.309,
-          "vol_20d": 52.71,
-          "vol_60d": 44.61,
+          "vol_20d": 52.33,
+          "vol_60d": 44.64,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.49,
-          "institutional_pct": 78.69,
-          "short_ratio": 2.02,
-          "short_pct_float": 1.11,
-          "insider_pct": 0.09
+          "volume_ratio": 0.88,
+          "institutional_pct": 78.48,
+          "short_ratio": 1.65,
+          "short_pct_float": 1.21,
+          "insider_pct": 0.12
         }
       }
     },
@@ -520,20 +520,20 @@
       "ticker": "AMZN",
       "name": "Amazon",
       "sector": "Technology",
-      "price": 249.7,
-      "change_pct": 0.48,
-      "market_cap": 2685336551424,
-      "composite_score": 48.4,
+      "price": 250.56,
+      "change_pct": 0.34,
+      "market_cap": 2694585253888,
+      "composite_score": 47.7,
       "grade": "C",
       "rank": 31,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 60.7,
-        "value": 50.1,
+        "momentum": 60.1,
+        "value": 49.4,
         "quality": 32.9,
         "growth": 37.7,
-        "risk": 52.6,
-        "flow": 51.7
+        "risk": 53.6,
+        "flow": 47.8
       },
       "signal": "HOLD",
       "signal_info": {
@@ -543,32 +543,32 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 84 — 과매수 구간, 단기 조정 가능성",
-        "최강 팩터: momentum (61점)",
+        "RSI 98 — 과매수 구간, 단기 조정 가능성",
+        "최강 팩터: momentum (60점)",
         "최약 팩터: quality (33점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 84.44,
-          "macd_histogram": 4.6123,
-          "return_1m": 16.03,
-          "return_3m": 5.51,
-          "return_6m": 15.39,
+          "rsi": 97.55,
+          "macd_histogram": 4.2976,
+          "return_1m": 19.39,
+          "return_3m": 5.2,
+          "return_6m": 16.23,
           "return_1y": null,
-          "ma20_diff_pct": 13.85,
-          "ma60_diff_pct": 14.47,
-          "ma200_diff_pct": 10.76,
+          "ma20_diff_pct": 13.16,
+          "ma60_diff_pct": 14.7,
+          "ma200_diff_pct": 11.07,
           "from_52w_high": null,
-          "bb_pct_b": 0.9469
+          "bb_pct_b": 0.9013
         },
         "value": {
-          "forward_pe": 26.568268,
-          "trailing_pe": 34.77716,
-          "ps_ratio": 3.7456362,
-          "pb_ratio": 6.518561,
-          "ev_ebitda": 18.775,
-          "peg_ratio": null,
-          "fcf_yield": 0.89,
+          "forward_pe": 26.64639,
+          "trailing_pe": 34.945606,
+          "ps_ratio": 3.7585368,
+          "pb_ratio": 6.541012,
+          "ev_ebitda": 18.838,
+          "peg_ratio": 1.81,
+          "fcf_yield": 0.88,
           "dividend_yield": null
         },
         "quality": {
@@ -583,22 +583,22 @@
         "growth": {
           "revenue_growth": 13.6,
           "earnings_growth": 5.0,
-          "eps_growth_fwd": 30.9,
-          "analyst_target_upside": 12.58
+          "eps_growth_fwd": 31.15,
+          "analyst_target_upside": 12.22
         },
         "risk": {
           "beta": 1.383,
-          "vol_20d": 36.19,
+          "vol_20d": 35.86,
           "vol_60d": 33.36,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.9,
-          "institutional_pct": 67.09,
-          "short_ratio": 1.82,
-          "short_pct_float": 0.87,
+          "volume_ratio": 1.1,
+          "institutional_pct": 67.12,
+          "short_ratio": 2.02,
+          "short_pct_float": 0.89,
           "insider_pct": 8.94
         }
       }
@@ -607,20 +607,20 @@
       "ticker": "AVGO",
       "name": "Broadcom",
       "sector": "Technology",
-      "price": 398.47,
-      "change_pct": 0.44,
-      "market_cap": 1889255292928,
-      "composite_score": 54.0,
+      "price": 406.54,
+      "change_pct": 2.03,
+      "market_cap": 1927517437952,
+      "composite_score": 55.7,
       "grade": "C",
-      "rank": 11,
+      "rank": 10,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 64.8,
-        "value": 26.0,
+        "momentum": 66.8,
+        "value": 29.3,
         "quality": 67.6,
         "growth": 75.1,
-        "risk": 47.1,
-        "flow": 48.7
+        "risk": 47.5,
+        "flow": 53.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -630,34 +630,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 87 — 과매수 구간, 단기 조정 가능성",
+        "RSI 94 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 29.5% — 고성장",
         "최강 팩터: growth (75점)",
-        "최약 팩터: value (26점)"
+        "최약 팩터: value (29점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 86.7,
-          "macd_histogram": 9.2683,
-          "return_1m": 24.27,
-          "return_3m": 17.48,
-          "return_6m": 16.26,
+          "rsi": 93.87,
+          "macd_histogram": 9.2759,
+          "return_1m": 28.95,
+          "return_3m": 18.77,
+          "return_6m": 16.18,
           "return_1y": null,
-          "ma20_diff_pct": 18.75,
-          "ma60_diff_pct": 20.61,
-          "ma200_diff_pct": 20.26,
+          "ma20_diff_pct": 19.6,
+          "ma60_diff_pct": 22.57,
+          "ma200_diff_pct": 22.43,
           "from_52w_high": null,
-          "bb_pct_b": 0.9731
+          "bb_pct_b": 0.9556
         },
         "value": {
-          "forward_pe": 22.14111,
-          "trailing_pe": 77.82617,
-          "ps_ratio": 27.668425,
-          "pb_ratio": 23.627039,
-          "ev_ebitda": 51.863,
-          "peg_ratio": null,
-          "fcf_yield": 1.35,
-          "dividend_yield": 0.66
+          "forward_pe": 22.43852,
+          "trailing_pe": 79.40234,
+          "ps_ratio": 28.228779,
+          "pb_ratio": 24.105545,
+          "ev_ebitda": 53.112,
+          "peg_ratio": 0.88,
+          "fcf_yield": 1.32,
+          "dividend_yield": 0.64
         },
         "quality": {
           "roe": 33.37,
@@ -671,22 +671,22 @@
         "growth": {
           "revenue_growth": 29.5,
           "earnings_growth": 31.6,
-          "eps_growth_fwd": 251.5,
-          "analyst_target_upside": 18.99
+          "eps_growth_fwd": 253.87,
+          "analyst_target_upside": 16.96
         },
         "risk": {
           "beta": 1.253,
-          "vol_20d": 46.47,
-          "vol_60d": 41.43,
+          "vol_20d": 46.55,
+          "vol_60d": 41.45,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.72,
-          "institutional_pct": 79.5,
-          "short_ratio": 2.03,
-          "short_pct_float": 1.13,
+          "volume_ratio": 0.84,
+          "institutional_pct": 79.71,
+          "short_ratio": 1.83,
+          "short_pct_float": 1.15,
           "insider_pct": 1.97
         }
       }
@@ -695,20 +695,20 @@
       "ticker": "TSLA",
       "name": "Tesla",
       "sector": "Technology",
-      "price": 388.9,
-      "change_pct": -0.78,
-      "market_cap": 1459320782848,
-      "composite_score": 34.5,
+      "price": 400.62,
+      "change_pct": 3.01,
+      "market_cap": 1503299239936,
+      "composite_score": 33.4,
       "grade": "D",
       "rank": 47,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 45.5,
-        "value": 17.9,
+        "momentum": 46.2,
+        "value": 12.0,
         "quality": 26.6,
-        "growth": 31.7,
+        "growth": 30.0,
         "risk": 39.5,
-        "flow": 47.8
+        "flow": 49.1
       },
       "signal": "SELL",
       "signal_info": {
@@ -718,34 +718,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 56 — 강세 모멘텀 유지",
-        "Forward P/E 140.3 — 고평가 주의",
+        "RSI 64 — 강세 모멘텀 유지",
+        "Forward P/E 145.5 — 고평가 주의",
         "매출 성장률 -3.1% — 역성장 우려",
-        "최강 팩터: flow (48점)",
-        "최약 팩터: value (18점)"
+        "최강 팩터: flow (49점)",
+        "최약 팩터: value (12점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 56.33,
-          "macd_histogram": 4.646,
-          "return_1m": -2.6,
-          "return_3m": -11.45,
-          "return_6m": -9.4,
+          "rsi": 64.47,
+          "macd_histogram": 6.1695,
+          "return_1m": 2.0,
+          "return_3m": -8.65,
+          "return_6m": -7.94,
           "return_1y": null,
-          "ma20_diff_pct": 6.03,
-          "ma60_diff_pct": -2.12,
-          "ma200_diff_pct": -2.38,
+          "ma20_diff_pct": 8.92,
+          "ma60_diff_pct": 0.96,
+          "ma200_diff_pct": 0.44,
           "from_52w_high": null,
-          "bb_pct_b": 0.8506
+          "bb_pct_b": 0.975
         },
         "value": {
-          "forward_pe": 140.30594,
-          "trailing_pe": 353.54544,
-          "ps_ratio": 15.389296,
-          "pb_ratio": 17.760424,
-          "ev_ebitda": 136.219,
-          "peg_ratio": null,
-          "fcf_yield": 0.26,
+          "forward_pe": 145.4885,
+          "trailing_pe": 370.94443,
+          "ps_ratio": 15.853071,
+          "pb_ratio": 18.295658,
+          "ev_ebitda": 140.406,
+          "peg_ratio": 5.87,
+          "fcf_yield": 0.25,
           "dividend_yield": null
         },
         "quality": {
@@ -760,22 +760,22 @@
         "growth": {
           "revenue_growth": -3.1,
           "earnings_growth": -60.6,
-          "eps_growth_fwd": 151.98,
-          "analyst_target_upside": 6.61
+          "eps_growth_fwd": 154.96,
+          "analyst_target_upside": 3.49
         },
         "risk": {
           "beta": 1.915,
-          "vol_20d": 50.97,
-          "vol_60d": 40.01,
+          "vol_20d": 50.59,
+          "vol_60d": 40.04,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.92,
-          "institutional_pct": 44.67,
-          "short_ratio": 1.05,
-          "short_pct_float": 1.82,
+          "volume_ratio": 1.29,
+          "institutional_pct": 44.68,
+          "short_ratio": 1.06,
+          "short_pct_float": 1.97,
           "insider_pct": 11.13
         }
       }
@@ -784,20 +784,20 @@
       "ticker": "AMD",
       "name": "AMD",
       "sector": "Technology",
-      "price": 278.26,
-      "change_pct": 7.8,
-      "market_cap": 453678137344,
-      "composite_score": 51.7,
+      "price": 278.39,
+      "change_pct": 0.05,
+      "market_cap": 453890113536,
+      "composite_score": 51.1,
       "grade": "C",
-      "rank": 15,
+      "rank": 20,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 67.0,
-        "value": 30.7,
+        "momentum": 67.4,
+        "value": 35.0,
         "quality": 43.5,
-        "growth": 75.0,
+        "growth": 76.6,
         "risk": 30.8,
-        "flow": 65.2
+        "flow": 53.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -805,40 +805,34 @@
         "emoji": "🟡",
         "color": "#ffd740"
       },
-      "alerts": [
-        {
-          "type": "OVERHEAT",
-          "severity": "warning",
-          "message": "과열 경고 — RSI 91, 볼린저밴드 상단 이탈"
-        }
-      ],
+      "alerts": [],
       "reasons": [
-        "RSI 91 — 과매수 구간, 단기 조정 가능성",
+        "RSI 93 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 34.1% — 고성장",
-        "최강 팩터: growth (75점)",
-        "최약 팩터: value (31점)"
+        "최강 팩터: growth (77점)",
+        "최약 팩터: risk (31점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 91.41,
-          "macd_histogram": 6.3588,
-          "return_1m": 41.75,
-          "return_3m": 24.45,
-          "return_6m": 27.59,
+          "rsi": 93.26,
+          "macd_histogram": 6.5976,
+          "return_1m": 39.57,
+          "return_3m": 22.14,
+          "return_6m": 16.68,
           "return_1y": null,
-          "ma20_diff_pct": 24.74,
-          "ma60_diff_pct": 28.18,
-          "ma200_diff_pct": 37.93,
+          "ma20_diff_pct": 22.79,
+          "ma60_diff_pct": 27.96,
+          "ma200_diff_pct": 37.51,
           "from_52w_high": null,
-          "bb_pct_b": 1.0934
+          "bb_pct_b": 0.9986
         },
         "value": {
-          "forward_pe": 25.464058,
-          "trailing_pe": 106.61304,
-          "ps_ratio": 13.097322,
-          "pb_ratio": 7.1994824,
-          "ev_ebitda": 66.291,
-          "peg_ratio": null,
+          "forward_pe": 25.39617,
+          "trailing_pe": 106.25574,
+          "ps_ratio": 13.103442,
+          "pb_ratio": 7.202846,
+          "ev_ebitda": 66.322,
+          "peg_ratio": 0.83,
           "fcf_yield": 1.01,
           "dividend_yield": null
         },
@@ -854,22 +848,22 @@
         "growth": {
           "revenue_growth": 34.1,
           "earnings_growth": 217.1,
-          "eps_growth_fwd": 318.68,
-          "analyst_target_upside": 3.98
+          "eps_growth_fwd": 318.39,
+          "analyst_target_upside": 4.72
         },
         "risk": {
           "beta": 1.963,
-          "vol_20d": 54.52,
-          "vol_60d": 66.75,
+          "vol_20d": 54.65,
+          "vol_60d": 64.98,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.77,
-          "institutional_pct": 72.19,
-          "short_ratio": 0.97,
-          "short_pct_float": 1.99,
+          "volume_ratio": 0.99,
+          "institutional_pct": 72.25,
+          "short_ratio": 1.13,
+          "short_pct_float": 2.24,
           "insider_pct": 0.44
         }
       }
@@ -879,19 +873,19 @@
       "name": "Intel",
       "sector": "Technology",
       "price": 68.5,
-      "change_pct": 5.48,
+      "change_pct": 0.0,
       "market_cap": 343939219456,
       "composite_score": 43.3,
       "grade": "D",
-      "rank": 44,
+      "rank": 40,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 71.1,
-        "value": 41.3,
+        "momentum": 72.3,
+        "value": 43.1,
         "quality": 23.3,
         "growth": 38.6,
         "risk": 32.2,
-        "flow": 44.8
+        "flow": 40.9
       },
       "signal": "HOLD",
       "signal_info": {
@@ -901,33 +895,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 87 — 과매수 구간, 단기 조정 가능성",
-        "Forward P/E 65.3 — 고평가 주의",
+        "RSI 90 — 과매수 구간, 단기 조정 가능성",
+        "Forward P/E 64.1 — 고평가 주의",
         "매출 성장률 -4.1% — 역성장 우려",
-        "최강 팩터: momentum (71점)",
+        "최강 팩터: momentum (72점)",
         "최약 팩터: quality (23점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 87.01,
-          "macd_histogram": 1.966,
-          "return_1m": 55.47,
-          "return_3m": 40.6,
-          "return_6m": 92.25,
+          "rsi": 89.65,
+          "macd_histogram": 1.8427,
+          "return_1m": 52.12,
+          "return_3m": 41.76,
+          "return_6m": 84.39,
           "return_1y": null,
-          "ma20_diff_pct": 31.05,
-          "ma60_diff_pct": 41.16,
-          "ma200_diff_pct": 84.87,
+          "ma20_diff_pct": 28.31,
+          "ma60_diff_pct": 40.47,
+          "ma200_diff_pct": 83.73,
           "from_52w_high": null,
-          "bb_pct_b": 0.9431
+          "bb_pct_b": 0.8888
         },
         "value": {
-          "forward_pe": 65.261086,
+          "forward_pe": 64.06959,
           "trailing_pe": null,
           "ps_ratio": 6.5074687,
           "pb_ratio": 2.9933577,
           "ev_ebitda": 28.808,
-          "peg_ratio": null,
+          "peg_ratio": 1.36,
           "fcf_yield": -1.31,
           "dividend_yield": null
         },
@@ -943,22 +937,22 @@
         "growth": {
           "revenue_growth": -4.1,
           "earnings_growth": null,
-          "eps_growth_fwd": 1849.38,
-          "analyst_target_upside": -25.03
+          "eps_growth_fwd": 1881.92,
+          "analyst_target_upside": -23.71
         },
         "risk": {
           "beta": 1.349,
-          "vol_20d": 75.77,
-          "vol_60d": 79.11,
+          "vol_20d": 76.17,
+          "vol_60d": 75.71,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.01,
-          "institutional_pct": 61.83,
-          "short_ratio": 1.59,
-          "short_pct_float": 2.3,
+          "volume_ratio": 1.09,
+          "institutional_pct": 61.9,
+          "short_ratio": 1.46,
+          "short_pct_float": 2.38,
           "insider_pct": 12.97
         }
       }
@@ -967,20 +961,20 @@
       "ticker": "QCOM",
       "name": "Qualcomm",
       "sector": "Technology",
-      "price": 134.47,
-      "change_pct": 1.07,
-      "market_cap": 143620030464,
-      "composite_score": 51.1,
+      "price": 136.2,
+      "change_pct": 1.29,
+      "market_cap": 145467736064,
+      "composite_score": 51.8,
       "grade": "C",
-      "rank": 18,
+      "rank": 17,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 35.2,
-        "value": 78.8,
-        "quality": 48.9,
-        "growth": 45.1,
-        "risk": 61.6,
-        "flow": 33.5
+        "momentum": 33.0,
+        "value": 84.5,
+        "quality": 48.5,
+        "growth": 43.0,
+        "risk": 61.2,
+        "flow": 35.6
       },
       "signal": "HOLD",
       "signal_info": {
@@ -990,34 +984,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 60 — 강세 모멘텀 유지",
-        "Forward P/E 12.2 — 저평가 영역",
-        "최강 팩터: value (79점)",
-        "최약 팩터: flow (34점)"
+        "RSI 74 — 과매수 구간, 단기 조정 가능성",
+        "Forward P/E 12.3 — 저평가 영역",
+        "최강 팩터: value (84점)",
+        "최약 팩터: momentum (33점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 59.68,
-          "macd_histogram": 1.3876,
-          "return_1m": 2.19,
-          "return_3m": -17.75,
-          "return_6m": -15.9,
+          "rsi": 74.45,
+          "macd_histogram": 1.537,
+          "return_1m": 4.39,
+          "return_3m": -15.07,
+          "return_6m": -15.46,
           "return_1y": null,
-          "ma20_diff_pct": 4.21,
-          "ma60_diff_pct": -2.19,
-          "ma200_diff_pct": -13.63,
+          "ma20_diff_pct": 5.35,
+          "ma60_diff_pct": -0.7,
+          "ma200_diff_pct": -12.46,
           "from_52w_high": null,
-          "bb_pct_b": 1.0156
+          "bb_pct_b": 1.0667
         },
         "value": {
-          "forward_pe": 12.153141,
-          "trailing_pe": 27.110888,
-          "ps_ratio": 3.2010171,
-          "pb_ratio": 6.259368,
-          "ev_ebitda": 10.642,
-          "peg_ratio": null,
-          "fcf_yield": 7.26,
-          "dividend_yield": 2.68
+          "forward_pe": 12.326572,
+          "trailing_pe": 27.459677,
+          "ps_ratio": 3.242199,
+          "pb_ratio": 6.3398967,
+          "ev_ebitda": 10.776,
+          "peg_ratio": 0.58,
+          "fcf_yield": 7.17,
+          "dividend_yield": 2.7
         },
         "quality": {
           "roe": 21.48,
@@ -1031,22 +1025,22 @@
         "growth": {
           "revenue_growth": 5.0,
           "earnings_growth": -1.8,
-          "eps_growth_fwd": 123.08,
-          "analyst_target_upside": 15.21
+          "eps_growth_fwd": 122.77,
+          "analyst_target_upside": 11.0
         },
         "risk": {
           "beta": 1.279,
-          "vol_20d": 21.07,
-          "vol_60d": 27.95,
+          "vol_20d": 21.39,
+          "vol_60d": 27.89,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.6,
-          "institutional_pct": 81.7,
-          "short_ratio": 4.36,
-          "short_pct_float": 4.15,
+          "volume_ratio": 0.74,
+          "institutional_pct": 81.66,
+          "short_ratio": 3.52,
+          "short_pct_float": 4.57,
           "insider_pct": 0.14
         }
       }
@@ -1055,20 +1049,20 @@
       "ticker": "CRM",
       "name": "Salesforce",
       "sector": "Technology",
-      "price": 181.22,
-      "change_pct": 2.04,
-      "market_cap": 169803137024,
-      "composite_score": 49.6,
+      "price": 182.14,
+      "change_pct": 0.51,
+      "market_cap": 168115224576,
+      "composite_score": 51.7,
       "grade": "C",
-      "rank": 27,
+      "rank": 18,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 32.0,
-        "value": 77.5,
+        "momentum": 34.4,
+        "value": 80.2,
         "quality": 41.2,
         "growth": 65.1,
-        "risk": 46.8,
-        "flow": 31.3
+        "risk": 47.5,
+        "flow": 38.3
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1078,33 +1072,33 @@
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 12.1 — 저평가 영역",
-        "최강 팩터: value (78점)",
-        "최약 팩터: flow (31점)"
+        "Forward P/E 12.2 — 저평가 영역",
+        "최강 팩터: value (80점)",
+        "최약 팩터: momentum (34점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 46.47,
-          "macd_histogram": 0.1249,
-          "return_1m": -6.98,
-          "return_3m": -24.17,
-          "return_6m": -24.11,
+          "rsi": 53.23,
+          "macd_histogram": 0.6616,
+          "return_1m": -6.04,
+          "return_3m": -21.81,
+          "return_6m": -22.69,
           "return_1y": null,
-          "ma20_diff_pct": -0.35,
-          "ma60_diff_pct": -6.17,
-          "ma200_diff_pct": -21.98,
+          "ma20_diff_pct": 0.49,
+          "ma60_diff_pct": -5.38,
+          "ma200_diff_pct": -21.44,
           "from_52w_high": null,
-          "bb_pct_b": 0.4802
+          "bb_pct_b": 0.5298
         },
         "value": {
-          "forward_pe": 12.119056,
-          "trailing_pe": 23.233334,
-          "ps_ratio": 4.0891786,
-          "pb_ratio": 2.8465962,
-          "ev_ebitda": 13.713,
-          "peg_ratio": null,
-          "fcf_yield": 9.64,
-          "dividend_yield": 0.99
+          "forward_pe": 12.180581,
+          "trailing_pe": 23.351282,
+          "ps_ratio": 4.0485306,
+          "pb_ratio": 2.8610475,
+          "ev_ebitda": 14.047,
+          "peg_ratio": 0.99,
+          "fcf_yield": 9.74,
+          "dividend_yield": 0.97
         },
         "quality": {
           "roe": 12.4,
@@ -1119,22 +1113,22 @@
           "revenue_growth": 12.1,
           "earnings_growth": 17.9,
           "eps_growth_fwd": 91.71,
-          "analyst_target_upside": 48.37
+          "analyst_target_upside": 47.62
         },
         "risk": {
           "beta": 1.288,
-          "vol_20d": 43.3,
-          "vol_60d": 42.47,
+          "vol_20d": 43.34,
+          "vol_60d": 42.46,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.86,
-          "institutional_pct": 84.94,
+          "volume_ratio": 1.22,
+          "institutional_pct": 95.83,
           "short_ratio": 5.94,
           "short_pct_float": 8.69,
-          "insider_pct": 2.68
+          "insider_pct": 3.02
         }
       }
     },
@@ -1142,20 +1136,20 @@
       "ticker": "ADBE",
       "name": "Adobe",
       "sector": "Technology",
-      "price": 248.15,
-      "change_pct": 1.43,
-      "market_cap": 101157142528,
-      "composite_score": 56.5,
+      "price": 244.45,
+      "change_pct": -1.5,
+      "market_cap": 99646849024,
+      "composite_score": 58.3,
       "grade": "C",
-      "rank": 8,
+      "rank": 7,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 34.6,
-        "value": 74.7,
-        "quality": 68.8,
-        "growth": 55.7,
-        "risk": 46.8,
-        "flow": 60.0
+        "momentum": 35.4,
+        "value": 80.4,
+        "quality": 68.5,
+        "growth": 56.2,
+        "risk": 47.8,
+        "flow": 61.7
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1165,33 +1159,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 55 — 강세 모멘텀 유지",
-        "Forward P/E 9.4 — 저평가 영역",
-        "최강 팩터: value (75점)",
+        "RSI 57 — 강세 모멘텀 유지",
+        "Forward P/E 9.3 — 저평가 영역",
+        "최강 팩터: value (80점)",
         "최약 팩터: momentum (35점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 55.23,
-          "macd_histogram": 1.9015,
-          "return_1m": -2.38,
-          "return_3m": -18.49,
-          "return_6m": -26.13,
+          "rsi": 57.14,
+          "macd_histogram": 2.0667,
+          "return_1m": -0.63,
+          "return_3m": -19.61,
+          "return_6m": -26.07,
           "return_1y": null,
-          "ma20_diff_pct": 3.19,
-          "ma60_diff_pct": -5.07,
-          "ma200_diff_pct": -22.76,
+          "ma20_diff_pct": 1.68,
+          "ma60_diff_pct": -6.19,
+          "ma200_diff_pct": -23.74,
           "from_52w_high": null,
-          "bb_pct_b": 0.8262
+          "bb_pct_b": 0.6737
         },
         "value": {
-          "forward_pe": 9.410094,
-          "trailing_pe": 14.46968,
-          "ps_ratio": 4.136799,
-          "pb_ratio": 8.812323,
-          "ev_ebitda": 10.517,
-          "peg_ratio": null,
-          "fcf_yield": 9.21,
+          "forward_pe": 9.270493,
+          "trailing_pe": 14.2453375,
+          "ps_ratio": 4.075036,
+          "pb_ratio": 8.680753,
+          "ev_ebitda": 10.359,
+          "peg_ratio": 0.69,
+          "fcf_yield": 9.35,
           "dividend_yield": null
         },
         "quality": {
@@ -1206,22 +1200,22 @@
         "growth": {
           "revenue_growth": 12.0,
           "earnings_growth": 11.1,
-          "eps_growth_fwd": 53.77,
-          "analyst_target_upside": 33.64
+          "eps_growth_fwd": 53.66,
+          "analyst_target_upside": 34.7
         },
         "risk": {
           "beta": 1.518,
-          "vol_20d": 39.31,
-          "vol_60d": 39.74,
+          "vol_20d": 39.7,
+          "vol_60d": 39.69,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.03,
-          "institutional_pct": 88.16,
-          "short_ratio": 2.22,
-          "short_pct_float": 3.63,
+          "volume_ratio": 1.2,
+          "institutional_pct": 88.21,
+          "short_ratio": 1.97,
+          "short_pct_float": 3.37,
           "insider_pct": 0.25
         }
       }
@@ -1230,20 +1224,20 @@
       "ticker": "NFLX",
       "name": "Netflix",
       "sector": "Communication",
-      "price": 107.79,
-      "change_pct": 0.07,
-      "market_cap": 457233268736,
-      "composite_score": 51.2,
+      "price": 97.31,
+      "change_pct": -9.72,
+      "market_cap": 410858586112,
+      "composite_score": 53.2,
       "grade": "C",
-      "rank": 17,
+      "rank": 13,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 52.6,
-        "value": 41.8,
-        "quality": 51.9,
-        "growth": 50.7,
-        "risk": 47.5,
-        "flow": 65.7
+        "momentum": 47.8,
+        "value": 47.9,
+        "quality": 60.1,
+        "growth": 58.4,
+        "risk": 40.9,
+        "flow": 67.4
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1253,62 +1247,63 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 93 — 과매수 구간, 단기 조정 가능성",
-        "최강 팩터: flow (66점)",
-        "최약 팩터: value (42점)"
+        "RSI 57 — 강세 모멘텀 유지",
+        "거래량 2.9배 급증 — 수급 이상 신호",
+        "최강 팩터: flow (67점)",
+        "최약 팩터: risk (41점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 93.04,
-          "macd_histogram": 0.9648,
-          "return_1m": 14.23,
-          "return_3m": 21.73,
-          "return_6m": -11.31,
+          "rsi": 57.14,
+          "macd_histogram": 0.225,
+          "return_1m": 2.76,
+          "return_3m": 10.52,
+          "return_6m": -19.13,
           "return_1y": null,
-          "ma20_diff_pct": 10.14,
-          "ma60_diff_pct": 19.31,
-          "ma200_diff_pct": 1.65,
+          "ma20_diff_pct": -0.85,
+          "ma60_diff_pct": 7.47,
+          "ma200_diff_pct": -8.09,
           "from_52w_high": null,
-          "bb_pct_b": 0.9453
+          "bb_pct_b": 0.4612
         },
         "value": {
-          "forward_pe": 27.757607,
-          "trailing_pe": 42.604744,
-          "ps_ratio": 10.119578,
-          "pb_ratio": 17.098667,
-          "ev_ebitda": 33.871,
-          "peg_ratio": null,
-          "fcf_yield": 5.43,
+          "forward_pe": 25.25984,
+          "trailing_pe": 31.491909,
+          "ps_ratio": 8.76218,
+          "pb_ratio": 15.436231,
+          "ev_ebitda": 29.002,
+          "peg_ratio": 2.04,
+          "fcf_yield": 6.33,
           "dividend_yield": null
         },
         "quality": {
-          "roe": 42.76,
-          "roa": 15.25,
-          "gross_margin": 48.49,
-          "operating_margin": 24.54,
-          "profit_margin": 24.3,
-          "debt_to_equity": 63.782,
-          "current_ratio": 1.186
+          "roe": 48.49,
+          "roa": 15.4,
+          "gross_margin": 49.03,
+          "operating_margin": 32.3,
+          "profit_margin": 28.52,
+          "debt_to_equity": 53.788,
+          "current_ratio": 1.407
         },
         "growth": {
-          "revenue_growth": 17.6,
-          "earnings_growth": 32.7,
-          "eps_growth_fwd": 53.49,
-          "analyst_target_upside": 6.1
+          "revenue_growth": 16.2,
+          "earnings_growth": 86.4,
+          "eps_growth_fwd": 24.67,
+          "analyst_target_upside": 17.63
         },
         "risk": {
           "beta": 1.669,
-          "vol_20d": 27.42,
-          "vol_60d": 41.36,
+          "vol_20d": 44.31,
+          "vol_60d": 45.98,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.18,
-          "institutional_pct": 83.73,
-          "short_ratio": 1.63,
-          "short_pct_float": 1.93,
+          "volume_ratio": 2.92,
+          "institutional_pct": 84.07,
+          "short_ratio": 1.97,
+          "short_pct_float": 1.92,
           "insider_pct": 0.59
         }
       }
@@ -1317,18 +1312,18 @@
       "ticker": "ORCL",
       "name": "Oracle",
       "sector": "Technology",
-      "price": 178.34,
-      "change_pct": 5.02,
-      "market_cap": 512914063360,
-      "composite_score": 48.5,
+      "price": 175.06,
+      "change_pct": -1.84,
+      "market_cap": 503480614912,
+      "composite_score": 49.9,
       "grade": "C",
-      "rank": 30,
+      "rank": 24,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 46.6,
-        "value": 43.7,
-        "quality": 51.8,
-        "growth": 63.6,
+        "momentum": 48.0,
+        "value": 47.7,
+        "quality": 51.2,
+        "growth": 66.3,
         "risk": 33.0,
         "flow": 54.8
       },
@@ -1348,32 +1343,32 @@
       "reasons": [
         "RSI 78 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 21.7% — 고성장",
-        "최강 팩터: growth (64점)",
+        "최강 팩터: growth (66점)",
         "최약 팩터: risk (33점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 77.81,
-          "macd_histogram": 4.0429,
-          "return_1m": 15.69,
-          "return_3m": -7.57,
-          "return_6m": -39.99,
+          "rsi": 77.65,
+          "macd_histogram": 4.3123,
+          "return_1m": 14.89,
+          "return_3m": -7.47,
+          "return_6m": -41.99,
           "return_1y": null,
-          "ma20_diff_pct": 19.67,
-          "ma60_diff_pct": 15.95,
-          "ma200_diff_pct": -16.77,
+          "ma20_diff_pct": 16.68,
+          "ma60_diff_pct": 13.79,
+          "ma200_diff_pct": -18.22,
           "from_52w_high": null,
-          "bb_pct_b": 1.1759
+          "bb_pct_b": 1.0104
         },
         "value": {
-          "forward_pe": 22.368776,
-          "trailing_pe": 32.017952,
-          "ps_ratio": 8.004776,
-          "pb_ratio": 15.287158,
-          "ev_ebitda": 22.482,
-          "peg_ratio": null,
-          "fcf_yield": -4.35,
-          "dividend_yield": 1.18
+          "forward_pe": 21.96283,
+          "trailing_pe": 31.429083,
+          "ps_ratio": 7.8575535,
+          "pb_ratio": 15.006,
+          "ev_ebitda": 23.032,
+          "peg_ratio": 1.11,
+          "fcf_yield": -4.43,
+          "dividend_yield": 1.14
         },
         "quality": {
           "roe": 57.57,
@@ -1387,20 +1382,20 @@
         "growth": {
           "revenue_growth": 21.7,
           "earnings_growth": 24.5,
-          "eps_growth_fwd": 43.14,
-          "analyst_target_upside": 36.74
+          "eps_growth_fwd": 43.1,
+          "analyst_target_upside": 39.3
         },
         "risk": {
           "beta": 1.597,
-          "vol_20d": 65.71,
-          "vol_60d": 59.55,
+          "vol_20d": 66.31,
+          "vol_60d": 59.26,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.6,
-          "institutional_pct": 44.22,
+          "volume_ratio": 1.57,
+          "institutional_pct": 44.26,
           "short_ratio": 1.0,
           "short_pct_float": 1.62,
           "insider_pct": 40.55
@@ -1411,20 +1406,20 @@
       "ticker": "AMAT",
       "name": "Applied Materials",
       "sector": "Technology",
-      "price": 389.9,
-      "change_pct": -1.11,
-      "market_cap": 309428486144,
-      "composite_score": 51.3,
+      "price": 396.94,
+      "change_pct": 1.81,
+      "market_cap": 315015495680,
+      "composite_score": 50.5,
       "grade": "C",
-      "rank": 16,
+      "rank": 22,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 69.0,
-        "value": 33.4,
-        "quality": 64.5,
-        "growth": 43.7,
+        "momentum": 69.2,
+        "value": 32.0,
+        "quality": 63.6,
+        "growth": 41.5,
         "risk": 34.8,
-        "flow": 62.6
+        "flow": 61.8
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1434,34 +1429,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 73 — 과매수 구간, 단기 조정 가능성",
+        "RSI 75 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 -2.1% — 역성장 우려",
         "최강 팩터: momentum (69점)",
-        "최약 팩터: value (33점)"
+        "최약 팩터: value (32점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 72.91,
-          "macd_histogram": 3.748,
-          "return_1m": 10.62,
-          "return_3m": 29.31,
-          "return_6m": 79.27,
+          "rsi": 75.39,
+          "macd_histogram": 3.33,
+          "return_1m": 13.58,
+          "return_3m": 24.56,
+          "return_6m": 74.98,
           "return_1y": null,
-          "ma20_diff_pct": 6.42,
-          "ma60_diff_pct": 11.0,
-          "ma200_diff_pct": 51.31,
+          "ma20_diff_pct": 7.75,
+          "ma60_diff_pct": 12.62,
+          "ma200_diff_pct": 53.4,
           "from_52w_high": null,
-          "bb_pct_b": 0.7479
+          "bb_pct_b": 0.7909
         },
         "value": {
-          "forward_pe": 27.83652,
-          "trailing_pe": 40.0308,
-          "ps_ratio": 10.967196,
-          "pb_ratio": 14.248127,
-          "ev_ebitda": 35.051,
-          "peg_ratio": null,
-          "fcf_yield": 1.4,
-          "dividend_yield": 0.54
+          "forward_pe": 28.209934,
+          "trailing_pe": 40.670082,
+          "ps_ratio": 11.165219,
+          "pb_ratio": 14.50539,
+          "ev_ebitda": 35.29,
+          "peg_ratio": 1.89,
+          "fcf_yield": 1.38,
+          "dividend_yield": 0.53
         },
         "quality": {
           "roe": 38.86,
@@ -1475,22 +1470,22 @@
         "growth": {
           "revenue_growth": -2.1,
           "earnings_growth": 75.2,
-          "eps_growth_fwd": 43.81,
-          "analyst_target_upside": 8.48
+          "eps_growth_fwd": 44.17,
+          "analyst_target_upside": 6.56
         },
         "risk": {
           "beta": 1.637,
-          "vol_20d": 56.38,
-          "vol_60d": 53.99,
+          "vol_20d": 56.24,
+          "vol_60d": 53.94,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.78,
-          "institutional_pct": 85.45,
-          "short_ratio": 1.93,
-          "short_pct_float": 1.73,
+          "volume_ratio": 0.93,
+          "institutional_pct": 85.52,
+          "short_ratio": 2.01,
+          "short_pct_float": 1.65,
           "insider_pct": 0.32
         }
       }
@@ -1499,20 +1494,20 @@
       "ticker": "MU",
       "name": "Micron",
       "sector": "Technology",
-      "price": 457.23,
-      "change_pct": 0.22,
-      "market_cap": 515633840128,
-      "composite_score": 62.7,
+      "price": 455.07,
+      "change_pct": -0.47,
+      "market_cap": 513197932544,
+      "composite_score": 64.1,
       "grade": "B",
       "rank": 1,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 70.0,
-        "value": 54.1,
+        "momentum": 70.6,
+        "value": 60.1,
         "quality": 83.0,
-        "growth": 87.5,
+        "growth": 89.7,
         "risk": 29.0,
-        "flow": 53.0
+        "flow": 51.3
       },
       "signal": "BUY",
       "signal_info": {
@@ -1522,33 +1517,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 76 — 과매수 구간, 단기 조정 가능성",
-        "Forward P/E 4.6 — 저평가 영역",
+        "RSI 75 — 과매수 구간, 단기 조정 가능성",
+        "Forward P/E 4.5 — 저평가 영역",
         "매출 성장률 196.3% — 고성장",
-        "최강 팩터: growth (88점)",
+        "최강 팩터: growth (90점)",
         "최약 팩터: risk (29점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 75.9,
-          "macd_histogram": 10.0889,
-          "return_1m": -0.92,
-          "return_3m": 37.22,
-          "return_6m": 144.63,
+          "rsi": 74.86,
+          "macd_histogram": 9.4276,
+          "return_1m": -1.4,
+          "return_3m": 35.24,
+          "return_6m": 137.29,
           "return_1y": null,
-          "ma20_diff_pct": 14.82,
-          "ma60_diff_pct": 12.59,
-          "ma200_diff_pct": 78.33,
+          "ma20_diff_pct": 14.12,
+          "ma60_diff_pct": 11.75,
+          "ma200_diff_pct": 76.34,
           "from_52w_high": null,
-          "bb_pct_b": 0.8588
+          "bb_pct_b": 0.8365
         },
         "value": {
-          "forward_pe": 4.6092277,
-          "trailing_pe": 21.598017,
-          "ps_ratio": 8.872036,
-          "pb_ratio": 7.117861,
-          "ev_ebitda": 13.877,
-          "peg_ratio": null,
+          "forward_pe": 4.5023613,
+          "trailing_pe": 21.455446,
+          "ps_ratio": 8.830123,
+          "pb_ratio": 7.084235,
+          "ev_ebitda": 13.841,
+          "peg_ratio": 0.26,
           "fcf_yield": 0.56,
           "dividend_yield": 0.13
         },
@@ -1564,23 +1559,23 @@
         "growth": {
           "revenue_growth": 196.3,
           "earnings_growth": 756.0,
-          "eps_growth_fwd": 368.58,
-          "analyst_target_upside": 16.73
+          "eps_growth_fwd": 376.54,
+          "analyst_target_upside": 17.28
         },
         "risk": {
           "beta": 1.606,
-          "vol_20d": 81.12,
-          "vol_60d": 72.25,
+          "vol_20d": 79.87,
+          "vol_60d": 71.13,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.64,
-          "institutional_pct": 82.36,
-          "short_ratio": 1.0,
-          "short_pct_float": 2.62,
-          "insider_pct": 0.26
+          "volume_ratio": 0.67,
+          "institutional_pct": 83.28,
+          "short_ratio": 0.7,
+          "short_pct_float": 2.79,
+          "insider_pct": 0.27
         }
       }
     },
@@ -1588,20 +1583,20 @@
       "ticker": "LRCX",
       "name": "Lam Research",
       "sector": "Technology",
-      "price": 260.96,
-      "change_pct": -1.58,
-      "market_cap": 327773552640,
-      "composite_score": 49.8,
+      "price": 267.6,
+      "change_pct": 2.54,
+      "market_cap": 336113631232,
+      "composite_score": 50.0,
       "grade": "C",
-      "rank": 26,
+      "rank": 23,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 71.9,
-        "value": 21.3,
+        "momentum": 73.3,
+        "value": 20.5,
         "quality": 70.7,
-        "growth": 55.2,
+        "growth": 55.1,
         "risk": 30.4,
-        "flow": 51.3
+        "flow": 52.2
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1611,33 +1606,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 74 — 과매수 구간, 단기 조정 가능성",
+        "RSI 76 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 22.1% — 고성장",
-        "최강 팩터: momentum (72점)",
-        "최약 팩터: value (21점)"
+        "최강 팩터: momentum (73점)",
+        "최약 팩터: value (20점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 74.01,
-          "macd_histogram": 4.6171,
-          "return_1m": 15.23,
-          "return_3m": 25.14,
-          "return_6m": 89.21,
+          "rsi": 75.73,
+          "macd_histogram": 4.1521,
+          "return_1m": 19.09,
+          "return_3m": 23.2,
+          "return_6m": 85.36,
           "return_1y": null,
-          "ma20_diff_pct": 10.46,
-          "ma60_diff_pct": 13.17,
-          "ma200_diff_pct": 58.04,
+          "ma20_diff_pct": 12.48,
+          "ma60_diff_pct": 15.72,
+          "ma200_diff_pct": 61.22,
           "from_52w_high": null,
-          "bb_pct_b": 0.7819
+          "bb_pct_b": 0.8226
         },
         "value": {
-          "forward_pe": 36.573093,
-          "trailing_pe": 53.475407,
-          "ps_ratio": 15.941881,
-          "pb_ratio": 32.181526,
-          "ev_ebitda": 44.145,
-          "peg_ratio": null,
-          "fcf_yield": 1.47,
+          "forward_pe": 37.39305,
+          "trailing_pe": 54.94867,
+          "ps_ratio": 16.347517,
+          "pb_ratio": 33.00037,
+          "ev_ebitda": 45.274,
+          "peg_ratio": 1.92,
+          "fcf_yield": 1.43,
           "dividend_yield": 0.39
         },
         "quality": {
@@ -1652,22 +1647,22 @@
         "growth": {
           "revenue_growth": 22.1,
           "earnings_growth": 37.0,
-          "eps_growth_fwd": 46.22,
-          "analyst_target_upside": 7.77
+          "eps_growth_fwd": 46.95,
+          "analyst_target_upside": 5.09
         },
         "risk": {
           "beta": 1.79,
-          "vol_20d": 68.22,
-          "vol_60d": 62.07,
+          "vol_20d": 67.43,
+          "vol_60d": 62.04,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.77,
-          "institutional_pct": 88.84,
-          "short_ratio": 2.93,
-          "short_pct_float": 2.41,
+          "volume_ratio": 0.85,
+          "institutional_pct": 88.91,
+          "short_ratio": 2.68,
+          "short_pct_float": 2.5,
           "insider_pct": 0.29
         }
       }
@@ -1676,20 +1671,20 @@
       "ticker": "KLAC",
       "name": "KLA Corp",
       "sector": "Technology",
-      "price": 1734.85,
-      "change_pct": -0.76,
-      "market_cap": 227945988096,
-      "composite_score": 50.0,
+      "price": 1791.44,
+      "change_pct": 3.26,
+      "market_cap": 235381473280,
+      "composite_score": 48.6,
       "grade": "C",
-      "rank": 24,
+      "rank": 28,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 71.7,
-        "value": 22.5,
+        "momentum": 72.7,
+        "value": 21.0,
         "quality": 74.6,
-        "growth": 34.1,
-        "risk": 37.7,
-        "flow": 61.3
+        "growth": 34.2,
+        "risk": 37.0,
+        "flow": 53.5
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1699,33 +1694,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 76 — 과매수 구간, 단기 조정 가능성",
+        "RSI 79 — 과매수 구간, 단기 조정 가능성",
         "최강 팩터: quality (75점)",
-        "최약 팩터: value (22점)"
+        "최약 팩터: value (21점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 75.84,
-          "macd_histogram": 22.959,
-          "return_1m": 17.11,
-          "return_3m": 21.09,
-          "return_6m": 69.64,
+          "rsi": 79.14,
+          "macd_histogram": 21.5477,
+          "return_1m": 20.85,
+          "return_3m": 16.1,
+          "return_6m": 65.3,
           "return_1y": null,
-          "ma20_diff_pct": 9.49,
-          "ma60_diff_pct": 15.0,
-          "ma200_diff_pct": 43.45,
+          "ma20_diff_pct": 12.07,
+          "ma60_diff_pct": 18.4,
+          "ma200_diff_pct": 47.59,
           "from_52w_high": null,
-          "bb_pct_b": 0.7977
+          "bb_pct_b": 0.8626
         },
         "value": {
-          "forward_pe": 36.116123,
-          "trailing_pe": 50.63777,
-          "ps_ratio": 17.885675,
-          "pb_ratio": 41.625076,
-          "ev_ebitda": 39.759,
-          "peg_ratio": null,
-          "fcf_yield": 1.41,
-          "dividend_yield": 0.43
+          "forward_pe": 37.19821,
+          "trailing_pe": 52.07674,
+          "ps_ratio": 18.469097,
+          "pb_ratio": 42.982864,
+          "ev_ebitda": 41.051,
+          "peg_ratio": 1.99,
+          "fcf_yield": 1.37,
+          "dividend_yield": 0.42
         },
         "quality": {
           "roe": 100.73,
@@ -1739,22 +1734,22 @@
         "growth": {
           "revenue_growth": 7.2,
           "earnings_growth": 40.9,
-          "eps_growth_fwd": 40.21,
-          "analyst_target_upside": -2.7
+          "eps_growth_fwd": 40.0,
+          "analyst_target_upside": -5.09
         },
         "risk": {
           "beta": 1.435,
-          "vol_20d": 51.97,
-          "vol_60d": 57.85,
+          "vol_20d": 52.54,
+          "vol_60d": 58.02,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.89,
-          "institutional_pct": 93.92,
-          "short_ratio": 3.42,
-          "short_pct_float": 2.55,
+          "volume_ratio": 0.78,
+          "institutional_pct": 94.48,
+          "short_ratio": 3.19,
+          "short_pct_float": 2.7,
           "insider_pct": 0.1
         }
       }
@@ -1763,20 +1758,20 @@
       "ticker": "MRVL",
       "name": "Marvell",
       "sector": "Technology",
-      "price": 133.37,
-      "change_pct": -0.91,
-      "market_cap": 116626489344,
-      "composite_score": 48.6,
+      "price": 139.69,
+      "change_pct": 4.74,
+      "market_cap": 122153074688,
+      "composite_score": 49.1,
       "grade": "C",
-      "rank": 29,
+      "rank": 27,
       "total_count": 47,
       "factor_scores": {
         "momentum": 72.7,
-        "value": 29.6,
+        "value": 28.4,
         "quality": 49.7,
         "growth": 61.8,
-        "risk": 29.0,
-        "flow": 47.4
+        "risk": 28.2,
+        "flow": 52.6
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1786,34 +1781,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 81 — 과매수 구간, 단기 조정 가능성",
+        "RSI 86 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 22.1% — 고성장",
         "최강 팩터: momentum (73점)",
-        "최약 팩터: risk (29점)"
+        "최약 팩터: risk (28점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 80.71,
-          "macd_histogram": 2.8407,
-          "return_1m": 46.97,
-          "return_3m": 64.31,
-          "return_6m": 54.87,
+          "rsi": 86.35,
+          "macd_histogram": 2.7679,
+          "return_1m": 59.51,
+          "return_3m": 73.87,
+          "return_6m": 57.34,
           "return_1y": null,
-          "ma20_diff_pct": 23.16,
-          "ma60_diff_pct": 47.03,
-          "ma200_diff_pct": 59.3,
+          "ma20_diff_pct": 26.08,
+          "ma60_diff_pct": 52.4,
+          "ma200_diff_pct": 66.21,
           "from_52w_high": null,
-          "bb_pct_b": 0.8738
+          "bb_pct_b": 0.9116
         },
         "value": {
-          "forward_pe": 24.586279,
-          "trailing_pe": 43.442997,
-          "ps_ratio": 14.232115,
-          "pb_ratio": 7.8977914,
-          "ev_ebitda": 45.163,
-          "peg_ratio": null,
-          "fcf_yield": 1.24,
-          "dividend_yield": 0.18
+          "forward_pe": 25.75135,
+          "trailing_pe": 45.50163,
+          "ps_ratio": 14.906533,
+          "pb_ratio": 8.272044,
+          "ev_ebitda": 47.265,
+          "peg_ratio": 1.64,
+          "fcf_yield": 1.18,
+          "dividend_yield": 0.17
         },
         "quality": {
           "roe": 19.25,
@@ -1828,22 +1823,22 @@
           "revenue_growth": 22.1,
           "earnings_growth": 106.3,
           "eps_growth_fwd": 76.7,
-          "analyst_target_upside": -5.2
+          "analyst_target_upside": -9.12
         },
         "risk": {
           "beta": 1.822,
-          "vol_20d": 69.57,
-          "vol_60d": 66.15,
+          "vol_20d": 70.14,
+          "vol_60d": 66.41,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.78,
-          "institutional_pct": 83.61,
-          "short_ratio": 1.94,
-          "short_pct_float": 4.55,
-          "insider_pct": 0.35
+          "volume_ratio": 0.98,
+          "institutional_pct": 83.64,
+          "short_ratio": 1.26,
+          "short_pct_float": 3.81,
+          "insider_pct": 0.34
         }
       }
     },
@@ -1851,20 +1846,20 @@
       "ticker": "SNPS",
       "name": "Synopsys",
       "sector": "Technology",
-      "price": 441.15,
-      "change_pct": 0.62,
-      "market_cap": 84507590656,
-      "composite_score": 47.5,
+      "price": 449.58,
+      "change_pct": 1.91,
+      "market_cap": 86122455040,
+      "composite_score": 46.3,
       "grade": "C",
-      "rank": 34,
+      "rank": 35,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 46.2,
-        "value": 42.8,
-        "quality": 38.6,
-        "growth": 63.6,
-        "risk": 47.5,
-        "flow": 48.3
+        "momentum": 44.7,
+        "value": 37.7,
+        "quality": 38.3,
+        "growth": 63.1,
+        "risk": 47.8,
+        "flow": 49.6
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1872,35 +1867,41 @@
         "emoji": "🟡",
         "color": "#ffd740"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "type": "OVERHEAT",
+          "severity": "warning",
+          "message": "과열 경고 — RSI 82, 볼린저밴드 상단 이탈"
+        }
+      ],
       "reasons": [
-        "RSI 66 — 강세 모멘텀 유지",
+        "RSI 82 — 과매수 구간, 단기 조정 가능성",
         "매출 성장률 65.5% — 고성장",
-        "최강 팩터: growth (64점)",
-        "최약 팩터: quality (39점)"
+        "최강 팩터: growth (63점)",
+        "최약 팩터: value (38점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 66.39,
-          "macd_histogram": 5.945,
-          "return_1m": 2.76,
-          "return_3m": -12.7,
-          "return_6m": -0.59,
+          "rsi": 82.44,
+          "macd_histogram": 6.9039,
+          "return_1m": 4.88,
+          "return_3m": -11.53,
+          "return_6m": 3.14,
           "return_1y": null,
-          "ma20_diff_pct": 7.86,
-          "ma60_diff_pct": 1.97,
-          "ma200_diff_pct": -8.76,
+          "ma20_diff_pct": 9.64,
+          "ma60_diff_pct": 4.21,
+          "ma200_diff_pct": -6.94,
           "from_52w_high": null,
-          "bb_pct_b": 0.9623
+          "bb_pct_b": 1.0148
         },
         "value": {
-          "forward_pe": 25.874702,
-          "trailing_pe": 67.55743,
-          "ps_ratio": 10.553343,
-          "pb_ratio": 2.7646868,
-          "ev_ebitda": 57.69,
-          "peg_ratio": null,
-          "fcf_yield": 3.66,
+          "forward_pe": 26.369146,
+          "trailing_pe": 68.95399,
+          "ps_ratio": 10.755008,
+          "pb_ratio": 2.8175175,
+          "ev_ebitda": 58.689,
+          "peg_ratio": 2.97,
+          "fcf_yield": 3.6,
           "dividend_yield": null
         },
         "quality": {
@@ -1915,22 +1916,22 @@
         "growth": {
           "revenue_growth": 65.5,
           "earnings_growth": -82.0,
-          "eps_growth_fwd": 161.09,
-          "analyst_target_upside": 21.43
+          "eps_growth_fwd": 161.49,
+          "analyst_target_upside": 18.67
         },
         "risk": {
           "beta": 1.148,
-          "vol_20d": 45.94,
-          "vol_60d": 46.31,
+          "vol_20d": 46.33,
+          "vol_60d": 46.26,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.74,
-          "institutional_pct": 90.97,
-          "short_ratio": 2.06,
-          "short_pct_float": 2.45,
+          "volume_ratio": 0.93,
+          "institutional_pct": 91.12,
+          "short_ratio": 2.39,
+          "short_pct_float": 2.52,
           "insider_pct": 2.95
         }
       }
@@ -1939,20 +1940,20 @@
       "ticker": "CDNS",
       "name": "Cadence",
       "sector": "Technology",
-      "price": 306.96,
-      "change_pct": 0.94,
-      "market_cap": 84749213696,
-      "composite_score": 50.2,
+      "price": 311.03,
+      "change_pct": 1.33,
+      "market_cap": 85872910336,
+      "composite_score": 47.3,
       "grade": "C",
-      "rank": 23,
+      "rank": 33,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 48.6,
-        "value": 30.5,
+        "momentum": 47.6,
+        "value": 26.2,
         "quality": 66.4,
         "growth": 54.6,
         "risk": 47.4,
-        "flow": 60.9
+        "flow": 48.7
       },
       "signal": "HOLD",
       "signal_info": {
@@ -1962,32 +1963,32 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 64 — 강세 모멘텀 유지",
+        "RSI 71 — 과매수 구간, 단기 조정 가능성",
         "최강 팩터: quality (66점)",
-        "최약 팩터: value (30점)"
+        "최약 팩터: value (26점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 63.66,
-          "macd_histogram": 3.5282,
-          "return_1m": 4.5,
-          "return_3m": -1.98,
-          "return_6m": -5.77,
+          "rsi": 71.42,
+          "macd_histogram": 4.148,
+          "return_1m": 7.39,
+          "return_3m": -2.99,
+          "return_6m": -4.03,
           "return_1y": null,
-          "ma20_diff_pct": 8.16,
-          "ma60_diff_pct": 4.98,
-          "ma200_diff_pct": -4.44,
+          "ma20_diff_pct": 9.14,
+          "ma60_diff_pct": 6.39,
+          "ma200_diff_pct": -3.18,
           "from_52w_high": null,
-          "bb_pct_b": 1.0728
+          "bb_pct_b": 1.0522
         },
         "value": {
-          "forward_pe": 32.51788,
-          "trailing_pe": 75.42014,
-          "ps_ratio": 16.000202,
-          "pb_ratio": 15.240553,
-          "ev_ebitda": 43.605,
-          "peg_ratio": null,
-          "fcf_yield": 1.78,
+          "forward_pe": 32.994263,
+          "trailing_pe": 76.42014,
+          "ps_ratio": 16.21235,
+          "pb_ratio": 15.442629,
+          "ev_ebitda": 44.187,
+          "peg_ratio": 2.78,
+          "fcf_yield": 1.76,
           "dividend_yield": null
         },
         "quality": {
@@ -2002,22 +2003,22 @@
         "growth": {
           "revenue_growth": 6.2,
           "earnings_growth": 14.6,
-          "eps_growth_fwd": 131.93,
-          "analyst_target_upside": 21.08
+          "eps_growth_fwd": 131.62,
+          "analyst_target_upside": 19.33
         },
         "risk": {
           "beta": 1.041,
-          "vol_20d": 48.61,
-          "vol_60d": 47.57,
+          "vol_20d": 48.55,
+          "vol_60d": 47.43,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.88,
-          "institutional_pct": 90.07,
-          "short_ratio": 2.22,
-          "short_pct_float": 2.26,
+          "volume_ratio": 0.97,
+          "institutional_pct": 90.08,
+          "short_ratio": 3.24,
+          "short_pct_float": 2.62,
           "insider_pct": 0.35
         }
       }
@@ -2026,20 +2027,20 @@
       "ticker": "PANW",
       "name": "Palo Alto",
       "sector": "Technology",
-      "price": 166.97,
-      "change_pct": 1.74,
-      "market_cap": 136247517184,
-      "composite_score": 43.9,
+      "price": 167.85,
+      "change_pct": 0.53,
+      "market_cap": 136965603328,
+      "composite_score": 40.6,
       "grade": "D",
-      "rank": 41,
+      "rank": 44,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 40.3,
-        "value": 28.0,
-        "quality": 40.8,
-        "growth": 71.3,
-        "risk": 47.8,
-        "flow": 41.8
+        "momentum": 38.2,
+        "value": 23.7,
+        "quality": 40.5,
+        "growth": 71.9,
+        "risk": 48.6,
+        "flow": 27.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2049,33 +2050,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 58 — 강세 모멘텀 유지",
-        "Forward P/E 42.1 — 고평가 주의",
-        "최강 팩터: growth (71점)",
-        "최약 팩터: value (28점)"
+        "RSI 67 — 강세 모멘텀 유지",
+        "Forward P/E 42.3 — 고평가 주의",
+        "최강 팩터: growth (72점)",
+        "최약 팩터: value (24점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 57.61,
-          "macd_histogram": 0.47,
-          "return_1m": -1.31,
-          "return_3m": -12.55,
-          "return_6m": -19.56,
+          "rsi": 66.99,
+          "macd_histogram": 0.6228,
+          "return_1m": -0.63,
+          "return_3m": -10.59,
+          "return_6m": -18.8,
           "return_1y": null,
-          "ma20_diff_pct": 3.3,
-          "ma60_diff_pct": 2.18,
-          "ma200_diff_pct": -10.28,
+          "ma20_diff_pct": 3.91,
+          "ma60_diff_pct": 2.87,
+          "ma200_diff_pct": -9.73,
           "from_52w_high": null,
-          "bb_pct_b": 0.7087
+          "bb_pct_b": 0.7512
         },
         "value": {
-          "forward_pe": 42.075844,
-          "trailing_pe": 92.24862,
-          "ps_ratio": 13.771418,
-          "pb_ratio": 12.4968195,
-          "ev_ebitda": 84.502,
-          "peg_ratio": null,
-          "fcf_yield": 2.1,
+          "forward_pe": 42.297604,
+          "trailing_pe": 93.25001,
+          "ps_ratio": 13.843999,
+          "pb_ratio": 12.562683,
+          "ev_ebitda": 86.488,
+          "peg_ratio": 2.82,
+          "fcf_yield": 2.09,
           "dividend_yield": null
         },
         "quality": {
@@ -2090,22 +2091,22 @@
         "growth": {
           "revenue_growth": 14.9,
           "earnings_growth": 60.5,
-          "eps_growth_fwd": 119.24,
-          "analyst_target_upside": 23.35
+          "eps_growth_fwd": 120.46,
+          "analyst_target_upside": 22.7
         },
         "risk": {
           "beta": 0.766,
-          "vol_20d": 56.19,
-          "vol_60d": 45.89,
+          "vol_20d": 56.2,
+          "vol_60d": 45.83,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.82,
-          "institutional_pct": 74.54,
-          "short_ratio": 1.99,
-          "short_pct_float": 3.11,
+          "volume_ratio": 0.8,
+          "institutional_pct": 74.35,
+          "short_ratio": 3.3,
+          "short_pct_float": 3.32,
           "insider_pct": 0.79
         }
       }
@@ -2114,20 +2115,20 @@
       "ticker": "CRWD",
       "name": "CrowdStrike",
       "sector": "Technology",
-      "price": 418.2,
-      "change_pct": 1.71,
-      "market_cap": 106061414400,
-      "composite_score": 43.8,
+      "price": 423.95,
+      "change_pct": 1.37,
+      "market_cap": 107519696896,
+      "composite_score": 41.7,
       "grade": "D",
       "rank": 42,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 43.3,
-        "value": 38.6,
+        "momentum": 41.9,
+        "value": 33.7,
         "quality": 30.9,
-        "growth": 72.8,
+        "growth": 72.3,
         "risk": 42.0,
-        "flow": 37.4
+        "flow": 32.2
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2137,34 +2138,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 57 — 강세 모멘텀 유지",
-        "Forward P/E 67.7 — 고평가 주의",
+        "RSI 67 — 강세 모멘텀 유지",
+        "Forward P/E 68.7 — 고평가 주의",
         "매출 성장률 23.3% — 고성장",
-        "최강 팩터: growth (73점)",
+        "최강 팩터: growth (72점)",
         "최약 팩터: quality (31점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 57.3,
-          "macd_histogram": 2.2238,
-          "return_1m": -3.46,
-          "return_3m": -9.23,
-          "return_6m": -14.47,
+          "rsi": 67.22,
+          "macd_histogram": 3.112,
+          "return_1m": -2.72,
+          "return_3m": -6.82,
+          "return_6m": -13.31,
           "return_1y": null,
-          "ma20_diff_pct": 4.46,
-          "ma60_diff_pct": 1.29,
-          "ma200_diff_pct": -9.08,
+          "ma20_diff_pct": 5.96,
+          "ma60_diff_pct": 2.78,
+          "ma200_diff_pct": -7.76,
           "from_52w_high": null,
-          "bb_pct_b": 0.7757
+          "bb_pct_b": 0.876
         },
         "value": {
-          "forward_pe": 67.725136,
+          "forward_pe": 68.65632,
           "trailing_pe": null,
-          "ps_ratio": 22.041002,
-          "pb_ratio": 23.927223,
-          "ev_ebitda": -2141.054,
-          "peg_ratio": null,
-          "fcf_yield": 1.51,
+          "ps_ratio": 22.344053,
+          "pb_ratio": 24.256208,
+          "ev_ebitda": -2210.566,
+          "peg_ratio": 3.5,
+          "fcf_yield": 1.49,
           "dividend_yield": null
         },
         "quality": {
@@ -2179,22 +2180,22 @@
         "growth": {
           "revenue_growth": 23.3,
           "earnings_growth": null,
-          "eps_growth_fwd": 1035.6,
-          "analyst_target_upside": 17.13
+          "eps_growth_fwd": 1064.84,
+          "analyst_target_upside": 15.55
         },
         "risk": {
           "beta": 1.072,
-          "vol_20d": 59.69,
-          "vol_60d": 57.51,
+          "vol_20d": 59.6,
+          "vol_60d": 57.56,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.74,
-          "institutional_pct": 75.47,
-          "short_ratio": 1.46,
-          "short_pct_float": 3.08,
+          "volume_ratio": 0.72,
+          "institutional_pct": 75.45,
+          "short_ratio": 1.78,
+          "short_pct_float": 2.99,
           "insider_pct": 3.08
         }
       }
@@ -2203,20 +2204,20 @@
       "ticker": "FTNT",
       "name": "Fortinet",
       "sector": "Technology",
-      "price": 82.4,
-      "change_pct": 3.47,
-      "market_cap": 61276606464,
-      "composite_score": 45.0,
-      "grade": "C",
-      "rank": 39,
+      "price": 81.84,
+      "change_pct": -0.68,
+      "market_cap": 60860162048,
+      "composite_score": 43.2,
+      "grade": "D",
+      "rank": 41,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 48.2,
-        "value": 42.2,
-        "quality": 63.8,
-        "growth": 34.8,
-        "risk": 55.1,
-        "flow": 25.6
+        "momentum": 44.3,
+        "value": 41.3,
+        "quality": 63.5,
+        "growth": 35.4,
+        "risk": 55.4,
+        "flow": 19.6
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2226,31 +2227,32 @@
       },
       "alerts": [],
       "reasons": [
+        "RSI 59 — 강세 모멘텀 유지",
         "최강 팩터: quality (64점)",
-        "최약 팩터: flow (26점)"
+        "최약 팩터: flow (20점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 53.01,
-          "macd_histogram": -0.0653,
-          "return_1m": -0.91,
-          "return_3m": 7.87,
-          "return_6m": -0.82,
+          "rsi": 58.88,
+          "macd_histogram": 0.0516,
+          "return_1m": -1.86,
+          "return_3m": 7.23,
+          "return_6m": -2.08,
           "return_1y": null,
-          "ma20_diff_pct": 2.01,
-          "ma60_diff_pct": 1.21,
-          "ma200_diff_pct": -2.11,
+          "ma20_diff_pct": 1.4,
+          "ma60_diff_pct": 0.4,
+          "ma200_diff_pct": -2.66,
           "from_52w_high": null,
-          "bb_pct_b": 0.7018
+          "bb_pct_b": 0.6443
         },
         "value": {
-          "forward_pe": 24.891253,
-          "trailing_pe": 34.049587,
-          "ps_ratio": 9.011796,
-          "pb_ratio": 49.459785,
-          "ev_ebitda": 26.254,
-          "peg_ratio": null,
-          "fcf_yield": 2.85,
+          "forward_pe": 24.727615,
+          "trailing_pe": 33.81818,
+          "ps_ratio": 8.95055,
+          "pb_ratio": 49.123646,
+          "ev_ebitda": 26.068,
+          "peg_ratio": 1.99,
+          "fcf_yield": 2.87,
           "dividend_yield": null
         },
         "quality": {
@@ -2265,22 +2267,22 @@
         "growth": {
           "revenue_growth": 14.8,
           "earnings_growth": -1.1,
-          "eps_growth_fwd": 36.79,
-          "analyst_target_upside": 8.01
+          "eps_growth_fwd": 36.76,
+          "analyst_target_upside": 8.75
         },
         "risk": {
           "beta": 0.998,
-          "vol_20d": 39.84,
-          "vol_60d": 37.81,
+          "vol_20d": 39.89,
+          "vol_60d": 37.85,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.84,
-          "institutional_pct": 71.55,
-          "short_ratio": 3.06,
-          "short_pct_float": 3.14,
+          "volume_ratio": 0.75,
+          "institutional_pct": 71.75,
+          "short_ratio": 3.08,
+          "short_pct_float": 3.1,
           "insider_pct": 17.43
         }
       }
@@ -2289,20 +2291,20 @@
       "ticker": "AMGN",
       "name": "Amgen",
       "sector": "Healthcare",
-      "price": 349.39,
-      "change_pct": 0.34,
-      "market_cap": 188344860672,
-      "composite_score": 55.3,
+      "price": 355.3,
+      "change_pct": 1.69,
+      "market_cap": 191530729472,
+      "composite_score": 56.4,
       "grade": "C",
-      "rank": 10,
+      "rank": 9,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 52.4,
-        "value": 66.6,
-        "quality": 50.9,
+        "momentum": 52.0,
+        "value": 63.1,
+        "quality": 50.6,
         "growth": 50.5,
         "risk": 68.5,
-        "flow": 40.4
+        "flow": 53.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2312,33 +2314,33 @@
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 15.0 — 저평가 영역",
+        "RSI 57 — 강세 모멘텀 유지",
         "최강 팩터: risk (68점)",
-        "최약 팩터: flow (40점)"
+        "최약 팩터: growth (50점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 46.12,
-          "macd_histogram": 0.5677,
-          "return_1m": -3.25,
-          "return_3m": 6.94,
-          "return_6m": 20.58,
+          "rsi": 56.52,
+          "macd_histogram": 0.9741,
+          "return_1m": 1.09,
+          "return_3m": 8.4,
+          "return_6m": 21.19,
           "return_1y": null,
-          "ma20_diff_pct": -0.05,
-          "ma60_diff_pct": -2.93,
-          "ma200_diff_pct": 9.5,
+          "ma20_diff_pct": 1.56,
+          "ma60_diff_pct": -1.35,
+          "ma200_diff_pct": 11.23,
           "from_52w_high": null,
-          "bb_pct_b": 0.488
+          "bb_pct_b": 0.8605
         },
         "value": {
-          "forward_pe": 14.985009,
-          "trailing_pe": 24.535816,
-          "ps_ratio": 5.124891,
-          "pb_ratio": 21.743109,
-          "ev_ebitda": 14.121,
-          "peg_ratio": null,
-          "fcf_yield": 3.98,
-          "dividend_yield": 2.89
+          "forward_pe": 15.256849,
+          "trailing_pe": 24.933332,
+          "ps_ratio": 5.211579,
+          "pb_ratio": 22.110895,
+          "ev_ebitda": 14.313,
+          "peg_ratio": 2.38,
+          "fcf_yield": 3.92,
+          "dividend_yield": 2.84
         },
         "quality": {
           "roe": 106.1,
@@ -2352,22 +2354,22 @@
         "growth": {
           "revenue_growth": 8.6,
           "earnings_growth": 112.1,
-          "eps_growth_fwd": 63.74,
-          "analyst_target_upside": 0.76
+          "eps_growth_fwd": 63.42,
+          "analyst_target_upside": -0.92
         },
         "risk": {
           "beta": 0.465,
-          "vol_20d": 18.15,
-          "vol_60d": 29.76,
+          "vol_20d": 19.05,
+          "vol_60d": 28.95,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.72,
-          "institutional_pct": 85.21,
-          "short_ratio": 6.07,
-          "short_pct_float": 2.67,
+          "volume_ratio": 1.31,
+          "institutional_pct": 85.26,
+          "short_ratio": 5.43,
+          "short_pct_float": 2.6,
           "insider_pct": 0.22
         }
       }
@@ -2376,56 +2378,57 @@
       "ticker": "GILD",
       "name": "Gilead",
       "sector": "Healthcare",
-      "price": 138.55,
-      "change_pct": -0.87,
-      "market_cap": 171968774144,
-      "composite_score": 58.9,
-      "grade": "C",
-      "rank": 4,
+      "price": 137.64,
+      "change_pct": -0.66,
+      "market_cap": 170839277568,
+      "composite_score": 61.3,
+      "grade": "B",
+      "rank": 2,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 52.0,
-        "value": 72.6,
+        "momentum": 46.8,
+        "value": 79.4,
         "quality": 64.2,
-        "growth": 36.9,
-        "risk": 69.2,
-        "flow": 56.5
+        "growth": 37.4,
+        "risk": 69.6,
+        "flow": 69.1
       },
-      "signal": "HOLD",
+      "signal": "BUY",
       "signal_info": {
-        "label": "Hold",
-        "emoji": "🟡",
-        "color": "#ffd740"
+        "label": "Buy",
+        "emoji": "🟢",
+        "color": "#66bb6a"
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 14.4 — 저평가 영역",
-        "최강 팩터: value (73점)",
+        "RSI 59 — 강세 모멘텀 유지",
+        "Forward P/E 14.3 — 저평가 영역",
+        "최강 팩터: value (79점)",
         "최약 팩터: growth (37점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 54.02,
-          "macd_histogram": 0.1779,
-          "return_1m": -4.05,
-          "return_3m": 12.31,
-          "return_6m": 18.38,
+          "rsi": 58.9,
+          "macd_histogram": 0.0577,
+          "return_1m": -2.58,
+          "return_3m": 14.15,
+          "return_6m": 17.78,
           "return_1y": null,
-          "ma20_diff_pct": -0.26,
-          "ma60_diff_pct": -3.18,
-          "ma200_diff_pct": 11.37,
+          "ma20_diff_pct": -0.79,
+          "ma60_diff_pct": -3.92,
+          "ma200_diff_pct": 10.51,
           "from_52w_high": null,
-          "bb_pct_b": 0.4523
+          "bb_pct_b": 0.351
         },
         "value": {
-          "forward_pe": 14.421656,
-          "trailing_pe": 20.435102,
-          "ps_ratio": 5.8407354,
-          "pb_ratio": 7.573936,
-          "ev_ebitda": 12.886,
-          "peg_ratio": null,
-          "fcf_yield": 4.38,
-          "dividend_yield": 2.35
+          "forward_pe": 14.309759,
+          "trailing_pe": 20.270987,
+          "ps_ratio": 5.8023734,
+          "pb_ratio": 7.52419,
+          "ev_ebitda": 12.809,
+          "peg_ratio": 0.38,
+          "fcf_yield": 4.41,
+          "dividend_yield": 2.38
         },
         "quality": {
           "roe": 40.66,
@@ -2439,22 +2442,22 @@
         "growth": {
           "revenue_growth": 4.7,
           "earnings_growth": 23.4,
-          "eps_growth_fwd": 41.7,
-          "analyst_target_upside": 14.17
+          "eps_growth_fwd": 41.66,
+          "analyst_target_upside": 15.05
         },
         "risk": {
           "beta": 0.404,
-          "vol_20d": 20.71,
-          "vol_60d": 28.26,
+          "vol_20d": 20.81,
+          "vol_60d": 27.18,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.58,
-          "institutional_pct": 92.66,
-          "short_ratio": 3.24,
-          "short_pct_float": 1.61,
+          "volume_ratio": 1.25,
+          "institutional_pct": 92.68,
+          "short_ratio": 3.56,
+          "short_pct_float": 1.74,
           "insider_pct": 0.12
         }
       }
@@ -2463,20 +2466,20 @@
       "ticker": "ISRG",
       "name": "Intuitive Surgical",
       "sector": "Healthcare",
-      "price": 458.08,
-      "change_pct": -2.19,
-      "market_cap": 162696134656,
-      "composite_score": 50.3,
+      "price": 469.21,
+      "change_pct": 2.43,
+      "market_cap": 166649167872,
+      "composite_score": 49.8,
       "grade": "C",
-      "rank": 22,
+      "rank": 25,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 39.5,
-        "value": 28.4,
-        "quality": 68.5,
-        "growth": 60.7,
-        "risk": 55.8,
-        "flow": 59.5
+        "momentum": 41.5,
+        "value": 24.9,
+        "quality": 67.9,
+        "growth": 61.7,
+        "risk": 55.4,
+        "flow": 58.3
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2486,32 +2489,33 @@
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 40.1 — 고평가 주의",
+        "RSI 60 — 강세 모멘텀 유지",
+        "Forward P/E 41.1 — 고평가 주의",
         "최강 팩터: quality (68점)",
-        "최약 팩터: value (28점)"
+        "최약 팩터: value (25점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 44.18,
-          "macd_histogram": 1.9304,
-          "return_1m": -5.11,
-          "return_3m": -16.22,
-          "return_6m": 4.97,
+          "rsi": 59.71,
+          "macd_histogram": 2.4558,
+          "return_1m": -1.78,
+          "return_3m": -13.32,
+          "return_6m": 7.71,
           "return_1y": null,
-          "ma20_diff_pct": -1.01,
-          "ma60_diff_pct": -5.66,
-          "ma200_diff_pct": -9.01,
+          "ma20_diff_pct": 1.51,
+          "ma60_diff_pct": -3.19,
+          "ma200_diff_pct": -6.73,
           "from_52w_high": null,
-          "bb_pct_b": 0.3778
+          "bb_pct_b": 0.6972
         },
         "value": {
-          "forward_pe": 40.087406,
-          "trailing_pe": 58.205845,
-          "ps_ratio": 16.165026,
-          "pb_ratio": 9.12619,
-          "ev_ebitda": 44.135,
-          "peg_ratio": null,
-          "fcf_yield": 1.4,
+          "forward_pe": 41.061413,
+          "trailing_pe": 59.544415,
+          "ps_ratio": 16.557787,
+          "pb_ratio": 9.34793,
+          "ev_ebitda": 45.246,
+          "peg_ratio": 2.41,
+          "fcf_yield": 1.37,
           "dividend_yield": null
         },
         "quality": {
@@ -2526,22 +2530,22 @@
         "growth": {
           "revenue_growth": 18.8,
           "earnings_growth": 16.6,
-          "eps_growth_fwd": 45.2,
-          "analyst_target_upside": 29.13
+          "eps_growth_fwd": 45.01,
+          "analyst_target_upside": 26.06
         },
         "risk": {
           "beta": 1.679,
-          "vol_20d": 23.93,
-          "vol_60d": 23.9,
+          "vol_20d": 25.61,
+          "vol_60d": 24.48,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.27,
-          "institutional_pct": 89.05,
-          "short_ratio": 3.94,
-          "short_pct_float": 1.8,
+          "volume_ratio": 1.49,
+          "institutional_pct": 89.11,
+          "short_ratio": 4.19,
+          "short_pct_float": 1.91,
           "insider_pct": 0.56
         }
       }
@@ -2550,20 +2554,20 @@
       "ticker": "VRTX",
       "name": "Vertex Pharma",
       "sector": "Healthcare",
-      "price": 435.65,
-      "change_pct": -1.37,
-      "market_cap": 110811815936,
-      "composite_score": 57.2,
+      "price": 441.2,
+      "change_pct": 1.27,
+      "market_cap": 112223518720,
+      "composite_score": 56.7,
       "grade": "C",
-      "rank": 6,
+      "rank": 8,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 37.6,
-        "value": 55.7,
+        "momentum": 44.7,
+        "value": 53.1,
         "quality": 72.6,
-        "growth": 50.8,
+        "growth": 51.8,
         "risk": 64.8,
-        "flow": 69.1
+        "flow": 58.7
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2573,31 +2577,32 @@
       },
       "alerts": [],
       "reasons": [
+        "RSI 55 — 강세 모멘텀 유지",
         "최강 팩터: quality (73점)",
-        "최약 팩터: momentum (38점)"
+        "최약 팩터: momentum (45점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 40.2,
-          "macd_histogram": 0.4962,
-          "return_1m": -5.8,
-          "return_3m": -3.09,
-          "return_6m": 5.68,
+          "rsi": 55.26,
+          "macd_histogram": 0.7468,
+          "return_1m": -2.3,
+          "return_3m": 0.52,
+          "return_6m": 8.16,
           "return_1y": null,
-          "ma20_diff_pct": -1.93,
-          "ma60_diff_pct": -6.01,
-          "ma200_diff_pct": -0.56,
+          "ma20_diff_pct": -0.49,
+          "ma60_diff_pct": -4.74,
+          "ma200_diff_pct": 0.72,
           "from_52w_high": null,
-          "bb_pct_b": 0.225
+          "bb_pct_b": 0.4236
         },
         "value": {
-          "forward_pe": 19.941391,
-          "trailing_pe": 28.418135,
-          "ps_ratio": 9.233317,
-          "pb_ratio": 5.9280176,
-          "ev_ebitda": 22.12,
-          "peg_ratio": null,
-          "fcf_yield": 2.32,
+          "forward_pe": 20.230997,
+          "trailing_pe": 28.817766,
+          "ps_ratio": 9.350946,
+          "pb_ratio": 6.003538,
+          "ev_ebitda": 22.094,
+          "peg_ratio": 2.15,
+          "fcf_yield": 2.29,
           "dividend_yield": null
         },
         "quality": {
@@ -2612,22 +2617,22 @@
         "growth": {
           "revenue_growth": 9.5,
           "earnings_growth": 32.9,
-          "eps_growth_fwd": 42.51,
-          "analyst_target_upside": 25.89
+          "eps_growth_fwd": 42.44,
+          "analyst_target_upside": 24.31
         },
         "risk": {
           "beta": 0.367,
-          "vol_20d": 26.88,
-          "vol_60d": 35.18,
+          "vol_20d": 26.76,
+          "vol_60d": 34.12,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.99,
-          "institutional_pct": 97.58,
-          "short_ratio": 2.9,
-          "short_pct_float": 1.83,
+          "volume_ratio": 0.78,
+          "institutional_pct": 97.59,
+          "short_ratio": 2.8,
+          "short_pct_float": 1.78,
           "insider_pct": 0.21
         }
       }
@@ -2636,20 +2641,20 @@
       "ticker": "REGN",
       "name": "Regeneron",
       "sector": "Healthcare",
-      "price": 746.0,
-      "change_pct": -1.05,
-      "market_cap": 78866972672,
-      "composite_score": 53.1,
+      "price": 750.57,
+      "change_pct": 0.61,
+      "market_cap": 79350120448,
+      "composite_score": 52.9,
       "grade": "C",
-      "rank": 12,
+      "rank": 15,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 49.0,
-        "value": 68.9,
+        "momentum": 50.2,
+        "value": 69.3,
         "quality": 57.5,
-        "growth": 29.3,
-        "risk": 69.2,
-        "flow": 40.9
+        "growth": 29.9,
+        "risk": 69.6,
+        "flow": 36.1
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2659,32 +2664,33 @@
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 14.2 — 저평가 영역",
-        "최강 팩터: risk (69점)",
-        "최약 팩터: growth (29점)"
+        "RSI 55 — 강세 모멘텀 유지",
+        "Forward P/E 14.3 — 저평가 영역",
+        "최강 팩터: risk (70점)",
+        "최약 팩터: growth (30점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 46.19,
-          "macd_histogram": -0.6509,
-          "return_1m": -1.72,
-          "return_3m": -0.96,
-          "return_6m": 30.6,
+          "rsi": 55.09,
+          "macd_histogram": -0.6919,
+          "return_1m": 0.87,
+          "return_3m": 1.29,
+          "return_6m": 30.53,
           "return_1y": null,
-          "ma20_diff_pct": -1.0,
-          "ma60_diff_pct": -2.32,
-          "ma200_diff_pct": 10.95,
+          "ma20_diff_pct": -0.48,
+          "ma60_diff_pct": -1.72,
+          "ma200_diff_pct": 11.44,
           "from_52w_high": null,
-          "bb_pct_b": 0.3582
+          "bb_pct_b": 0.429
         },
         "value": {
-          "forward_pe": 14.223804,
-          "trailing_pe": 17.988907,
-          "ps_ratio": 5.498677,
-          "pb_ratio": 2.4487276,
-          "ev_ebitda": 16.704,
-          "peg_ratio": null,
-          "fcf_yield": 4.13,
+          "forward_pe": 14.323804,
+          "trailing_pe": 18.081669,
+          "ps_ratio": 5.5323625,
+          "pb_ratio": 2.4637287,
+          "ev_ebitda": 16.815,
+          "peg_ratio": 1.6,
+          "fcf_yield": 4.11,
           "dividend_yield": 0.5
         },
         "quality": {
@@ -2699,22 +2705,22 @@
         "growth": {
           "revenue_growth": 2.5,
           "earnings_growth": -2.6,
-          "eps_growth_fwd": 26.47,
-          "analyst_target_upside": 17.35
+          "eps_growth_fwd": 26.24,
+          "analyst_target_upside": 16.64
         },
         "risk": {
           "beta": 0.397,
-          "vol_20d": 23.24,
-          "vol_60d": 26.97,
+          "vol_20d": 23.07,
+          "vol_60d": 26.65,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.78,
-          "institutional_pct": 90.83,
-          "short_ratio": 4.04,
-          "short_pct_float": 2.45,
+          "volume_ratio": 0.8,
+          "institutional_pct": 90.98,
+          "short_ratio": 4.46,
+          "short_pct_float": 2.55,
           "insider_pct": 1.98
         }
       }
@@ -2723,62 +2729,64 @@
       "ticker": "MRNA",
       "name": "Moderna",
       "sector": "Healthcare",
-      "price": 54.68,
-      "change_pct": 0.77,
-      "market_cap": 21685368832,
-      "composite_score": 39.9,
+      "price": 53.72,
+      "change_pct": -1.76,
+      "market_cap": 21304645632,
+      "composite_score": 41.0,
       "grade": "D",
-      "rank": 45,
+      "rank": 43,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 64.4,
-        "value": 57.3,
+        "momentum": 62.3,
+        "value": 57.9,
         "quality": 25.4,
-        "growth": 18.5,
-        "risk": 39.1,
-        "flow": 20.9
+        "growth": 19.0,
+        "risk": 39.5,
+        "flow": 29.1
       },
-      "signal": "SELL",
+      "signal": "HOLD",
       "signal_info": {
-        "label": "Sell",
-        "emoji": "🔴",
-        "color": "#ff5252"
+        "label": "Hold",
+        "emoji": "🟡",
+        "color": "#ffd740"
       },
       "alerts": [
         {
           "type": "HIGH_SHORT",
           "severity": "warning",
-          "message": "공매도 비율 높음 — 유통주식 대비 20.4%"
+          "message": "공매도 비율 높음 — 유통주식 대비 18.7%"
         }
       ],
       "reasons": [
-        "Forward P/E -11.8 — 저평가 영역",
+        "RSI 63 — 강세 모멘텀 유지",
+        "Forward P/E -11.6 — 저평가 영역",
         "매출 성장률 -29.8% — 역성장 우려",
-        "최강 팩터: momentum (64점)",
-        "최약 팩터: growth (18점)"
+        "거래량 2.1배 급증 — 수급 이상 신호",
+        "최강 팩터: momentum (62점)",
+        "최약 팩터: growth (19점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 52.97,
-          "macd_histogram": 0.2905,
-          "return_1m": 1.39,
-          "return_3m": 34.75,
-          "return_6m": 108.3,
+          "rsi": 63.3,
+          "macd_histogram": 0.296,
+          "return_1m": 2.52,
+          "return_3m": 36.48,
+          "return_6m": 93.8,
           "return_1y": null,
-          "ma20_diff_pct": 6.49,
-          "ma60_diff_pct": 10.47,
-          "ma200_diff_pct": 57.69,
+          "ma20_diff_pct": 4.48,
+          "ma60_diff_pct": 8.39,
+          "ma200_diff_pct": 54.37,
           "from_52w_high": null,
-          "bb_pct_b": 0.9628
+          "bb_pct_b": 0.809
         },
         "value": {
-          "forward_pe": -11.792768,
+          "forward_pe": -11.642498,
           "trailing_pe": null,
-          "ps_ratio": 11.1550255,
-          "pb_ratio": 2.4906623,
-          "ev_ebitda": -5.982,
+          "ps_ratio": 10.95918,
+          "pb_ratio": 2.4469345,
+          "ev_ebitda": -5.849,
           "peg_ratio": null,
-          "fcf_yield": -6.12,
+          "fcf_yield": -6.23,
           "dividend_yield": null
         },
         "quality": {
@@ -2793,22 +2801,22 @@
         "growth": {
           "revenue_growth": -29.8,
           "earnings_growth": null,
-          "eps_growth_fwd": 36.13,
-          "analyst_target_upside": -15.87
+          "eps_growth_fwd": 36.44,
+          "analyst_target_upside": -14.18
         },
         "risk": {
           "beta": 1.336,
-          "vol_20d": 47.57,
-          "vol_60d": 70.28,
+          "vol_20d": 48.1,
+          "vol_60d": 62.72,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.86,
-          "institutional_pct": 77.03,
-          "short_ratio": 6.35,
-          "short_pct_float": 20.42,
+          "volume_ratio": 2.15,
+          "institutional_pct": 77.02,
+          "short_ratio": 7.11,
+          "short_pct_float": 18.71,
           "insider_pct": 7.32
         }
       }
@@ -2817,20 +2825,20 @@
       "ticker": "DXCM",
       "name": "DexCom",
       "sector": "Healthcare",
-      "price": 61.23,
-      "change_pct": -0.5,
-      "market_cap": 23880695808,
-      "composite_score": 50.7,
+      "price": 63.98,
+      "change_pct": 4.49,
+      "market_cap": 24688154624,
+      "composite_score": 53.4,
       "grade": "C",
-      "rank": 20,
+      "rank": 12,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 25.9,
-        "value": 58.1,
-        "quality": 53.2,
-        "growth": 67.2,
-        "risk": 52.5,
-        "flow": 53.5
+        "momentum": 37.4,
+        "value": 58.0,
+        "quality": 52.8,
+        "growth": 66.0,
+        "risk": 51.5,
+        "flow": 58.3
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2840,31 +2848,32 @@
       },
       "alerts": [],
       "reasons": [
-        "최강 팩터: growth (67점)",
-        "최약 팩터: momentum (26점)"
+        "RSI 57 — 강세 모멘텀 유지",
+        "최강 팩터: growth (66점)",
+        "최약 팩터: momentum (37점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 32.67,
-          "macd_histogram": -0.0393,
-          "return_1m": -9.05,
-          "return_3m": -12.15,
-          "return_6m": -7.52,
+          "rsi": 56.69,
+          "macd_histogram": 0.1025,
+          "return_1m": -5.44,
+          "return_3m": -7.6,
+          "return_6m": -2.19,
           "return_1y": null,
-          "ma20_diff_pct": -4.47,
-          "ma60_diff_pct": -10.67,
-          "ma200_diff_pct": -13.43,
+          "ma20_diff_pct": 0.08,
+          "ma60_diff_pct": -6.48,
+          "ma200_diff_pct": -9.41,
           "from_52w_high": null,
-          "bb_pct_b": 0.151
+          "bb_pct_b": 0.5065
         },
         "value": {
-          "forward_pe": 20.4617,
-          "trailing_pe": 29.296652,
-          "ps_ratio": 5.122414,
-          "pb_ratio": 8.580437,
-          "ev_ebitda": 19.837,
-          "peg_ratio": null,
-          "fcf_yield": 3.01,
+          "forward_pe": 21.394846,
+          "trailing_pe": 30.612442,
+          "ps_ratio": 5.2956142,
+          "pb_ratio": 8.965807,
+          "ev_ebitda": 20.644,
+          "peg_ratio": 1.4,
+          "fcf_yield": 2.91,
           "dividend_yield": null
         },
         "quality": {
@@ -2879,23 +2888,23 @@
         "growth": {
           "revenue_growth": 13.1,
           "earnings_growth": 78.0,
-          "eps_growth_fwd": 43.18,
-          "analyst_target_upside": 41.88
+          "eps_growth_fwd": 43.08,
+          "analyst_target_upside": 35.78
         },
         "risk": {
           "beta": 1.556,
-          "vol_20d": 30.86,
-          "vol_60d": 32.51,
+          "vol_20d": 35.54,
+          "vol_60d": 33.64,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.43,
-          "institutional_pct": 101.28,
-          "short_ratio": 3.89,
-          "short_pct_float": 5.46,
-          "insider_pct": 0.39
+          "volume_ratio": 1.86,
+          "institutional_pct": 101.4,
+          "short_ratio": 3.77,
+          "short_pct_float": 4.93,
+          "insider_pct": 0.28
         }
       }
     },
@@ -2903,20 +2912,20 @@
       "ticker": "PYPL",
       "name": "PayPal",
       "sector": "Financials",
-      "price": 49.81,
-      "change_pct": 0.48,
-      "market_cap": 45858299904,
-      "composite_score": 48.0,
+      "price": 50.81,
+      "change_pct": 2.01,
+      "market_cap": 46778966016,
+      "composite_score": 48.6,
       "grade": "C",
-      "rank": 32,
+      "rank": 29,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 37.3,
-        "value": 85.2,
-        "quality": 34.4,
-        "growth": 28.6,
-        "risk": 46.0,
-        "flow": 47.8
+        "momentum": 38.5,
+        "value": 88.7,
+        "quality": 33.7,
+        "growth": 28.1,
+        "risk": 46.7,
+        "flow": 45.7
       },
       "signal": "HOLD",
       "signal_info": {
@@ -2924,36 +2933,42 @@
         "emoji": "🟡",
         "color": "#ffd740"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "type": "OVERHEAT",
+          "severity": "warning",
+          "message": "과열 경고 — RSI 82, 볼린저밴드 상단 이탈"
+        }
+      ],
       "reasons": [
-        "RSI 70 — 강세 모멘텀 유지",
-        "Forward P/E 8.6 — 저평가 영역",
-        "최강 팩터: value (85점)",
-        "최약 팩터: growth (29점)"
+        "RSI 82 — 과매수 구간, 단기 조정 가능성",
+        "Forward P/E 8.7 — 저평가 영역",
+        "최강 팩터: value (89점)",
+        "최약 팩터: growth (28점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 69.65,
-          "macd_histogram": 0.5953,
-          "return_1m": 7.98,
-          "return_3m": -13.35,
-          "return_6m": -27.58,
+          "rsi": 82.46,
+          "macd_histogram": 0.6725,
+          "return_1m": 13.95,
+          "return_3m": -10.18,
+          "return_6m": -24.86,
           "return_1y": null,
-          "ma20_diff_pct": 9.03,
-          "ma60_diff_pct": 8.27,
-          "ma200_diff_pct": -17.5,
+          "ma20_diff_pct": 10.42,
+          "ma60_diff_pct": 10.64,
+          "ma200_diff_pct": -15.67,
           "from_52w_high": null,
-          "bb_pct_b": 1.0969
+          "bb_pct_b": 1.0894
         },
         "value": {
-          "forward_pe": 8.578732,
-          "trailing_pe": 9.207025,
-          "ps_ratio": 1.38244,
-          "pb_ratio": 2.2623427,
-          "ev_ebitda": 7.179,
-          "peg_ratio": null,
-          "fcf_yield": 7.14,
-          "dividend_yield": 1.13
+          "forward_pe": 8.735254,
+          "trailing_pe": 9.391868,
+          "ps_ratio": 1.4101943,
+          "pb_ratio": 2.3077621,
+          "ev_ebitda": 7.317,
+          "peg_ratio": 0.92,
+          "fcf_yield": 7.0,
+          "dividend_yield": 1.1
         },
         "quality": {
           "roe": 25.73,
@@ -2967,22 +2982,22 @@
         "growth": {
           "revenue_growth": 3.7,
           "earnings_growth": 39.4,
-          "eps_growth_fwd": 7.32,
-          "analyst_target_upside": 6.4
+          "eps_growth_fwd": 7.52,
+          "analyst_target_upside": 4.01
         },
         "risk": {
           "beta": 1.411,
-          "vol_20d": 34.11,
-          "vol_60d": 55.37,
+          "vol_20d": 34.01,
+          "vol_60d": 55.44,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.82,
-          "institutional_pct": 83.87,
-          "short_ratio": 1.65,
-          "short_pct_float": 4.69,
+          "volume_ratio": 1.2,
+          "institutional_pct": 84.35,
+          "short_ratio": 2.55,
+          "short_pct_float": 5.69,
           "insider_pct": 0.66
         }
       }
@@ -2991,20 +3006,20 @@
       "ticker": "INTU",
       "name": "Intuit",
       "sector": "Financials",
-      "price": 387.11,
-      "change_pct": -0.67,
-      "market_cap": 107722678272,
-      "composite_score": 52.4,
+      "price": 393.25,
+      "change_pct": 1.59,
+      "market_cap": 109431283712,
+      "composite_score": 53.1,
       "grade": "C",
       "rank": 14,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 21.9,
-        "value": 70.4,
-        "quality": 55.6,
-        "growth": 76.6,
-        "risk": 41.7,
-        "flow": 52.2
+        "momentum": 25.1,
+        "value": 73.0,
+        "quality": 55.3,
+        "growth": 77.2,
+        "risk": 42.0,
+        "flow": 48.7
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3014,33 +3029,33 @@
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 14.6 — 저평가 영역",
+        "Forward P/E 14.8 — 저평가 영역",
         "최강 팩터: growth (77점)",
-        "최약 팩터: momentum (22점)"
+        "최약 팩터: momentum (25점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 36.11,
-          "macd_histogram": -2.5601,
-          "return_1m": -15.45,
-          "return_3m": -31.47,
-          "return_6m": -40.8,
+          "rsi": 42.64,
+          "macd_histogram": -0.8538,
+          "return_1m": -11.71,
+          "return_3m": -28.87,
+          "return_6m": -39.45,
           "return_1y": null,
-          "ma20_diff_pct": -5.7,
-          "ma60_diff_pct": -10.72,
-          "ma200_diff_pct": -36.11,
+          "ma20_diff_pct": -3.49,
+          "ma60_diff_pct": -8.85,
+          "ma200_diff_pct": -34.89,
           "from_52w_high": null,
-          "bb_pct_b": 0.3149
+          "bb_pct_b": 0.3818
         },
         "value": {
-          "forward_pe": 14.620486,
-          "trailing_pe": 25.218891,
-          "ps_ratio": 5.3537436,
-          "pb_ratio": 5.6373324,
-          "ev_ebitda": 18.171,
-          "peg_ratio": null,
-          "fcf_yield": 4.92,
-          "dividend_yield": 1.19
+          "forward_pe": 14.849626,
+          "trailing_pe": 25.56892,
+          "ps_ratio": 5.43866,
+          "pb_ratio": 5.726747,
+          "ev_ebitda": 18.449,
+          "peg_ratio": 1.01,
+          "fcf_yield": 4.84,
+          "dividend_yield": 1.18
         },
         "quality": {
           "roe": 23.46,
@@ -3054,22 +3069,22 @@
         "growth": {
           "revenue_growth": 17.4,
           "earnings_growth": 48.5,
-          "eps_growth_fwd": 72.49,
-          "analyst_target_upside": 54.87
+          "eps_growth_fwd": 72.19,
+          "analyst_target_upside": 52.45
         },
         "risk": {
           "beta": 1.213,
-          "vol_20d": 52.49,
-          "vol_60d": 55.4,
+          "vol_20d": 52.3,
+          "vol_60d": 55.55,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.78,
-          "institutional_pct": 90.46,
-          "short_ratio": 1.47,
-          "short_pct_float": 3.0,
+          "volume_ratio": 0.93,
+          "institutional_pct": 90.68,
+          "short_ratio": 2.0,
+          "short_pct_float": 2.85,
           "insider_pct": 2.35
         }
       }
@@ -3078,20 +3093,20 @@
       "ticker": "COIN",
       "name": "Coinbase",
       "sector": "Financials",
-      "price": 199.82,
-      "change_pct": 2.0,
-      "market_cap": 53884329984,
-      "composite_score": 38.5,
+      "price": 206.33,
+      "change_pct": 3.25,
+      "market_cap": 55638454272,
+      "composite_score": 39.2,
       "grade": "D",
       "rank": 46,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 38.1,
-        "value": 44.8,
+        "momentum": 39.9,
+        "value": 48.5,
         "quality": 44.5,
-        "growth": 32.6,
+        "growth": 28.8,
         "risk": 26.1,
-        "flow": 43.0
+        "flow": 43.9
       },
       "signal": "SELL",
       "signal_info": {
@@ -3103,37 +3118,38 @@
         {
           "type": "HIGH_SHORT",
           "severity": "warning",
-          "message": "공매도 비율 높음 — 유통주식 대비 11.5%"
+          "message": "공매도 비율 높음 — 유통주식 대비 12.2%"
         }
       ],
       "reasons": [
-        "RSI 68 — 강세 모멘텀 유지",
+        "RSI 84 — 과매수 구간, 단기 조정 가능성",
+        "Forward P/E 40.2 — 고평가 주의",
         "매출 성장률 -22.2% — 역성장 우려",
-        "최강 팩터: value (45점)",
+        "최강 팩터: value (48점)",
         "최약 팩터: risk (26점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 68.22,
-          "macd_histogram": 2.9951,
-          "return_1m": -4.95,
-          "return_3m": -21.9,
-          "return_6m": -41.49,
+          "rsi": 83.8,
+          "macd_histogram": 3.9484,
+          "return_1m": 2.0,
+          "return_3m": -13.77,
+          "return_6m": -38.65,
           "return_1y": null,
-          "ma20_diff_pct": 11.2,
-          "ma60_diff_pct": 8.66,
-          "ma200_diff_pct": -26.99,
+          "ma20_diff_pct": 14.71,
+          "ma60_diff_pct": 12.41,
+          "ma200_diff_pct": -24.44,
           "from_52w_high": null,
-          "bb_pct_b": 0.8867
+          "bb_pct_b": 0.9955
         },
         "value": {
-          "forward_pe": 37.635296,
-          "trailing_pe": 44.904495,
-          "ps_ratio": 7.8281126,
-          "pb_ratio": 3.6179209,
-          "ev_ebitda": 29.34,
-          "peg_ratio": null,
-          "fcf_yield": 2.41,
+          "forward_pe": 40.173206,
+          "trailing_pe": 46.262333,
+          "ps_ratio": 8.082946,
+          "pb_ratio": 3.7356968,
+          "ev_ebitda": 30.368,
+          "peg_ratio": 0.79,
+          "fcf_yield": 2.33,
           "dividend_yield": null
         },
         "quality": {
@@ -3148,22 +3164,22 @@
         "growth": {
           "revenue_growth": -22.2,
           "earnings_growth": null,
-          "eps_growth_fwd": 19.31,
-          "analyst_target_upside": 19.06
+          "eps_growth_fwd": 15.16,
+          "analyst_target_upside": 15.8
         },
         "risk": {
           "beta": 3.606,
-          "vol_20d": 68.67,
-          "vol_60d": 86.75,
+          "vol_20d": 69.62,
+          "vol_60d": 87.01,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.02,
-          "institutional_pct": 68.95,
-          "short_ratio": 1.59,
-          "short_pct_float": 11.51,
+          "volume_ratio": 1.41,
+          "institutional_pct": 68.92,
+          "short_ratio": 1.89,
+          "short_pct_float": 12.24,
           "insider_pct": 1.32
         }
       }
@@ -3172,20 +3188,20 @@
       "ticker": "COST",
       "name": "Costco",
       "sector": "Consumer Disc",
-      "price": 987.21,
-      "change_pct": 0.25,
-      "market_cap": 438192340992,
-      "composite_score": 46.1,
+      "price": 999.89,
+      "change_pct": 1.28,
+      "market_cap": 443820572672,
+      "composite_score": 45.7,
       "grade": "C",
-      "rank": 38,
+      "rank": 37,
       "total_count": 47,
       "factor_scores": {
         "momentum": 48.2,
-        "value": 35.6,
-        "quality": 25.4,
-        "growth": 48.3,
-        "risk": 70.6,
-        "flow": 51.3
+        "value": 30.5,
+        "quality": 25.1,
+        "growth": 47.3,
+        "risk": 71.0,
+        "flow": 56.5
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3195,34 +3211,35 @@
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 43.9 — 고평가 주의",
+        "RSI 56 — 강세 모멘텀 유지",
+        "Forward P/E 44.5 — 고평가 주의",
         "매출 성장률 21.5% — 고성장",
         "최강 팩터: risk (71점)",
         "최약 팩터: quality (25점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 52.84,
-          "macd_histogram": -2.8423,
-          "return_1m": -0.9,
-          "return_3m": 3.95,
-          "return_6m": 4.59,
+          "rsi": 55.67,
+          "macd_histogram": -1.9956,
+          "return_1m": 2.04,
+          "return_3m": 4.65,
+          "return_6m": 4.99,
           "return_1y": null,
-          "ma20_diff_pct": -0.53,
-          "ma60_diff_pct": -0.29,
-          "ma200_diff_pct": 4.2,
+          "ma20_diff_pct": 0.62,
+          "ma60_diff_pct": 0.96,
+          "ma200_diff_pct": 5.53,
           "from_52w_high": null,
-          "bb_pct_b": 0.4339
+          "bb_pct_b": 0.5786
         },
         "value": {
-          "forward_pe": 43.940975,
-          "trailing_pe": 51.417187,
-          "ps_ratio": 1.5307226,
-          "pb_ratio": 26.482376,
-          "ev_ebitda": 32.398,
-          "peg_ratio": null,
-          "fcf_yield": 1.53,
-          "dividend_yield": 0.53
+          "forward_pe": 44.49063,
+          "trailing_pe": 52.077602,
+          "ps_ratio": 1.5503836,
+          "pb_ratio": 26.822523,
+          "ev_ebitda": 32.815,
+          "peg_ratio": 5.53,
+          "fcf_yield": 1.51,
+          "dividend_yield": 0.59
         },
         "quality": {
           "roe": 29.65,
@@ -3236,21 +3253,21 @@
         "growth": {
           "revenue_growth": 21.5,
           "earnings_growth": 45.5,
-          "eps_growth_fwd": 17.01,
-          "analyst_target_upside": 8.34
+          "eps_growth_fwd": 17.05,
+          "analyst_target_upside": 7.23
         },
         "risk": {
           "beta": 0.978,
-          "vol_20d": 18.36,
-          "vol_60d": 19.6,
+          "vol_20d": 18.74,
+          "vol_60d": 19.38,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.81,
-          "institutional_pct": 72.52,
-          "short_ratio": 3.39,
+          "volume_ratio": 1.25,
+          "institutional_pct": 72.67,
+          "short_ratio": 3.78,
           "short_pct_float": 1.42,
           "insider_pct": 0.17
         }
@@ -3260,20 +3277,20 @@
       "ticker": "PEP",
       "name": "PepsiCo",
       "sector": "Staples",
-      "price": 158.38,
-      "change_pct": 2.28,
-      "market_cap": 216496111616,
-      "composite_score": 55.6,
+      "price": 157.67,
+      "change_pct": -0.45,
+      "market_cap": 215525572608,
+      "composite_score": 54.8,
       "grade": "C",
-      "rank": 9,
+      "rank": 11,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 46.6,
-        "value": 70.8,
-        "quality": 32.2,
-        "growth": 48.0,
-        "risk": 72.5,
-        "flow": 61.3
+        "momentum": 48.8,
+        "value": 72.9,
+        "quality": 34.0,
+        "growth": 40.3,
+        "risk": 72.1,
+        "flow": 56.5
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3283,62 +3300,62 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 65 — 강세 모멘텀 유지",
-        "최강 팩터: risk (72점)",
-        "최약 팩터: quality (32점)"
+        "RSI 60 — 강세 모멘텀 유지",
+        "최강 팩터: value (73점)",
+        "최약 팩터: quality (34점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 65.24,
-          "macd_histogram": 0.4602,
-          "return_1m": 1.2,
-          "return_3m": 9.51,
-          "return_6m": 6.48,
+          "rsi": 59.95,
+          "macd_histogram": 0.491,
+          "return_1m": 2.69,
+          "return_3m": 8.53,
+          "return_6m": 6.27,
           "return_1y": null,
-          "ma20_diff_pct": 2.59,
-          "ma60_diff_pct": 0.37,
-          "ma200_diff_pct": 8.02,
+          "ma20_diff_pct": 1.96,
+          "ma60_diff_pct": -0.21,
+          "ma200_diff_pct": 7.44,
           "from_52w_high": null,
-          "bb_pct_b": 0.8853
+          "bb_pct_b": 0.7855
         },
         "value": {
-          "forward_pe": 17.322542,
-          "trailing_pe": 26.440737,
-          "ps_ratio": 2.3049893,
-          "pb_ratio": 10.609592,
-          "ev_ebitda": 14.046,
-          "peg_ratio": null,
-          "fcf_yield": 3.8,
-          "dividend_yield": 3.67
+          "forward_pe": 17.27493,
+          "trailing_pe": 24.751963,
+          "ps_ratio": 2.2580183,
+          "pb_ratio": 10.562031,
+          "ev_ebitda": 13.776,
+          "peg_ratio": 1.7,
+          "fcf_yield": 4.06,
+          "dividend_yield": 3.61
         },
         "quality": {
-          "roe": 42.85,
-          "roa": 9.05,
-          "gross_margin": 54.46,
-          "operating_margin": 14.07,
-          "profit_margin": 8.77,
-          "debt_to_equity": 258.081,
-          "current_ratio": 0.853
+          "roe": 43.88,
+          "roa": 9.09,
+          "gross_margin": 54.38,
+          "operating_margin": 16.96,
+          "profit_margin": 9.15,
+          "debt_to_equity": 244.837,
+          "current_ratio": 0.897
         },
         "growth": {
-          "revenue_growth": 5.6,
-          "earnings_growth": 67.5,
-          "eps_growth_fwd": 52.64,
-          "analyst_target_upside": 7.19
+          "revenue_growth": 8.5,
+          "earnings_growth": 27.8,
+          "eps_growth_fwd": 43.28,
+          "analyst_target_upside": 8.82
         },
         "risk": {
           "beta": 0.41,
-          "vol_20d": 20.33,
-          "vol_60d": 23.1,
+          "vol_20d": 20.3,
+          "vol_60d": 23.08,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.54,
-          "institutional_pct": 79.78,
-          "short_ratio": 3.4,
-          "short_pct_float": 1.75,
+          "volume_ratio": 1.15,
+          "institutional_pct": 79.91,
+          "short_ratio": 3.3,
+          "short_pct_float": 1.67,
           "insider_pct": 0.2
         }
       }
@@ -3347,20 +3364,20 @@
       "ticker": "SBUX",
       "name": "Starbucks",
       "sector": "Consumer Disc",
-      "price": 98.36,
-      "change_pct": 0.02,
-      "market_cap": 112061546496,
-      "composite_score": 44.3,
-      "grade": "D",
-      "rank": 40,
+      "price": 100.0,
+      "change_pct": 1.67,
+      "market_cap": 113929994240,
+      "composite_score": 45.2,
+      "grade": "C",
+      "rank": 39,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 53.0,
-        "value": 50.1,
+        "momentum": 51.4,
+        "value": 49.9,
         "quality": 26.7,
         "growth": 32.2,
-        "risk": 60.5,
-        "flow": 38.7
+        "risk": 61.6,
+        "flow": 45.6
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3370,33 +3387,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 70 — 과매수 구간, 단기 조정 가능성",
-        "최강 팩터: risk (60점)",
+        "RSI 94 — 과매수 구간, 단기 조정 가능성",
+        "최강 팩터: risk (62점)",
         "최약 팩터: quality (27점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 70.12,
-          "macd_histogram": 0.8187,
-          "return_1m": 0.81,
-          "return_3m": 8.61,
-          "return_6m": 22.87,
+          "rsi": 94.05,
+          "macd_histogram": 0.8512,
+          "return_1m": 7.92,
+          "return_3m": 7.9,
+          "return_6m": 22.34,
           "return_1y": null,
-          "ma20_diff_pct": 4.89,
-          "ma60_diff_pct": 2.84,
-          "ma200_diff_pct": 10.61,
+          "ma20_diff_pct": 6.41,
+          "ma60_diff_pct": 4.48,
+          "ma200_diff_pct": 12.42,
           "from_52w_high": null,
-          "bb_pct_b": 0.8069
+          "bb_pct_b": 0.8793
         },
         "value": {
-          "forward_pe": 33.261192,
-          "trailing_pe": 81.96667,
-          "ps_ratio": 2.9723206,
-          "pb_ratio": -13.356872,
-          "ev_ebitda": 25.288,
-          "peg_ratio": null,
-          "fcf_yield": -1.28,
-          "dividend_yield": 2.52
+          "forward_pe": 33.99129,
+          "trailing_pe": 83.33333,
+          "ps_ratio": 3.0218794,
+          "pb_ratio": -13.5795765,
+          "ev_ebitda": 25.641,
+          "peg_ratio": 1.72,
+          "fcf_yield": -1.26,
+          "dividend_yield": 2.48
         },
         "quality": {
           "roe": null,
@@ -3410,22 +3427,22 @@
         "growth": {
           "revenue_growth": 5.5,
           "earnings_growth": -62.5,
-          "eps_growth_fwd": 146.43,
-          "analyst_target_upside": 2.06
+          "eps_growth_fwd": 145.16,
+          "analyst_target_upside": 0.38
         },
         "risk": {
           "beta": 0.944,
-          "vol_20d": 35.69,
-          "vol_60d": 30.95,
+          "vol_20d": 34.18,
+          "vol_60d": 30.56,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.75,
+          "volume_ratio": 1.11,
           "institutional_pct": 84.67,
-          "short_ratio": 6.24,
-          "short_pct_float": 4.6,
+          "short_ratio": 5.28,
+          "short_pct_float": 4.21,
           "insider_pct": 0.13
         }
       }
@@ -3434,20 +3451,20 @@
       "ticker": "ABNB",
       "name": "Airbnb",
       "sector": "Consumer Disc",
-      "price": 137.81,
-      "change_pct": 0.22,
-      "market_cap": 82619023360,
-      "composite_score": 46.7,
+      "price": 141.55,
+      "change_pct": 2.71,
+      "market_cap": 84861206528,
+      "composite_score": 46.5,
       "grade": "C",
-      "rank": 36,
+      "rank": 34,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 52.2,
-        "value": 50.9,
-        "quality": 54.2,
-        "growth": 28.6,
+        "momentum": 50.4,
+        "value": 51.6,
+        "quality": 53.9,
+        "growth": 27.0,
         "risk": 52.9,
-        "flow": 38.3
+        "flow": 40.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3455,34 +3472,40 @@
         "emoji": "🟡",
         "color": "#ffd740"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "type": "OVERHEAT",
+          "severity": "warning",
+          "message": "과열 경고 — RSI 81, 볼린저밴드 상단 이탈"
+        }
+      ],
       "reasons": [
-        "RSI 60 — 강세 모멘텀 유지",
+        "RSI 81 — 과매수 구간, 단기 조정 가능성",
         "최강 팩터: quality (54점)",
-        "최약 팩터: growth (29점)"
+        "최약 팩터: growth (27점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 59.83,
-          "macd_histogram": 1.231,
-          "return_1m": 4.44,
-          "return_3m": 3.78,
-          "return_6m": 12.14,
+          "rsi": 81.24,
+          "macd_histogram": 1.5382,
+          "return_1m": 7.95,
+          "return_3m": 6.75,
+          "return_6m": 13.91,
           "return_1y": null,
-          "ma20_diff_pct": 6.5,
-          "ma60_diff_pct": 6.87,
-          "ma200_diff_pct": 7.61,
+          "ma20_diff_pct": 8.94,
+          "ma60_diff_pct": 9.66,
+          "ma200_diff_pct": 10.5,
           "from_52w_high": null,
-          "bb_pct_b": 0.9978
+          "bb_pct_b": 1.0782
         },
         "value": {
-          "forward_pe": 23.832212,
-          "trailing_pe": 34.196026,
-          "ps_ratio": 6.7493687,
-          "pb_ratio": 10.118209,
-          "ev_ebitda": 28.631,
-          "peg_ratio": null,
-          "fcf_yield": 4.29,
+          "forward_pe": 24.55449,
+          "trailing_pe": 35.12407,
+          "ps_ratio": 6.9325385,
+          "pb_ratio": 10.392805,
+          "ev_ebitda": 29.572,
+          "peg_ratio": 1.33,
+          "fcf_yield": 4.18,
           "dividend_yield": null
         },
         "quality": {
@@ -3497,22 +3520,22 @@
         "growth": {
           "revenue_growth": 12.0,
           "earnings_growth": -23.7,
-          "eps_growth_fwd": 43.49,
-          "analyst_target_upside": 5.73
+          "eps_growth_fwd": 43.05,
+          "analyst_target_upside": 2.94
         },
         "risk": {
           "beta": 1.16,
-          "vol_20d": 38.87,
-          "vol_60d": 37.83,
+          "vol_20d": 39.74,
+          "vol_60d": 37.97,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.75,
-          "institutional_pct": 87.08,
-          "short_ratio": 2.71,
-          "short_pct_float": 3.48,
+          "volume_ratio": 1.16,
+          "institutional_pct": 87.14,
+          "short_ratio": 3.79,
+          "short_pct_float": 3.47,
           "insider_pct": 1.36
         }
       }
@@ -3521,57 +3544,62 @@
       "ticker": "BKNG",
       "name": "Booking",
       "sector": "Consumer Disc",
-      "price": 184.56,
-      "change_pct": -0.61,
-      "market_cap": 146140823552,
-      "composite_score": 59.2,
-      "grade": "C",
-      "rank": 2,
+      "price": 192.01,
+      "change_pct": 4.04,
+      "market_cap": 152039981056,
+      "composite_score": 60.6,
+      "grade": "B",
+      "rank": 3,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 43.9,
-        "value": 70.6,
-        "quality": 64.0,
-        "growth": 69.4,
-        "risk": 49.6,
-        "flow": 58.7
+        "momentum": 44.9,
+        "value": 73.5,
+        "quality": 63.7,
+        "growth": 67.8,
+        "risk": 48.9,
+        "flow": 65.7
       },
-      "signal": "HOLD",
+      "signal": "BUY",
       "signal_info": {
-        "label": "Hold",
-        "emoji": "🟡",
-        "color": "#ffd740"
+        "label": "Buy",
+        "emoji": "🟢",
+        "color": "#66bb6a"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "type": "OVERHEAT",
+          "severity": "warning",
+          "message": "과열 경고 — RSI 77, 볼린저밴드 상단 이탈"
+        }
+      ],
       "reasons": [
-        "RSI 65 — 강세 모멘텀 유지",
-        "Forward P/E 14.8 — 저평가 영역",
-        "최강 팩터: value (71점)",
-        "최약 팩터: momentum (44점)"
+        "RSI 77 — 과매수 구간, 단기 조정 가능성",
+        "최강 팩터: value (74점)",
+        "최약 팩터: momentum (45점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 65.07,
-          "macd_histogram": 1.8287,
-          "return_1m": 3.86,
-          "return_3m": -10.84,
-          "return_6m": -12.25,
+          "rsi": 77.09,
+          "macd_histogram": 2.2423,
+          "return_1m": 9.56,
+          "return_3m": -7.35,
+          "return_6m": -5.13,
           "return_1y": null,
-          "ma20_diff_pct": 6.36,
-          "ma60_diff_pct": 4.36,
-          "ma200_diff_pct": -8.82,
+          "ma20_diff_pct": 10.02,
+          "ma60_diff_pct": 8.72,
+          "ma200_diff_pct": -5.06,
           "from_52w_high": null,
-          "bb_pct_b": 0.9354
+          "bb_pct_b": 1.0791
         },
         "value": {
-          "forward_pe": 14.7712755,
-          "trailing_pe": 27.837103,
-          "ps_ratio": 5.429313,
-          "pb_ratio": -26.380789,
-          "ev_ebitda": 14.762,
-          "peg_ratio": null,
-          "fcf_yield": 4.48,
-          "dividend_yield": 0.85
+          "forward_pe": 15.414949,
+          "trailing_pe": 29.004532,
+          "ps_ratio": 5.648474,
+          "pb_ratio": -27.445683,
+          "ev_ebitda": 15.257,
+          "peg_ratio": 0.79,
+          "fcf_yield": 4.31,
+          "dividend_yield": 0.82
         },
         "quality": {
           "roe": null,
@@ -3585,23 +3613,23 @@
         "growth": {
           "revenue_growth": 16.0,
           "earnings_growth": 38.4,
-          "eps_growth_fwd": 88.45,
-          "analyst_target_upside": 26.04
+          "eps_growth_fwd": 88.16,
+          "analyst_target_upside": 21.15
         },
         "risk": {
           "beta": 1.198,
-          "vol_20d": 37.46,
-          "vol_60d": 45.85,
+          "vol_20d": 38.69,
+          "vol_60d": 46.27,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.69,
-          "institutional_pct": 96.69,
-          "short_ratio": 1.71,
-          "short_pct_float": 3.02,
-          "insider_pct": 0.2
+          "volume_ratio": 1.01,
+          "institutional_pct": 96.92,
+          "short_ratio": 2.21,
+          "short_pct_float": 2.55,
+          "insider_pct": 0.19
         }
       }
     },
@@ -3609,20 +3637,20 @@
       "ticker": "CMCSA",
       "name": "Comcast",
       "sector": "Communication",
-      "price": 29.35,
-      "change_pct": 3.71,
-      "market_cap": 106948304896,
-      "composite_score": 50.5,
+      "price": 29.63,
+      "change_pct": 0.95,
+      "market_cap": 107968593920,
+      "composite_score": 50.7,
       "grade": "C",
       "rank": 21,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 40.9,
-        "value": 90.8,
-        "quality": 30.5,
+        "momentum": 42.1,
+        "value": 84.5,
+        "quality": 30.2,
         "growth": 16.5,
-        "risk": 69.6,
-        "flow": 44.8
+        "risk": 70.3,
+        "flow": 52.2
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3638,34 +3666,34 @@
         }
       ],
       "reasons": [
-        "RSI 61 — 강세 모멘텀 유지",
-        "Forward P/E 7.6 — 저평가 영역",
-        "최강 팩터: value (91점)",
+        "RSI 69 — 강세 모멘텀 유지",
+        "Forward P/E 7.7 — 저평가 영역",
+        "최강 팩터: value (84점)",
         "최약 팩터: growth (16점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 61.15,
-          "macd_histogram": 0.1531,
-          "return_1m": -1.29,
-          "return_3m": 4.47,
-          "return_6m": 6.88,
+          "rsi": 69.35,
+          "macd_histogram": 0.2204,
+          "return_1m": 4.92,
+          "return_3m": 5.73,
+          "return_6m": 8.88,
           "return_1y": null,
-          "ma20_diff_pct": 3.69,
-          "ma60_diff_pct": -0.95,
-          "ma200_diff_pct": 2.53,
+          "ma20_diff_pct": 4.5,
+          "ma60_diff_pct": -0.07,
+          "ma200_diff_pct": 3.56,
           "from_52w_high": null,
-          "bb_pct_b": 1.1317
+          "bb_pct_b": 1.132
         },
         "value": {
-          "forward_pe": 7.6240106,
-          "trailing_pe": 5.445269,
-          "ps_ratio": 0.86452913,
-          "pb_ratio": 1.0916462,
-          "ev_ebitda": 5.365,
-          "peg_ratio": null,
-          "fcf_yield": 5.23,
-          "dividend_yield": 4.66
+          "forward_pe": 7.72542,
+          "trailing_pe": 5.497217,
+          "ps_ratio": 0.87277675,
+          "pb_ratio": 1.1020606,
+          "ev_ebitda": 5.494,
+          "peg_ratio": 142.98,
+          "fcf_yield": 5.18,
+          "dividend_yield": 4.45
         },
         "quality": {
           "roe": 21.41,
@@ -3679,22 +3707,22 @@
         "growth": {
           "revenue_growth": 1.2,
           "earnings_growth": -52.5,
-          "eps_growth_fwd": -28.58,
-          "analyst_target_upside": 11.35
+          "eps_growth_fwd": -28.84,
+          "analyst_target_upside": 10.3
         },
         "risk": {
           "beta": 0.79,
-          "vol_20d": 20.52,
-          "vol_60d": 24.71,
+          "vol_20d": 20.2,
+          "vol_60d": 24.23,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.72,
-          "institutional_pct": 88.77,
-          "short_ratio": 2.91,
-          "short_pct_float": 1.94,
+          "volume_ratio": 0.9,
+          "institutional_pct": 89.05,
+          "short_ratio": 2.28,
+          "short_pct_float": 2.22,
           "insider_pct": 0.76
         }
       }
@@ -3703,20 +3731,20 @@
       "ticker": "TMUS",
       "name": "T-Mobile",
       "sector": "Communication",
-      "price": 197.12,
-      "change_pct": 3.64,
-      "market_cap": 220480012288,
-      "composite_score": 47.9,
+      "price": 197.67,
+      "change_pct": 0.28,
+      "market_cap": 221095198720,
+      "composite_score": 46.2,
       "grade": "C",
-      "rank": 33,
+      "rank": 36,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 31.0,
-        "value": 78.4,
+        "momentum": 33.6,
+        "value": 83.5,
         "quality": 29.1,
-        "growth": 44.9,
-        "risk": 68.1,
-        "flow": 31.3
+        "growth": 46.5,
+        "risk": 67.8,
+        "flow": 8.3
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3726,33 +3754,33 @@
       },
       "alerts": [],
       "reasons": [
-        "Forward P/E 14.2 — 저평가 영역",
-        "최강 팩터: value (78점)",
-        "최약 팩터: quality (29점)"
+        "Forward P/E 14.1 — 저평가 영역",
+        "최강 팩터: value (84점)",
+        "최약 팩터: flow (8점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 31.36,
-          "macd_histogram": -1.1945,
-          "return_1m": -7.61,
-          "return_3m": 3.15,
-          "return_6m": -13.24,
+          "rsi": 32.96,
+          "macd_histogram": -0.678,
+          "return_1m": -4.33,
+          "return_3m": 4.18,
+          "return_6m": -11.93,
           "return_1y": null,
-          "ma20_diff_pct": -2.85,
-          "ma60_diff_pct": -4.12,
-          "ma200_diff_pct": -9.21,
+          "ma20_diff_pct": -2.37,
+          "ma60_diff_pct": -3.96,
+          "ma200_diff_pct": -8.87,
           "from_52w_high": null,
-          "bb_pct_b": 0.313
+          "bb_pct_b": 0.3458
         },
         "value": {
-          "forward_pe": 14.157817,
-          "trailing_pe": 20.279835,
-          "ps_ratio": 2.496688,
-          "pb_ratio": 3.6855881,
-          "ev_ebitda": 10.214,
-          "peg_ratio": null,
-          "fcf_yield": 3.63,
-          "dividend_yield": 2.15
+          "forward_pe": 14.118792,
+          "trailing_pe": 20.31552,
+          "ps_ratio": 2.5036542,
+          "pb_ratio": 3.6958716,
+          "ev_ebitda": 10.233,
+          "peg_ratio": 0.76,
+          "fcf_yield": 3.62,
+          "dividend_yield": 2.06
         },
         "quality": {
           "roe": 18.18,
@@ -3766,22 +3794,22 @@
         "growth": {
           "revenue_growth": 11.3,
           "earnings_growth": -26.6,
-          "eps_growth_fwd": 43.24,
-          "analyst_target_upside": 36.13
+          "eps_growth_fwd": 43.89,
+          "analyst_target_upside": 35.75
         },
         "risk": {
           "beta": 0.422,
-          "vol_20d": 23.03,
+          "vol_20d": 23.09,
           "vol_60d": 27.01,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.93,
+          "volume_ratio": 0.81,
           "institutional_pct": 42.46,
-          "short_ratio": 2.24,
-          "short_pct_float": 2.8,
+          "short_ratio": 3.92,
+          "short_pct_float": 5.0,
           "insider_pct": 55.81
         }
       }
@@ -3790,20 +3818,20 @@
       "ticker": "HON",
       "name": "Honeywell",
       "sector": "Industrials",
-      "price": 229.38,
-      "change_pct": -1.21,
-      "market_cap": 145347362816,
-      "composite_score": 51.0,
+      "price": 233.55,
+      "change_pct": 1.82,
+      "market_cap": 147989692416,
+      "composite_score": 49.7,
       "grade": "C",
-      "rank": 19,
+      "rank": 26,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 53.4,
-        "value": 60.0,
-        "quality": 29.6,
-        "growth": 27.8,
+        "momentum": 52.4,
+        "value": 57.4,
+        "quality": 28.9,
+        "growth": 25.6,
         "risk": 67.8,
-        "flow": 63.5
+        "flow": 63.0
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3813,34 +3841,34 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 56 — 강세 모멘텀 유지",
+        "RSI 65 — 강세 모멘텀 유지",
         "매출 성장률 -3.3% — 역성장 우려",
         "최강 팩터: risk (68점)",
-        "최약 팩터: growth (28점)"
+        "최약 팩터: growth (26점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 56.4,
-          "macd_histogram": 0.6431,
-          "return_1m": -0.88,
-          "return_3m": 8.2,
-          "return_6m": 17.95,
+          "rsi": 64.9,
+          "macd_histogram": 0.6746,
+          "return_1m": 1.58,
+          "return_3m": 9.16,
+          "return_6m": 23.71,
           "return_1y": null,
-          "ma20_diff_pct": 0.6,
-          "ma60_diff_pct": -1.38,
-          "ma200_diff_pct": 9.11,
+          "ma20_diff_pct": 2.32,
+          "ma60_diff_pct": 0.31,
+          "ma200_diff_pct": 11.06,
           "from_52w_high": null,
-          "bb_pct_b": 0.5737
+          "bb_pct_b": 0.7781
         },
         "value": {
-          "forward_pe": 19.995502,
-          "trailing_pe": 33.051872,
-          "ps_ratio": 3.881934,
-          "pb_ratio": 10.480673,
-          "ev_ebitda": 20.025,
-          "peg_ratio": null,
-          "fcf_yield": 3.21,
-          "dividend_yield": 2.05
+          "forward_pe": 20.363838,
+          "trailing_pe": 33.652737,
+          "ps_ratio": 3.952505,
+          "pb_ratio": 10.6712055,
+          "ev_ebitda": 20.338,
+          "peg_ratio": 2.12,
+          "fcf_yield": 3.15,
+          "dividend_yield": 2.04
         },
         "quality": {
           "roe": 26.14,
@@ -3854,22 +3882,22 @@
         "growth": {
           "revenue_growth": -3.3,
           "earnings_growth": -76.4,
-          "eps_growth_fwd": 65.3,
-          "analyst_target_upside": 9.64
+          "eps_growth_fwd": 65.26,
+          "analyst_target_upside": 7.69
         },
         "risk": {
           "beta": 0.915,
-          "vol_20d": 23.71,
-          "vol_60d": 23.14,
+          "vol_20d": 24.51,
+          "vol_60d": 23.12,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.81,
-          "institutional_pct": 80.98,
-          "short_ratio": 2.56,
-          "short_pct_float": 1.43,
+          "volume_ratio": 1.11,
+          "institutional_pct": 81.23,
+          "short_ratio": 2.78,
+          "short_pct_float": 1.74,
           "insider_pct": 0.07
         }
       }
@@ -3878,20 +3906,20 @@
       "ticker": "GE",
       "name": "GE Aerospace",
       "sector": "Industrials",
-      "price": 298.29,
-      "change_pct": -4.98,
-      "market_cap": 314640433152,
-      "composite_score": 46.8,
+      "price": 304.13,
+      "change_pct": 1.96,
+      "market_cap": 320800555008,
+      "composite_score": 45.3,
       "grade": "C",
-      "rank": 35,
+      "rank": 38,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 49.2,
-        "value": 38.4,
-        "quality": 34.7,
-        "growth": 48.7,
-        "risk": 44.2,
-        "flow": 67.8
+        "momentum": 47.6,
+        "value": 32.2,
+        "quality": 34.4,
+        "growth": 47.1,
+        "risk": 44.6,
+        "flow": 69.6
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3901,33 +3929,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 56 — 강세 모멘텀 유지",
-        "최강 팩터: flow (68점)",
-        "최약 팩터: quality (35점)"
+        "RSI 59 — 강세 모멘텀 유지",
+        "최강 팩터: flow (70점)",
+        "최약 팩터: value (32점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 55.99,
-          "macd_histogram": 3.0412,
-          "return_1m": -1.26,
-          "return_3m": -6.32,
-          "return_6m": -0.34,
+          "rsi": 59.48,
+          "macd_histogram": 2.4731,
+          "return_1m": 1.05,
+          "return_3m": -4.8,
+          "return_6m": 1.6,
           "return_1y": null,
-          "ma20_diff_pct": 1.03,
-          "ma60_diff_pct": -3.88,
-          "ma200_diff_pct": 0.9,
+          "ma20_diff_pct": 2.79,
+          "ma60_diff_pct": -1.92,
+          "ma200_diff_pct": 2.78,
           "from_52w_high": null,
-          "bb_pct_b": 0.5597
+          "bb_pct_b": 0.6604
         },
         "value": {
-          "forward_pe": 34.62389,
-          "trailing_pe": 37.100746,
-          "ps_ratio": 6.8616385,
-          "pb_ratio": 16.749397,
-          "ev_ebitda": 31.677,
-          "peg_ratio": null,
-          "fcf_yield": 1.66,
-          "dividend_yield": 0.6
+          "forward_pe": 35.25928,
+          "trailing_pe": 37.73325,
+          "ps_ratio": 6.995978,
+          "pb_ratio": 17.07732,
+          "ev_ebitda": 30.717,
+          "peg_ratio": 5.24,
+          "fcf_yield": 1.62,
+          "dividend_yield": 0.62
         },
         "quality": {
           "roe": 44.69,
@@ -3941,20 +3969,20 @@
         "growth": {
           "revenue_growth": 17.6,
           "earnings_growth": 37.4,
-          "eps_growth_fwd": 7.15,
-          "analyst_target_upside": 17.55
+          "eps_growth_fwd": 7.02,
+          "analyst_target_upside": 15.3
         },
         "risk": {
           "beta": 1.428,
-          "vol_20d": 48.23,
+          "vol_20d": 47.24,
           "vol_60d": 40.24,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 1.03,
-          "institutional_pct": 81.11,
+          "volume_ratio": 1.34,
+          "institutional_pct": 81.27,
           "short_ratio": 2.16,
           "short_pct_float": 1.17,
           "insider_pct": 0.31
@@ -3965,20 +3993,20 @@
       "ticker": "CAT",
       "name": "Caterpillar",
       "sector": "Industrials",
-      "price": 772.66,
-      "change_pct": 0.32,
-      "market_cap": 361589080064,
-      "composite_score": 46.5,
+      "price": 794.65,
+      "change_pct": 2.85,
+      "market_cap": 371880001536,
+      "composite_score": 47.7,
       "grade": "C",
-      "rank": 37,
+      "rank": 32,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 68.2,
-        "value": 41.9,
-        "quality": 38.1,
-        "growth": 36.8,
+        "momentum": 68.6,
+        "value": 38.2,
+        "quality": 37.2,
+        "growth": 37.9,
         "risk": 46.0,
-        "flow": 42.2
+        "flow": 54.8
       },
       "signal": "HOLD",
       "signal_info": {
@@ -3988,33 +4016,33 @@
       },
       "alerts": [],
       "reasons": [
-        "RSI 66 — 강세 모멘텀 유지",
-        "최강 팩터: momentum (68점)",
-        "최약 팩터: growth (37점)"
+        "RSI 72 — 과매수 구간, 단기 조정 가능성",
+        "최강 팩터: momentum (69점)",
+        "최약 팩터: quality (37점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 66.13,
-          "macd_histogram": 6.1446,
-          "return_1m": 10.07,
-          "return_3m": 21.25,
-          "return_6m": 47.25,
+          "rsi": 71.62,
+          "macd_histogram": 5.9608,
+          "return_1m": 14.57,
+          "return_3m": 23.07,
+          "return_6m": 49.57,
           "return_1y": null,
-          "ma20_diff_pct": 5.46,
-          "ma60_diff_pct": 7.48,
-          "ma200_diff_pct": 36.47,
+          "ma20_diff_pct": 7.69,
+          "ma60_diff_pct": 10.16,
+          "ma200_diff_pct": 39.85,
           "from_52w_high": null,
-          "bb_pct_b": 0.745
+          "bb_pct_b": 0.84
         },
         "value": {
-          "forward_pe": 27.774523,
-          "trailing_pe": 41.120804,
-          "ps_ratio": 5.349821,
-          "pb_ratio": 16.864044,
-          "ev_ebitda": 28.238,
-          "peg_ratio": null,
-          "fcf_yield": 1.61,
-          "dividend_yield": 0.78
+          "forward_pe": 28.564991,
+          "trailing_pe": 42.201275,
+          "ps_ratio": 5.5020785,
+          "pb_ratio": 17.344,
+          "ev_ebitda": 28.971,
+          "peg_ratio": 2.13,
+          "fcf_yield": 1.57,
+          "dividend_yield": 0.76
         },
         "quality": {
           "roe": 43.53,
@@ -4028,20 +4056,20 @@
         "growth": {
           "revenue_growth": 18.0,
           "earnings_growth": -11.4,
-          "eps_growth_fwd": 48.05,
-          "analyst_target_upside": -2.37
+          "eps_growth_fwd": 47.74,
+          "analyst_target_upside": -4.43
         },
         "risk": {
           "beta": 1.519,
-          "vol_20d": 42.85,
-          "vol_60d": 39.65,
+          "vol_20d": 43.29,
+          "vol_60d": 39.72,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.68,
-          "institutional_pct": 72.6,
+          "volume_ratio": 1.17,
+          "institutional_pct": 72.55,
           "short_ratio": 2.94,
           "short_pct_float": 1.71,
           "insider_pct": 0.22
@@ -4052,20 +4080,20 @@
       "ticker": "XOM",
       "name": "ExxonMobil",
       "sector": "Energy",
-      "price": 151.98,
-      "change_pct": 1.99,
-      "market_cap": 631713890304,
-      "composite_score": 50.0,
+      "price": 146.44,
+      "change_pct": -3.65,
+      "market_cap": 608686571520,
+      "composite_score": 51.5,
       "grade": "C",
-      "rank": 25,
+      "rank": 19,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 45.3,
-        "value": 77.1,
-        "quality": 26.6,
-        "growth": 28.7,
-        "risk": 65.2,
-        "flow": 49.6
+        "momentum": 37.8,
+        "value": 79.5,
+        "quality": 26.3,
+        "growth": 34.1,
+        "risk": 64.1,
+        "flow": 62.6
       },
       "signal": "HOLD",
       "signal_info": {
@@ -4075,33 +4103,35 @@
       },
       "alerts": [],
       "reasons": [
+        "RSI 18 — 과매도 구간, 반등 가능성",
+        "Forward P/E 14.4 — 저평가 영역",
         "매출 성장률 -1.3% — 역성장 우려",
-        "최강 팩터: value (77점)",
-        "최약 팩터: quality (27점)"
+        "최강 팩터: value (80점)",
+        "최약 팩터: quality (26점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 32.38,
-          "macd_histogram": -2.1195,
-          "return_1m": -4.3,
-          "return_3m": 17.51,
-          "return_6m": 37.44,
+          "rsi": 17.82,
+          "macd_histogram": -2.2085,
+          "return_1m": -7.08,
+          "return_3m": 14.16,
+          "return_6m": 33.24,
           "return_1y": null,
-          "ma20_diff_pct": -5.03,
-          "ma60_diff_pct": 0.24,
-          "ma200_diff_pct": 22.03,
+          "ma20_diff_pct": -8.15,
+          "ma60_diff_pct": -3.56,
+          "ma200_diff_pct": 17.39,
           "from_52w_high": null,
-          "bb_pct_b": 0.2072
+          "bb_pct_b": 0.0672
         },
         "value": {
-          "forward_pe": 15.271686,
-          "trailing_pe": 22.649776,
-          "ps_ratio": 1.950306,
-          "pb_ratio": 2.4485652,
-          "ev_ebitda": 11.247,
-          "peg_ratio": null,
-          "fcf_yield": 1.94,
-          "dividend_yield": 2.76
+          "forward_pe": 14.426235,
+          "trailing_pe": 21.824142,
+          "ps_ratio": 1.8792133,
+          "pb_ratio": 2.35931,
+          "ev_ebitda": 11.067,
+          "peg_ratio": 1.34,
+          "fcf_yield": 2.01,
+          "dividend_yield": 2.81
         },
         "quality": {
           "roe": 11.08,
@@ -4115,20 +4145,20 @@
         "growth": {
           "revenue_growth": -1.3,
           "earnings_growth": -11.0,
-          "eps_growth_fwd": 48.31,
-          "analyst_target_upside": 7.99
+          "eps_growth_fwd": 51.28,
+          "analyst_target_upside": 12.53
         },
         "risk": {
           "beta": 0.288,
-          "vol_20d": 34.31,
-          "vol_60d": 29.33,
+          "vol_20d": 36.38,
+          "vol_60d": 30.07,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.59,
-          "institutional_pct": 67.62,
+          "volume_ratio": 1.13,
+          "institutional_pct": 67.66,
           "short_ratio": 2.13,
           "short_pct_float": 1.43,
           "insider_pct": 0.09
@@ -4139,54 +4169,54 @@
       "ticker": "CEG",
       "name": "Constellation Energy",
       "sector": "Energy",
-      "price": 299.14,
-      "change_pct": 1.5,
-      "market_cap": 108376825856,
-      "composite_score": 43.7,
+      "price": 296.21,
+      "change_pct": -0.98,
+      "market_cap": 107315298304,
+      "composite_score": 39.5,
       "grade": "D",
-      "rank": 43,
+      "rank": 45,
       "total_count": 47,
       "factor_scores": {
-        "momentum": 46.4,
-        "value": 49.6,
-        "quality": 23.0,
-        "growth": 50.8,
+        "momentum": 39.9,
+        "value": 44.6,
+        "quality": 22.7,
+        "growth": 52.4,
         "risk": 42.4,
-        "flow": 46.9
+        "flow": 33.0
       },
-      "signal": "HOLD",
+      "signal": "SELL",
       "signal_info": {
-        "label": "Hold",
-        "emoji": "🟡",
-        "color": "#ffd740"
+        "label": "Sell",
+        "emoji": "🔴",
+        "color": "#ff5252"
       },
       "alerts": [],
       "reasons": [
-        "최강 팩터: growth (51점)",
+        "최강 팩터: growth (52점)",
         "최약 팩터: quality (23점)"
       ],
       "factors_raw": {
         "momentum": {
-          "rsi": 52.51,
-          "macd_histogram": 2.1187,
-          "return_1m": -2.78,
-          "return_3m": -9.33,
-          "return_6m": -23.02,
+          "rsi": 46.49,
+          "macd_histogram": 2.2136,
+          "return_1m": -6.62,
+          "return_3m": -13.07,
+          "return_6m": -26.49,
           "return_1y": null,
-          "ma20_diff_pct": 3.26,
-          "ma60_diff_pct": 1.78,
-          "ma200_diff_pct": -8.6,
+          "ma20_diff_pct": 2.6,
+          "ma60_diff_pct": 0.77,
+          "ma200_diff_pct": -9.48,
           "from_52w_high": null,
-          "bb_pct_b": 0.7041
+          "bb_pct_b": 0.6909
         },
         "value": {
-          "forward_pe": 21.774467,
-          "trailing_pe": 40.424324,
-          "ps_ratio": 4.244579,
-          "pb_ratio": 6.4364405,
-          "ev_ebitda": 20.326,
-          "peg_ratio": null,
-          "fcf_yield": 1.16,
+          "forward_pe": 21.56119,
+          "trailing_pe": 39.974358,
+          "ps_ratio": 4.203004,
+          "pb_ratio": 6.3733964,
+          "ev_ebitda": 20.138,
+          "peg_ratio": 3.74,
+          "fcf_yield": 1.17,
           "dividend_yield": 0.58
         },
         "quality": {
@@ -4201,22 +4231,22 @@
         "growth": {
           "revenue_growth": 12.9,
           "earnings_growth": -48.9,
-          "eps_growth_fwd": 85.65,
-          "analyst_target_upside": 24.79
+          "eps_growth_fwd": 85.4,
+          "analyst_target_upside": 26.02
         },
         "risk": {
           "beta": 1.188,
-          "vol_20d": 55.55,
-          "vol_60d": 48.54,
+          "vol_20d": 55.62,
+          "vol_60d": 48.58,
           "max_drawdown": null,
           "sharpe": null,
           "sortino": null
         },
         "flow": {
-          "volume_ratio": 0.91,
-          "institutional_pct": 78.88,
-          "short_ratio": 2.66,
-          "short_pct_float": 2.9,
+          "volume_ratio": 0.75,
+          "institutional_pct": 78.97,
+          "short_ratio": 3.09,
+          "short_pct_float": 2.94,
           "insider_pct": 0.35
         }
       }
@@ -4228,20 +4258,20 @@
         "ticker": "MU",
         "name": "Micron",
         "sector": "Technology",
-        "price": 457.23,
-        "change_pct": 0.22,
-        "market_cap": 515633840128,
-        "composite_score": 62.7,
+        "price": 455.07,
+        "change_pct": -0.47,
+        "market_cap": 513197932544,
+        "composite_score": 64.1,
         "grade": "B",
         "rank": 1,
         "total_count": 47,
         "factor_scores": {
-          "momentum": 70.0,
-          "value": 54.1,
+          "momentum": 70.6,
+          "value": 60.1,
           "quality": 83.0,
-          "growth": 87.5,
+          "growth": 89.7,
           "risk": 29.0,
-          "flow": 53.0
+          "flow": 51.3
         },
         "signal": "BUY",
         "signal_info": {
@@ -4251,33 +4281,33 @@
         },
         "alerts": [],
         "reasons": [
-          "RSI 76 — 과매수 구간, 단기 조정 가능성",
-          "Forward P/E 4.6 — 저평가 영역",
+          "RSI 75 — 과매수 구간, 단기 조정 가능성",
+          "Forward P/E 4.5 — 저평가 영역",
           "매출 성장률 196.3% — 고성장",
-          "최강 팩터: growth (88점)",
+          "최강 팩터: growth (90점)",
           "최약 팩터: risk (29점)"
         ],
         "factors_raw": {
           "momentum": {
-            "rsi": 75.9,
-            "macd_histogram": 10.0889,
-            "return_1m": -0.92,
-            "return_3m": 37.22,
-            "return_6m": 144.63,
+            "rsi": 74.86,
+            "macd_histogram": 9.4276,
+            "return_1m": -1.4,
+            "return_3m": 35.24,
+            "return_6m": 137.29,
             "return_1y": null,
-            "ma20_diff_pct": 14.82,
-            "ma60_diff_pct": 12.59,
-            "ma200_diff_pct": 78.33,
+            "ma20_diff_pct": 14.12,
+            "ma60_diff_pct": 11.75,
+            "ma200_diff_pct": 76.34,
             "from_52w_high": null,
-            "bb_pct_b": 0.8588
+            "bb_pct_b": 0.8365
           },
           "value": {
-            "forward_pe": 4.6092277,
-            "trailing_pe": 21.598017,
-            "ps_ratio": 8.872036,
-            "pb_ratio": 7.117861,
-            "ev_ebitda": 13.877,
-            "peg_ratio": null,
+            "forward_pe": 4.5023613,
+            "trailing_pe": 21.455446,
+            "ps_ratio": 8.830123,
+            "pb_ratio": 7.084235,
+            "ev_ebitda": 13.841,
+            "peg_ratio": 0.26,
             "fcf_yield": 0.56,
             "dividend_yield": 0.13
           },
@@ -4293,23 +4323,204 @@
           "growth": {
             "revenue_growth": 196.3,
             "earnings_growth": 756.0,
-            "eps_growth_fwd": 368.58,
-            "analyst_target_upside": 16.73
+            "eps_growth_fwd": 376.54,
+            "analyst_target_upside": 17.28
           },
           "risk": {
             "beta": 1.606,
-            "vol_20d": 81.12,
-            "vol_60d": 72.25,
+            "vol_20d": 79.87,
+            "vol_60d": 71.13,
             "max_drawdown": null,
             "sharpe": null,
             "sortino": null
           },
           "flow": {
-            "volume_ratio": 0.64,
-            "institutional_pct": 82.36,
-            "short_ratio": 1.0,
-            "short_pct_float": 2.62,
-            "insider_pct": 0.26
+            "volume_ratio": 0.67,
+            "institutional_pct": 83.28,
+            "short_ratio": 0.7,
+            "short_pct_float": 2.79,
+            "insider_pct": 0.27
+          }
+        }
+      },
+      {
+        "ticker": "GILD",
+        "name": "Gilead",
+        "sector": "Healthcare",
+        "price": 137.64,
+        "change_pct": -0.66,
+        "market_cap": 170839277568,
+        "composite_score": 61.3,
+        "grade": "B",
+        "rank": 2,
+        "total_count": 47,
+        "factor_scores": {
+          "momentum": 46.8,
+          "value": 79.4,
+          "quality": 64.2,
+          "growth": 37.4,
+          "risk": 69.6,
+          "flow": 69.1
+        },
+        "signal": "BUY",
+        "signal_info": {
+          "label": "Buy",
+          "emoji": "🟢",
+          "color": "#66bb6a"
+        },
+        "alerts": [],
+        "reasons": [
+          "RSI 59 — 강세 모멘텀 유지",
+          "Forward P/E 14.3 — 저평가 영역",
+          "최강 팩터: value (79점)",
+          "최약 팩터: growth (37점)"
+        ],
+        "factors_raw": {
+          "momentum": {
+            "rsi": 58.9,
+            "macd_histogram": 0.0577,
+            "return_1m": -2.58,
+            "return_3m": 14.15,
+            "return_6m": 17.78,
+            "return_1y": null,
+            "ma20_diff_pct": -0.79,
+            "ma60_diff_pct": -3.92,
+            "ma200_diff_pct": 10.51,
+            "from_52w_high": null,
+            "bb_pct_b": 0.351
+          },
+          "value": {
+            "forward_pe": 14.309759,
+            "trailing_pe": 20.270987,
+            "ps_ratio": 5.8023734,
+            "pb_ratio": 7.52419,
+            "ev_ebitda": 12.809,
+            "peg_ratio": 0.38,
+            "fcf_yield": 4.41,
+            "dividend_yield": 2.38
+          },
+          "quality": {
+            "roe": 40.66,
+            "roa": 12.52,
+            "gross_margin": 78.84,
+            "operating_margin": 37.38,
+            "profit_margin": 28.9,
+            "debt_to_equity": 112.923,
+            "current_ratio": 1.553
+          },
+          "growth": {
+            "revenue_growth": 4.7,
+            "earnings_growth": 23.4,
+            "eps_growth_fwd": 41.66,
+            "analyst_target_upside": 15.05
+          },
+          "risk": {
+            "beta": 0.404,
+            "vol_20d": 20.81,
+            "vol_60d": 27.18,
+            "max_drawdown": null,
+            "sharpe": null,
+            "sortino": null
+          },
+          "flow": {
+            "volume_ratio": 1.25,
+            "institutional_pct": 92.68,
+            "short_ratio": 3.56,
+            "short_pct_float": 1.74,
+            "insider_pct": 0.12
+          }
+        }
+      },
+      {
+        "ticker": "BKNG",
+        "name": "Booking",
+        "sector": "Consumer Disc",
+        "price": 192.01,
+        "change_pct": 4.04,
+        "market_cap": 152039981056,
+        "composite_score": 60.6,
+        "grade": "B",
+        "rank": 3,
+        "total_count": 47,
+        "factor_scores": {
+          "momentum": 44.9,
+          "value": 73.5,
+          "quality": 63.7,
+          "growth": 67.8,
+          "risk": 48.9,
+          "flow": 65.7
+        },
+        "signal": "BUY",
+        "signal_info": {
+          "label": "Buy",
+          "emoji": "🟢",
+          "color": "#66bb6a"
+        },
+        "alerts": [
+          {
+            "type": "OVERHEAT",
+            "severity": "warning",
+            "message": "과열 경고 — RSI 77, 볼린저밴드 상단 이탈"
+          }
+        ],
+        "reasons": [
+          "RSI 77 — 과매수 구간, 단기 조정 가능성",
+          "최강 팩터: value (74점)",
+          "최약 팩터: momentum (45점)"
+        ],
+        "factors_raw": {
+          "momentum": {
+            "rsi": 77.09,
+            "macd_histogram": 2.2423,
+            "return_1m": 9.56,
+            "return_3m": -7.35,
+            "return_6m": -5.13,
+            "return_1y": null,
+            "ma20_diff_pct": 10.02,
+            "ma60_diff_pct": 8.72,
+            "ma200_diff_pct": -5.06,
+            "from_52w_high": null,
+            "bb_pct_b": 1.0791
+          },
+          "value": {
+            "forward_pe": 15.414949,
+            "trailing_pe": 29.004532,
+            "ps_ratio": 5.648474,
+            "pb_ratio": -27.445683,
+            "ev_ebitda": 15.257,
+            "peg_ratio": 0.79,
+            "fcf_yield": 4.31,
+            "dividend_yield": 0.82
+          },
+          "quality": {
+            "roe": null,
+            "roa": 20.82,
+            "gross_margin": 87.36,
+            "operating_margin": 32.45,
+            "profit_margin": 20.08,
+            "debt_to_equity": null,
+            "current_ratio": 1.333
+          },
+          "growth": {
+            "revenue_growth": 16.0,
+            "earnings_growth": 38.4,
+            "eps_growth_fwd": 88.16,
+            "analyst_target_upside": 21.15
+          },
+          "risk": {
+            "beta": 1.198,
+            "vol_20d": 38.69,
+            "vol_60d": 46.27,
+            "max_drawdown": null,
+            "sharpe": null,
+            "sortino": null
+          },
+          "flow": {
+            "volume_ratio": 1.01,
+            "institutional_pct": 96.92,
+            "short_ratio": 2.21,
+            "short_pct_float": 2.55,
+            "insider_pct": 0.19
           }
         }
       }
@@ -4319,20 +4530,20 @@
         "ticker": "TSLA",
         "name": "Tesla",
         "sector": "Technology",
-        "price": 388.9,
-        "change_pct": -0.78,
-        "market_cap": 1459320782848,
-        "composite_score": 34.5,
+        "price": 400.62,
+        "change_pct": 3.01,
+        "market_cap": 1503299239936,
+        "composite_score": 33.4,
         "grade": "D",
         "rank": 47,
         "total_count": 47,
         "factor_scores": {
-          "momentum": 45.5,
-          "value": 17.9,
+          "momentum": 46.2,
+          "value": 12.0,
           "quality": 26.6,
-          "growth": 31.7,
+          "growth": 30.0,
           "risk": 39.5,
-          "flow": 47.8
+          "flow": 49.1
         },
         "signal": "SELL",
         "signal_info": {
@@ -4342,34 +4553,34 @@
         },
         "alerts": [],
         "reasons": [
-          "RSI 56 — 강세 모멘텀 유지",
-          "Forward P/E 140.3 — 고평가 주의",
+          "RSI 64 — 강세 모멘텀 유지",
+          "Forward P/E 145.5 — 고평가 주의",
           "매출 성장률 -3.1% — 역성장 우려",
-          "최강 팩터: flow (48점)",
-          "최약 팩터: value (18점)"
+          "최강 팩터: flow (49점)",
+          "최약 팩터: value (12점)"
         ],
         "factors_raw": {
           "momentum": {
-            "rsi": 56.33,
-            "macd_histogram": 4.646,
-            "return_1m": -2.6,
-            "return_3m": -11.45,
-            "return_6m": -9.4,
+            "rsi": 64.47,
+            "macd_histogram": 6.1695,
+            "return_1m": 2.0,
+            "return_3m": -8.65,
+            "return_6m": -7.94,
             "return_1y": null,
-            "ma20_diff_pct": 6.03,
-            "ma60_diff_pct": -2.12,
-            "ma200_diff_pct": -2.38,
+            "ma20_diff_pct": 8.92,
+            "ma60_diff_pct": 0.96,
+            "ma200_diff_pct": 0.44,
             "from_52w_high": null,
-            "bb_pct_b": 0.8506
+            "bb_pct_b": 0.975
           },
           "value": {
-            "forward_pe": 140.30594,
-            "trailing_pe": 353.54544,
-            "ps_ratio": 15.389296,
-            "pb_ratio": 17.760424,
-            "ev_ebitda": 136.219,
-            "peg_ratio": null,
-            "fcf_yield": 0.26,
+            "forward_pe": 145.4885,
+            "trailing_pe": 370.94443,
+            "ps_ratio": 15.853071,
+            "pb_ratio": 18.295658,
+            "ev_ebitda": 140.406,
+            "peg_ratio": 5.87,
+            "fcf_yield": 0.25,
             "dividend_yield": null
           },
           "quality": {
@@ -4384,22 +4595,22 @@
           "growth": {
             "revenue_growth": -3.1,
             "earnings_growth": -60.6,
-            "eps_growth_fwd": 151.98,
-            "analyst_target_upside": 6.61
+            "eps_growth_fwd": 154.96,
+            "analyst_target_upside": 3.49
           },
           "risk": {
             "beta": 1.915,
-            "vol_20d": 50.97,
-            "vol_60d": 40.01,
+            "vol_20d": 50.59,
+            "vol_60d": 40.04,
             "max_drawdown": null,
             "sharpe": null,
             "sortino": null
           },
           "flow": {
-            "volume_ratio": 0.92,
-            "institutional_pct": 44.67,
-            "short_ratio": 1.05,
-            "short_pct_float": 1.82,
+            "volume_ratio": 1.29,
+            "institutional_pct": 44.68,
+            "short_ratio": 1.06,
+            "short_pct_float": 1.97,
             "insider_pct": 11.13
           }
         }
@@ -4408,20 +4619,20 @@
         "ticker": "COIN",
         "name": "Coinbase",
         "sector": "Financials",
-        "price": 199.82,
-        "change_pct": 2.0,
-        "market_cap": 53884329984,
-        "composite_score": 38.5,
+        "price": 206.33,
+        "change_pct": 3.25,
+        "market_cap": 55638454272,
+        "composite_score": 39.2,
         "grade": "D",
         "rank": 46,
         "total_count": 47,
         "factor_scores": {
-          "momentum": 38.1,
-          "value": 44.8,
+          "momentum": 39.9,
+          "value": 48.5,
           "quality": 44.5,
-          "growth": 32.6,
+          "growth": 28.8,
           "risk": 26.1,
-          "flow": 43.0
+          "flow": 43.9
         },
         "signal": "SELL",
         "signal_info": {
@@ -4433,37 +4644,38 @@
           {
             "type": "HIGH_SHORT",
             "severity": "warning",
-            "message": "공매도 비율 높음 — 유통주식 대비 11.5%"
+            "message": "공매도 비율 높음 — 유통주식 대비 12.2%"
           }
         ],
         "reasons": [
-          "RSI 68 — 강세 모멘텀 유지",
+          "RSI 84 — 과매수 구간, 단기 조정 가능성",
+          "Forward P/E 40.2 — 고평가 주의",
           "매출 성장률 -22.2% — 역성장 우려",
-          "최강 팩터: value (45점)",
+          "최강 팩터: value (48점)",
           "최약 팩터: risk (26점)"
         ],
         "factors_raw": {
           "momentum": {
-            "rsi": 68.22,
-            "macd_histogram": 2.9951,
-            "return_1m": -4.95,
-            "return_3m": -21.9,
-            "return_6m": -41.49,
+            "rsi": 83.8,
+            "macd_histogram": 3.9484,
+            "return_1m": 2.0,
+            "return_3m": -13.77,
+            "return_6m": -38.65,
             "return_1y": null,
-            "ma20_diff_pct": 11.2,
-            "ma60_diff_pct": 8.66,
-            "ma200_diff_pct": -26.99,
+            "ma20_diff_pct": 14.71,
+            "ma60_diff_pct": 12.41,
+            "ma200_diff_pct": -24.44,
             "from_52w_high": null,
-            "bb_pct_b": 0.8867
+            "bb_pct_b": 0.9955
           },
           "value": {
-            "forward_pe": 37.635296,
-            "trailing_pe": 44.904495,
-            "ps_ratio": 7.8281126,
-            "pb_ratio": 3.6179209,
-            "ev_ebitda": 29.34,
-            "peg_ratio": null,
-            "fcf_yield": 2.41,
+            "forward_pe": 40.173206,
+            "trailing_pe": 46.262333,
+            "ps_ratio": 8.082946,
+            "pb_ratio": 3.7356968,
+            "ev_ebitda": 30.368,
+            "peg_ratio": 0.79,
+            "fcf_yield": 2.33,
             "dividend_yield": null
           },
           "quality": {
@@ -4478,44 +4690,44 @@
           "growth": {
             "revenue_growth": -22.2,
             "earnings_growth": null,
-            "eps_growth_fwd": 19.31,
-            "analyst_target_upside": 19.06
+            "eps_growth_fwd": 15.16,
+            "analyst_target_upside": 15.8
           },
           "risk": {
             "beta": 3.606,
-            "vol_20d": 68.67,
-            "vol_60d": 86.75,
+            "vol_20d": 69.62,
+            "vol_60d": 87.01,
             "max_drawdown": null,
             "sharpe": null,
             "sortino": null
           },
           "flow": {
-            "volume_ratio": 1.02,
-            "institutional_pct": 68.95,
-            "short_ratio": 1.59,
-            "short_pct_float": 11.51,
+            "volume_ratio": 1.41,
+            "institutional_pct": 68.92,
+            "short_ratio": 1.89,
+            "short_pct_float": 12.24,
             "insider_pct": 1.32
           }
         }
       },
       {
-        "ticker": "MRNA",
-        "name": "Moderna",
-        "sector": "Healthcare",
-        "price": 54.68,
-        "change_pct": 0.77,
-        "market_cap": 21685368832,
-        "composite_score": 39.9,
+        "ticker": "CEG",
+        "name": "Constellation Energy",
+        "sector": "Energy",
+        "price": 296.21,
+        "change_pct": -0.98,
+        "market_cap": 107315298304,
+        "composite_score": 39.5,
         "grade": "D",
         "rank": 45,
         "total_count": 47,
         "factor_scores": {
-          "momentum": 64.4,
-          "value": 57.3,
-          "quality": 25.4,
-          "growth": 18.5,
-          "risk": 39.1,
-          "flow": 20.9
+          "momentum": 39.9,
+          "value": 44.6,
+          "quality": 22.7,
+          "growth": 52.4,
+          "risk": 42.4,
+          "flow": 33.0
         },
         "signal": "SELL",
         "signal_info": {
@@ -4523,72 +4735,64 @@
           "emoji": "🔴",
           "color": "#ff5252"
         },
-        "alerts": [
-          {
-            "type": "HIGH_SHORT",
-            "severity": "warning",
-            "message": "공매도 비율 높음 — 유통주식 대비 20.4%"
-          }
-        ],
+        "alerts": [],
         "reasons": [
-          "Forward P/E -11.8 — 저평가 영역",
-          "매출 성장률 -29.8% — 역성장 우려",
-          "최강 팩터: momentum (64점)",
-          "최약 팩터: growth (18점)"
+          "최강 팩터: growth (52점)",
+          "최약 팩터: quality (23점)"
         ],
         "factors_raw": {
           "momentum": {
-            "rsi": 52.97,
-            "macd_histogram": 0.2905,
-            "return_1m": 1.39,
-            "return_3m": 34.75,
-            "return_6m": 108.3,
+            "rsi": 46.49,
+            "macd_histogram": 2.2136,
+            "return_1m": -6.62,
+            "return_3m": -13.07,
+            "return_6m": -26.49,
             "return_1y": null,
-            "ma20_diff_pct": 6.49,
-            "ma60_diff_pct": 10.47,
-            "ma200_diff_pct": 57.69,
+            "ma20_diff_pct": 2.6,
+            "ma60_diff_pct": 0.77,
+            "ma200_diff_pct": -9.48,
             "from_52w_high": null,
-            "bb_pct_b": 0.9628
+            "bb_pct_b": 0.6909
           },
           "value": {
-            "forward_pe": -11.792768,
-            "trailing_pe": null,
-            "ps_ratio": 11.1550255,
-            "pb_ratio": 2.4906623,
-            "ev_ebitda": -5.982,
-            "peg_ratio": null,
-            "fcf_yield": -6.12,
-            "dividend_yield": null
+            "forward_pe": 21.56119,
+            "trailing_pe": 39.974358,
+            "ps_ratio": 4.203004,
+            "pb_ratio": 6.3733964,
+            "ev_ebitda": 20.138,
+            "peg_ratio": 3.74,
+            "fcf_yield": 1.17,
+            "dividend_yield": 0.58
           },
           "quality": {
-            "roe": -28.87,
-            "roa": -14.51,
-            "gross_margin": -105.76,
-            "operating_margin": -126.4,
-            "profit_margin": -145.16,
-            "debt_to_equity": 15.087,
-            "current_ratio": 3.293
+            "roe": 16.36,
+            "roa": 3.44,
+            "gross_margin": 18.38,
+            "operating_margin": 9.6,
+            "profit_margin": 9.08,
+            "debt_to_equity": 63.94,
+            "current_ratio": 1.526
           },
           "growth": {
-            "revenue_growth": -29.8,
-            "earnings_growth": null,
-            "eps_growth_fwd": 36.13,
-            "analyst_target_upside": -15.87
+            "revenue_growth": 12.9,
+            "earnings_growth": -48.9,
+            "eps_growth_fwd": 85.4,
+            "analyst_target_upside": 26.02
           },
           "risk": {
-            "beta": 1.336,
-            "vol_20d": 47.57,
-            "vol_60d": 70.28,
+            "beta": 1.188,
+            "vol_20d": 55.62,
+            "vol_60d": 48.58,
             "max_drawdown": null,
             "sharpe": null,
             "sortino": null
           },
           "flow": {
-            "volume_ratio": 0.86,
-            "institutional_pct": 77.03,
-            "short_ratio": 6.35,
-            "short_pct_float": 20.42,
-            "insider_pct": 7.32
+            "volume_ratio": 0.75,
+            "institutional_pct": 78.97,
+            "short_ratio": 3.09,
+            "short_pct_float": 2.94,
+            "insider_pct": 0.35
           }
         }
       }
@@ -4597,20 +4801,20 @@
   "summary": {
     "total_stocks": 47,
     "signal_distribution": {
-      "HOLD": 43,
+      "HOLD": 41,
       "SELL": 3,
-      "BUY": 1
+      "BUY": 3
     },
     "avg_score": 50.0,
     "sector_avg_scores": {
-      "Technology": 50.2,
-      "Communication": 49.9,
-      "Healthcare": 52.2,
-      "Financials": 46.3,
-      "Consumer Disc": 49.1,
-      "Staples": 55.6,
-      "Industrials": 48.1,
-      "Energy": 46.9
+      "Technology": 50.1,
+      "Communication": 50.0,
+      "Healthcare": 53.1,
+      "Financials": 47.0,
+      "Consumer Disc": 49.5,
+      "Staples": 54.8,
+      "Industrials": 47.6,
+      "Energy": 45.5
     }
   }
 }
