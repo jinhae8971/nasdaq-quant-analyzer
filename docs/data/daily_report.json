@@ -1,6 +1,6 @@
 {
   "date": "2026-05-16",
-  "generated_at": "2026-05-16T02:43:10.837722",
+  "generated_at": "2026-05-16T02:56:39.546368",
   "indices": {
     "nasdaq": {
       "close": 26225.14,
@@ -261,7 +261,7 @@
         "momentum": 65.2,
         "value": 30.7,
         "quality": 93.4,
-        "growth": 83.5,
+        "growth": 83.4,
         "risk": 42.4,
         "flow": 57.0
       },
@@ -960,7 +960,7 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 70.1,
-        "value": 72.8,
+        "value": 72.7,
         "quality": 59.2,
         "growth": 29.2,
         "risk": 33.0,
@@ -1137,7 +1137,7 @@
         "momentum": 43.1,
         "value": 80.9,
         "quality": 67.6,
-        "growth": 48.9,
+        "growth": 49.0,
         "risk": 48.9,
         "flow": 53.9
       },
@@ -1925,8 +1925,8 @@
         "momentum": 57.9,
         "value": 25.4,
         "quality": 58.4,
-        "growth": 54.7,
-        "risk": 54.3,
+        "growth": 54.6,
+        "risk": 54.4,
         "flow": 52.6
       },
       "signal": "HOLD",
@@ -2010,10 +2010,10 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 64.4,
-        "value": 18.5,
+        "value": 18.6,
         "quality": 40.2,
         "growth": 48.2,
-        "risk": 51.4,
+        "risk": 51.5,
         "flow": 51.3
       },
       "signal": "HOLD",
@@ -2033,7 +2033,7 @@
         "RSI 93 — 과매수 구간, 단기 조정 가능성",
         "Forward P/E 61.2 — 고평가 주의",
         "최강 팩터: momentum (64점)",
-        "최약 팩터: value (18점)"
+        "최약 팩터: value (19점)"
       ],
       "factors_raw": {
         "momentum": {
@@ -3261,9 +3261,9 @@
       "total_count": 47,
       "factor_scores": {
         "momentum": 34.4,
-        "value": 72.8,
+        "value": 72.9,
         "quality": 32.5,
-        "growth": 39.6,
+        "growth": 39.5,
         "risk": 72.1,
         "flow": 54.8
       },
@@ -4320,7 +4320,7 @@
           "momentum": 65.2,
           "value": 30.7,
           "quality": 93.4,
-          "growth": 83.5,
+          "growth": 83.4,
           "risk": 42.4,
           "flow": 57.0
         },
