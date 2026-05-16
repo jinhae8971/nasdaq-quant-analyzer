@@ -3,7 +3,7 @@ name: NASDAQ Quant Analyzer — Daily Report
 on:
   schedule:
     # 매일 미국 동부시간 장 마감 후 KST 08:00 = UTC 23:00 (일~목)
-    - cron: "0 23 * * 0-4"
+    - cron: "20 23 * * 0-4"
   workflow_dispatch:
     inputs:
       debug_mode:
