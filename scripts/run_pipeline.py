@@ -1,6 +1,15 @@
 """
 run_pipeline.py — NASDAQ Quant Analyzer 진입점
 """
+
+# === anthropic_usage_reporter (auto-injected) ===
+try:
+    from anthropic_usage_reporter import patch_anthropic_client
+    patch_anthropic_client(workflow="nasdaq-quant-daily")
+except Exception:
+    pass
+# === end auto-injection ===
+
 import logging
 import os
 import sys
