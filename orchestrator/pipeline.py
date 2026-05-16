@@ -8,13 +8,6 @@ pipeline.py — 전체 파���프라인 오케스트레이터
   4. 결과 저장 (JSON)
   5. Telegram 알림 (선택)
 """
-# === anthropic_usage_reporter (auto-injected) ===
-try:
-    from anthropic_usage_reporter import patch_anthropic_client
-    patch_anthropic_client(workflow="nasdaq-quant-daily")
-except Exception:
-    pass
-# === end auto-injection ===
 
 import json
 import logging
